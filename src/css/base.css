@@ -1,0 +1,63 @@
+body {
+    position: relative;
+    padding-top: 30px;
+}
+
+body:before {
+    background-image: url("http://dev.antiant.com/src/image/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity:0.2;
+}
+
+.background-logo img{
+    position: fixed;
+    height: 100%;
+    opacity: 0.06;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+
+
+input[type="submit"] {
+    font-family: FontAwesome;
+}
+
+.language a{
+    color: #000000;
+    font-weight:bold
+}
+
+.navbar-button {
+    float: right !important;
+}
+
+.top-nav {
+    padding-top: 30px;
+}
+
+.main-title {
+    padding-top: 50px;
+}
+
+.login {
+    padding-top: 100px;
+}
+
+.side-nav a{
+    color: #000000;
+    font-weight:bold
+}
+
+.side-nav .submit{
+    padding-top: 10px;
+}
+
+.container-fluid{
+   padding: 0 20px !important;
+}
