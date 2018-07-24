@@ -1,0 +1,99 @@
+body {
+    position: relative;
+    padding-top: 30px;
+}
+
+body:before {
+    background-image: url("http://dev.antiant.com/src/image/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity:0.2;
+}
+
+.background-logo img{
+    position: fixed;
+    height: 100%;
+    opacity: 0.06;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+
+
+input[type="submit"] {
+    font-family: FontAwesome;
+}
+
+.language a{
+    color: #000000;
+    font-weight:bold
+}
+
+.navbar-button {
+    float: right !important;
+}
+
+.top-nav {
+    padding-top: 30px;
+}
+.home_page_btn img {
+    width: 10%;
+    display: block;
+    float: left
+}
+.home_page_btn:before{
+);
+}
+.menu_btn a{
+    color: black;
+    font-family:"Times New Roman",Georgia,Serif;
+    font-weight: bold;
+
+}
+.menu_btn a:hover{
+    background-color: #4d88ff;
+}
+.menu_btn{
+    border-bottom: 4px solid #1a53ff;
+    width: 100%
+}
+
+.main-title {
+    padding-top: 50px;
+}
+
+.login {
+    padding-top: 100px;
+}
+.login_box{
+    background-color: #4d88ff;
+    width: 110%;
+    padding: 40px 10px 250px;
+}
+.side-nav a{
+    color: #000000;
+    font-weight:bold
+}
+.form-group label{
+    font-family:"Times New Roman",Georgia,Serif;
+    font-weight: bold;
+}
+
+.side-nav .submit{
+    padding-top: 10px 30px;
+    background-color: #000;
+
+}
+.login_btn{
+    border-style: none;
+    padding-top: 10px 30px;
+    background-color: #000;
+}
+
+.container-fluid{
+   padding: 0 20px !important;
+}

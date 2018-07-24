@@ -1,20 +1,4 @@
 <?php
-/**
- * Index Page for this controller.
- *
- * Maps to the following URL
- * 		http://example.com/index.php/welcome
- *	- or -
- * 		http://example.com/index.php/welcome/index
- *	- or -
- * Since this controller is set as the default controller in
- * config/routes.php, it's displayed at http://example.com/
- *
- * So any other public methods not prefixed with an underscore will
- * map to /index.php/welcome/<method_name>
- * @see https://codeigniter.com/user_guide/general/urls.html
- */
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Base extends CI_Controller {
@@ -23,18 +7,44 @@ class Base extends CI_Controller {
             parent::__construct();
         }
 
-	public function index()
+	public function index($menu="home")
 	{
+            $current_lang = "english";
+            // Display side, top navbar, display title
+            $lang = $this->lang->load("base", $current_lang);
+            $data = [
+                'en_title' => "Anti-Ant Logistic Limited",
+                'cn_title' => "順水速遞",
+                'current_lang' => $current_lang,
+                'lang' => $lang,
+                'menu' => $menu
+            ];
             //Set basic Javascripts and CSS
-            $this->load->view('base');
-            
-            //Set title
-            $this->load->view('title');
-            
-            // Display nav bar
-            $this->load->view('nav');
+            $this->load->view('base', $data);
 	}
         
+        public function home(){
+            $this->index('home');
+        }
+        public function profile(){
+            $this->index('profile');
+        }
+        public function expertise(){
+            $this->index('expertise');
+        }
+        public function pricing(){
+            $this->index('pricing');
+        }
+        public function tracking(){
+            $this->index('tracking');
+        }
+        public function about(){
+            $this->index('about');
+        }
+        public function contact(){
+            $this->index('contact');
+        }
+
         public function switchLanguage($language = "") {
             $language = ($language != "") ? $language : "english";
             $this->session->set_userdata('site_lang', $language);

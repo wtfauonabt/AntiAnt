@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 18, 2018, 11:21:29 PM
+    Author     : Stanley Yeung
+*/
+
+.home{
+	display: block;
+	text-align: center;
+	font-size: 35px;
+	margin-top: 100px;
+	background-color:  #66a3ff;
+	margin-left: 15%;
+    margin-right: 15%;
+    padding: 15px 0;
+}
+
+.home input{
+	    width: 50%;
+    display: block;
+    text-align: center;
+    margin: 0 25%;
+}
