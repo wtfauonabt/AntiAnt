@@ -70,6 +70,11 @@ $lang["expertise"]["paragraph"] =["全球專業倉儲","進出口報關、物流
  *  
 *******************************************************************************/
 
+$lang["pricing"]["header"] =["Ordinary user price (HKD)","Member price (HKD)"
+];
+$lang["pricing"]["data"] =["Ordinary user price (HKD)","Member price (HKD)","dsd","fdsdf","fdsaaa"
+];
+
 /*******************************************************************************
  * Tracking Language Pack (English)
  * -------------------------------

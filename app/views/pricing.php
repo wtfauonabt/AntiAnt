@@ -1,19 +1,20 @@
 <?php
-$table_data;
-$table_header;
+ defined('BASEPATH') OR exit('No direct script access allowed');
+$pricing_lang = $this->lang->line('pricing');
+
 ?>
 <table>
-	<?php foreach($table_header as $cell): ?>
+	<?php foreach($pricing_lang['header'] as $cell): ?>
 		<th>
 			<td>
-				<?php echo $row ?>
+				<?php echo $cell; ?>
 			</td>
 		</th>
 	<?php endforeach; ?>
-	<?php foreach($table_data as $row): ?>
+	<?php foreach($pricing_lang['data'] as $row): ?>
 		<tr>
 			<td>
-				<?php echo $row ?>
+				<?php echo $row ;?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
