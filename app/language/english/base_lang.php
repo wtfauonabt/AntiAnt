@@ -116,3 +116,13 @@ $lang["contact"]['email'] = 'Email : AAReceiving@gmail.com';
 $lang["contact"]['openhours'] = 'Opening hour:  Monday to Saturday：9:00am-6:00pm
                              Sunday and Public Holiday：Closed
 ';
+/*******************************************************************************
+ * Footer Language Pack (English)
+ * -------------------------------
+ * Display language for contact page
+ *  
+*******************************************************************************/
+$lang["foo"]["paragraph"] = ["Company Profile" ,"Expertise","Pricing", "Tracking" ,  "Awards" ,"Awards" , "About us" , "Contact"];
+
+
+
