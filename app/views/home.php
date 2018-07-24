@@ -1,10 +1,13 @@
 <?php 
+
 defined('BASEPATH') OR exit('No direct script access allowed');
+$home_lang = $this->lang->line('home');
+
 ?>
 <link href="<?php base_url();?>/src/css/home.css" rel="stylesheet" />
 
 <section  id="home">
-    <div class="card">
+    <!--<div class="card">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -31,6 +34,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <span class="sr-only">Next</span>
             </a>
           </div>
-    </div>
+    </div>-->
+     <form>
+                   <div class="form-group home" >
+                       <label><?php echo $home_lang['title']; ?></label>
+                       <input class="form-control" type="text" placeholder="<?php echo $home_lang['tracknum']; ?>" aria-label="<?php echo $home_lang['tracknum']; ?>">
+                   </div>
+                   
+                </form>
 </section>
 <script src="<?php base_url();?>/src/js/home.js"></script>

@@ -43,7 +43,8 @@ $lang["nav"]["login"] = "Login";
  * Display language for home page
  *  
 *******************************************************************************/
-
+$lang["home"]["title"] = "Track & Trace ";
+$lang["home"]["tracknum"] = "EK12345678HK, Ek87654321HK";
 /*******************************************************************************
  * Company Profile Language Pack (English)
  * -------------------------------
