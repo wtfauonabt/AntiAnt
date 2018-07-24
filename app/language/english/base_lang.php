@@ -58,11 +58,9 @@ $lang["profile"]["paragraph"] = "Lorem ipsum dolor sit amet, consectetuer adipis
  * Display language for expertise page
  *  
 *******************************************************************************/
-/*$lang["profile"]["title"] = "Title";
-$lang["profile"]["data"] = [
-    ['image' => '', '' => ''],
-    
-];
+$lang["expertise"]["title"] = "Expertise";
+$lang["expertise"]["paragraph"] ="全球專業倉儲";
+   
 /*******************************************************************************
  * Pricing Language Pack (English)
  * -------------------------------

@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $expertise_lang = $this->lang->line('expertise');
 ?>
 <link href="<?php base_url();?>/src/css/expertise.css" rel="stylesheet" />
-<section id="profile">
+<!--<section id="profile">
     <table>
         <th>
             <td>
@@ -19,5 +19,30 @@ $expertise_lang = $this->lang->line('expertise');
             </tr>
         <?php endforeach; ?>
     </table>
+</section>-->
+<section id="expertise">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <img class='w-100 pro_img' src='<?php base_url();?>/src/image/expertise.png'>
+            </div>
+            <div class="col-6">
+                <div class="expertise-title">
+                    <h1><?php echo $expertise_lang['title']?></h1>
+                </div>
+                <ul>
+                    <?php foreach($expertise_lang['paragraph'] as $data): ?>
+                        <li><?php echo $data?></li>
+                    <?php enforeach;?>
+                </ul>
+
+            </div>
+        </div>
+    </div>
 </section>
 <script src="<?php base_url();?>/src/js/expertise.js"></script>
