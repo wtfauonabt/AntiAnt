@@ -40,6 +40,27 @@ input[type="submit"] {
 .top-nav {
     padding-top: 30px;
 }
+.home_page_btn img {
+    width: 10%;
+    display: block;
+    float: left
+}
+.home_page_btn:before{
+);
+}
+.menu_btn a{
+    color: black;
+    font-family:"Times New Roman",Georgia,Serif;
+    font-weight: bold;
+
+}
+.menu_btn a:hover{
+    background-color: #4d88ff;
+}
+.menu_btn{
+    border-bottom: 4px solid #1a53ff;
+    width: 100%
+}
 
 .main-title {
     padding-top: 50px;
@@ -48,14 +69,29 @@ input[type="submit"] {
 .login {
     padding-top: 100px;
 }
-
+.login_box{
+    background-color: #4d88ff;
+    width: 110%;
+    padding: 40px 10px 350px;
+}
 .side-nav a{
     color: #000000;
     font-weight:bold
 }
+.form-group label{
+    font-family:"Times New Roman",Georgia,Serif;
+    font-weight: bold;
+}
 
 .side-nav .submit{
-    padding-top: 10px;
+    padding-top: 10px 30px;
+    background-color: #000;
+
+}
+.login_btn{
+    border-style: none;
+    padding-top: 10px 30px;
+    background-color: #000;
 }
 
 .container-fluid{

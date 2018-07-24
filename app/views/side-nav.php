@@ -6,7 +6,7 @@
     <!-- Sidebar -->
     <nav id="sidebar navbar navbar-dark ">
         <div class="login">
-            <form>
+            <form class="login_box">
                 <div class="form-group">
                     <label><?php echo $nav_lang['username']; ?></label>
                     <input class="form-control" type="text" placeholder="<?php echo $nav_lang['username']; ?>" aria-label="<?php echo $nav_lang['username']; ?>">
@@ -19,7 +19,7 @@
                     <a href=""><?php echo $nav_lang['register']; ?></a>
                 </div>
                 <div class="submit text-center">
-                    <button class="btn btn-success" type="submit"><?php echo $nav_lang['login']; ?></button>
+                    <button class=" login_btn btn btn-success" type="submit"><?php echo $nav_lang['login']; ?></button>
                 </div>
             </form>
 
