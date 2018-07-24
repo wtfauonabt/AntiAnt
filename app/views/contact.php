@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $contact_lang = $this->lang->line('contact');
+$api_key = 'AIzaSyCQPjritES8o4t77VJSVSGz9keLKlklYFk';
+$address = 'Hang+Wai+Industrial+Center,6+Kin+Tai+Street,Tuen+Mun,N.T.,Hong+Kong';
 ?>
 <link href="<?php base_url();?>/src/css/contact.css" rel="stylesheet" />
 <section id="contact">
@@ -38,8 +40,8 @@ $contact_lang = $this->lang->line('contact');
         <div class="row">
             <div class="col-6">
                 <!--<div id="map" class='map'>My map will go here</div>-->
-                <p>My map will go here</p>
-                <img class='w-100 about_img' src='<?php base_url();?>/src/image/map.png'>
+                <iframe width="100%" height="100%" rameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=<?php echo $api_key; ?>&q=<?php echo $address; ?>"></iframe>
+                <!--<img class='w-100 about_img' src='<?php base_url();?>/src/image/map.png'>-->
                  <p style="text-align: center;"><?php echo $contact_lang['address']?></p>
             </div>
             <div class="col-6 contact_position">
