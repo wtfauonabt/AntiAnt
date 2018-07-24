@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <link href="<?php base_url();?>/src/css/home.css" rel="stylesheet" />
 
-<section style="background-image: url(./src/image/bg.jpg);" id="home">
+<section  id="home">
     <div class="card">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
