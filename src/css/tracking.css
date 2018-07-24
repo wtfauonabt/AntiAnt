@@ -5,3 +5,21 @@
 	font-family: "Times New Roman",Georgia,Serif;
     font-weight: bold;
 }
+.output_box{
+	padding: 0 0 177px;
+    margin: 0 0 0 -32px;
+    background-color: #ffffff;
+    border: 1px solid #b3b3b3;
+ }
+.input_box{
+	padding: 0 0 155px;
+    background-color: #ffffff;
+    border: 1px solid #b3b3b3;
+}
+.submit_btn{
+	position: absolute;
+    left: 44%;
+    top: 289px;
+    background:  #99ffff;
+    
+}
