@@ -28,17 +28,18 @@ $expertise_lang = $this->lang->line('expertise');
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
-                <img class='w-100 pro_img' src='<?php base_url();?>/src/image/expertise.png'>
+            <div class="col-6 ">
+                <img class='w-100 exper_img' src='<?php base_url();?>/src/image/expertise.png'>
             </div>
             <div class="col-6">
                 <div class="expertise-title">
-                    <h1><?php echo $expertise_lang['title']?></h1>
+                    <h1><?php echo $expertise_lang['title'];?></h1>
                 </div>
-                <ul>
+                <div class="exper_list">
+                <ul >
                     <?php foreach($expertise_lang['paragraph'] as $data): ?>
-                        <li><?php echo $data?></li>
-                    <?php enforeach;?>
+                        <li><?php echo $data;?></li>
+                    <?php endforeach;?>
                 </ul>
 
             </div>

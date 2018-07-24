@@ -59,7 +59,8 @@ $lang["profile"]["paragraph"] = "Lorem ipsum dolor sit amet, consectetuer adipis
  *  
 *******************************************************************************/
 $lang["expertise"]["title"] = "Expertise";
-$lang["expertise"]["paragraph"] ="全球專業倉儲";
+$lang["expertise"]["paragraph"] =["全球專業倉儲","進出口報關、物流配送","供應鏈管理","全球物流專線運輸","全球電商物流解決方案定製及實施"
+];
    
 /*******************************************************************************
  * Pricing Language Pack (English)
@@ -75,7 +76,8 @@ $lang["expertise"]["paragraph"] ="全球專業倉儲";
  *  
 *******************************************************************************/
 $lang["tracking"]["title"] = "Track Your Shipment";
-$lang["tracking"]["tracking_number"] = "Tracking Number";
+$lang["tracking"]["tracking_number"] = "Tracking Number (Single/Multiple)";
+$lang["tracking"]["status"] = "Status";
 $lang["tracking"]["submit"] = "Submit";
 
 /*******************************************************************************

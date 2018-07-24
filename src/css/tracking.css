@@ -1,3 +1,7 @@
 .tracking-title{
     text-align: center;
 }
+.status label{
+	font-family: "Times New Roman",Georgia,Serif;
+    font-weight: bold;
+}

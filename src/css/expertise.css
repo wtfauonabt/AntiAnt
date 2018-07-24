@@ -8,3 +8,19 @@ and open the template in the editor.
     Author     : Stanley Yeung
 */
 
+.expertise-title{
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px 0;
+}
+.exper_list ul {
+  list-style-type: none;
+  line-height: 50px;
+}
+.exper_img{
+	padding-top: 100px;
+}
+.exper_list li:before{
+    display: inline-block;
+  content: url(././src/image/arrow.png);
+    transform: scale(.8);
