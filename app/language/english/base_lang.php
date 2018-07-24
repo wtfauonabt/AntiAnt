@@ -86,7 +86,16 @@ $lang["tracking"]["submit"] = "Submit";
  * Display language for about page
  *  
 *******************************************************************************/
+$lang["about"]["title"] = "About us";
+$lang["about"]["paragraph"] = "專業，創新，忠誠，共赢！
 
+專業，是企業成就客戶，長盛不衰的不變法則！
+創新，是企業不斷發展的基礎！
+忠誠，是企業團隊永不放棄為奮鬥的堅定信念！
+共贏，是企業聲名遠播的口碑！
+
+以人為本，人才是順水速遞的核心財富，是公司發展的推進器！
+公司提倡開放，積極，團結，永不放棄工作氛圍，打造以人為本的核心團隊，營造民主開放的企業氛圍，提升服務品質與企業形象。 ";
 /*******************************************************************************
  * Contact Us Language Pack (English)
  * -------------------------------
@@ -99,6 +108,10 @@ $lang["contact"]["username"] = "Username";
 $lang["contact"]["password"] = "Password";
 $lang["contact"]["register"] = "Register";
 
-$lang["contact"]['address'] = "Address: 123";
-$lang["contact"]['number'] = "Phone Number: 1232165498";
-$lang["contact"]['email'] = 'contact@antiant.com';
+$lang["contact"]['address'] = "Unit 6, 12/F, Hang Wai Industrial Center Block C1, 6 Kin Tai Street, Tuen Mun, N.T., Hong Kong";
+$lang["contact"]['web'] = "Website : AA-expresshk.com";
+$lang["contact"]['number'] = "Phone Number : +852 3590 2379 & +86 151 0204 0978";
+$lang["contact"]['email'] = 'Email : AAReceiving@gmail.com';
+$lang["contact"]['openhours'] = 'Opening hour:  Monday to Saturday：9:00am-6:00pm
+                             Sunday and Public Holiday：Closed
+';

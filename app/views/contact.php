@@ -23,7 +23,7 @@ $contact_lang = $this->lang->line('contact');
         <div class="row">
             <div class="col-6">
                 map-->
-                <div id="map" class='map'>My map will go here</div>
+                
 <!--            </div>
             <div class="col-6">
                 contact information
@@ -33,6 +33,24 @@ $contact_lang = $this->lang->line('contact');
             </div>
         </div>
     </div>-->
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-6">
+                <!--<div id="map" class='map'>My map will go here</div>-->
+                <p>My map will go here</p>
+                <img class='w-100 about_img' src='<?php base_url();?>/src/image/map.png'>
+                 <p style="text-align: center;"><?php echo $contact_lang['address']?></p>
+            </div>
+            <div class="col-6 contact_position">
+                <p><?php echo $contact_lang['web']?></p>
+                <p><?php echo $contact_lang['email']?></p>
+                <p><?php echo $contact_lang['number']?></p>
+                <p><?php echo $contact_lang['openhours']?></p>
+
+            </div>
+        </div>
+    </div>
 </section>
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 <script src="<?php base_url();?>/src/js/contact.js"></script>

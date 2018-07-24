@@ -8,3 +8,11 @@ and open the template in the editor.
     Author     : Stanley Yeung
 */
 
+.about-title{
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px 0;
+}
+.about_img{
+	padding-top: 90px;
+}
