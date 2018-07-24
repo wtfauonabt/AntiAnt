@@ -8,3 +8,6 @@ and open the template in the editor.
     Author     : Stanley Yeung
 */
 
+.pricing table{
+	border: 1px solid  #ff3333;
+}
