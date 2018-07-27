@@ -7,7 +7,7 @@
     <nav id="sidebar navbar navbar-dark ">
 
         <div class="login chat-box" >
-            <input type="checkbox"/>
+            <input type="checkbox" class="hidden_ch" />
         <label data-expanded="" data-collapsed="Login Here"></label>
             <form class="login_box chat-box-content" >
                 <div class="form-group form_group_mob" >
