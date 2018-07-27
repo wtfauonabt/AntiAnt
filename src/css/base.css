@@ -189,13 +189,13 @@ input[type="submit"] {
         border-radius: 3px;
     }
     .form_group_mob{
-        margin:0 0;
+        margin:6px 0;
     }
     .form_control_mob{
 
         padding: 0 0;
         font-size: 1px;
-        line-height: 1;
+        line-height: 2;
     }
         .hidden_sidenav {
         ;
