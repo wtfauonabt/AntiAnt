@@ -12,8 +12,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="menu_btn nav  justify-content-center">
                     <li class="nav-item home_page_btn" tab="home">
-                        
-                        <a class="nav-link <?php if($menu == 'home'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/home'); ?>"><img src="<?php base_url();?>/src/image/home_page_btn.png"><?php echo $nav_lang['home']; ?></a>
+                        <a class="nav-link <?php if($menu == 'home'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/home'); ?>"><i class="fas fa-home"></i> <?php echo $nav_lang['home']; ?></a>
                     </li>
                     <li class="nav-item" tab="profile">
                         <a class="nav-link <?php if($menu == 'profile'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/profile'); ?>"><?php echo $nav_lang['profile']; ?></a>
@@ -36,5 +35,5 @@
                 </ul>
             </div>
         </div>
-    </nav>  
+    </nav>
 </div>

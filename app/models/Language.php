@@ -10,20 +10,22 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Language extends CI_Model{
-    private $current_lang;
-
+	private const DEFAULT_LANGUAGE = 'simp_chinese';
 
     public function __construct(){
         parent::__construct();
-        $this->setLanguage("simp_chinese");
     }
     
     public function getCurrentLanguage(){
-    	return $this->current_lang;
+    	if(!$this->session->has_userdata('language')){
+			$this->setLanguage('simp_chinese');
+			return 'simp_chinese';
+		}
+        return $this->session->userdata('language');
     }
 
-    public function setLanguage($lang){
-    	$this->current_lang = $lang;
-        return $this->getCurrentLanguage();
+    public function setLanguage($language){
+    	$this->session->set_userdata('language', $language);
+        return $language;
     }
 }
