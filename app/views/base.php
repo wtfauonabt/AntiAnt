@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="icon" href="<?php echo base_url('src/image/favicon.ico'); ?>" type="image/x-icon"/>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -24,11 +25,11 @@
                     <?php $this->load->view("title"); ?>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2">
+            <div class="row" >
+                <div class="col-lg-2 col-sm-12 hidden_sidenav">
                     <?php $this->load->view("side-nav"); ?>
                 </div>
-                <div class="col-10">
+                <div class="col-lg-10 col-sm-12">
                     <?php $this->load->view("top-nav"); ?>
                     <?php $this->load->view($menu); ?>
                 </div>

@@ -7,13 +7,13 @@
     <nav id="sidebar navbar navbar-dark ">
         <div class="login">
             <form class="login_box">
-                <div class="form-group">
+                <div class="form-group form_group_mob">
                     <label><?php echo $nav_lang['username']; ?></label>
-                    <input class="form-control" type="text" placeholder="<?php echo $nav_lang['username']; ?>" aria-label="<?php echo $nav_lang['username']; ?>">
+                    <input class="form-control form_control_mob" type="text" placeholder="<?php echo $nav_lang['username']; ?>" aria-label="<?php echo $nav_lang['username']; ?>">
                 </div>
-                <div class="form-group">
+                <div class="form-group form_group_mob">
                     <label><?php echo $nav_lang['password']; ?></label>
-                    <input class="form-control" type="password" placeholder="<?php echo $nav_lang['password']; ?>" aria-label="<?php echo $nav_lang['password']; ?>">
+                    <input class="form-control form_control_mob" type="password" placeholder="<?php echo $nav_lang['password']; ?>" aria-label="<?php echo $nav_lang['password']; ?>">
                 </div>
                 <div class="text-center">
                     <a href=""><?php echo $nav_lang['register']; ?></a>

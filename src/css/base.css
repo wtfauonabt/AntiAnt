@@ -40,6 +40,7 @@ input[type="submit"] {
 .top-nav {
     padding-top: 30px;
 }
+
 .home_page_btn img {
     width: 10%;
     display: block;
@@ -62,9 +63,7 @@ input[type="submit"] {
     width: 100%
 }
 
-.main-title {
-    padding-top: 50px;
-}
+
 
 .login {
     padding-top: 100px;
@@ -74,6 +73,55 @@ input[type="submit"] {
     width: 110%;
     padding: 40px 10px 250px;
 }
+@media all and (max-width: 768px){
+    .login {
+    padding-top: 0;
+}
+.login_box{
+    background-color: #4d88ff;
+    width: 30%;
+    padding: 10px;
+    /* float: right; */
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    top: 90px;
+
+}
+.form_group_mob{
+    margin:0 0;
+}
+.form_control_mob{
+
+    padding: 0 0;
+    font-size: 1px;
+    line-height: 1;
+}
+    .hidden_sidenav {
+    ;
+    }
+    .side-nav a{
+    color: #000000;
+    font-weight:bold
+}
+.form-group label{
+    font-family:"Times New Roman",Georgia,Serif;
+    font-weight: bold;
+}
+
+.side-nav .submit{
+    padding-top: 10px 30px;
+    background-color: #000;
+
+}
+.login_btn{
+    border-style: none;
+    padding-top: 10px 30px;
+    background-color: #000;
+}
+}
+
+
 .side-nav a{
     color: #000000;
     font-weight:bold

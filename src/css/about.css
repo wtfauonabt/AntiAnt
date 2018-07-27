@@ -16,3 +16,9 @@ and open the template in the editor.
 .about_img{
 	padding-top: 90px;
 }
+
+@media all and (max-width: 768px){
+	.about_img{
+	padding: 0px;
+	}	
+}
