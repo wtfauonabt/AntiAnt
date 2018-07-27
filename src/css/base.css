@@ -73,6 +73,39 @@ input[type="submit"] {
     width: 110%;
     padding: 40px 10px 250px;
 }
+
+
+
+.side-nav a{
+    color: #000000;
+    font-weight:bold
+}
+.form-group label{
+    font-family:"Times New Roman",Georgia,Serif;
+    font-weight: bold;
+        font-size: 11px;
+    line-height: 1px;
+}
+
+.side-nav .submit{
+    padding-top: 10px 30px;
+    background-color: #000;
+
+}
+.login_btn{
+    border-style: none;
+    padding-top: 10px 30px;
+    background-color: #000;
+        padding: 1px;
+    color:#fff;
+}
+
+
+.container-fluid{
+   padding: 0 20px !important;
+}
+
+
 @media all and (max-width: 768px){
     .login {
     padding-top: 0;
@@ -185,38 +218,10 @@ input[type="submit"] {
         padding-top: 10px 30px;
         background-color: #000;
         font-size: 1px;
+        font-color: #fff;
     }
     .register{
         font-size: 4px;
     }
 
-}
-
-
-.side-nav a{
-    color: #000000;
-    font-weight:bold
-}
-.form-group label{
-    font-family:"Times New Roman",Georgia,Serif;
-    font-weight: bold;
-        font-size: 11px;
-    line-height: 1px;
-}
-
-.side-nav .submit{
-    padding-top: 10px 30px;
-    background-color: #000;
-
-}
-.login_btn{
-    border-style: none;
-    padding-top: 10px 30px;
-    background-color: #000;
-        padding: 1px;
-}
-}
-
-.container-fluid{
-   padding: 0 20px !important;
 }

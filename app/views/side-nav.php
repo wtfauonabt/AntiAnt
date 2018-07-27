@@ -22,7 +22,7 @@
                     <a href=""><?php echo $nav_lang['register']; ?></a>
                 </div>
                 <div class="submit text-center">
-                    <button class=" login_btn btn btn-success" type="submit"><?php echo $nav_lang['login']; ?></button>
+                    <button class=" login_btn btn " type="submit"><?php echo $nav_lang['login']; ?></button>
                 </div>
             </form>
 
