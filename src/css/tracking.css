@@ -6,20 +6,28 @@
     font-weight: bold;
 }
 .output_box{
-	padding: 0 0 177px;
-    margin: 0 0 0 -32px;
+	    padding: 0px 0 179px;
+    margin: -9px 0 0 -31px;
     background-color: #ffffff;
     border: 1px solid #b3b3b3;
  }
-.input_box{
-	padding: 0 0 155px;
-    background-color: #ffffff;
-    border: 1px solid #b3b3b3;
+
+.input_box input{
+    padding: 87px 12px;
+    border: none;
 }
 .submit_btn{
 	position: absolute;
-    left: 44%;
+    left: 42%;
     top: 289px;
     background:  #99ffff;
     
+}
+
+@media all and (max-width: 425px){
+  .submit_btn{
+        position: absolute;
+    left: 37%;
+    top: 282px;
+    background: #99ffff;
 }
