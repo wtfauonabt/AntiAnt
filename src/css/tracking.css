@@ -18,9 +18,9 @@
 }
 .submit_btn{
 	position: absolute;
-    left: 42%;
-    top: 289px;
-    background:  #99ffff;
+    left: 43%;
+    top: 324px;
+    background: #99ffff;
     
 }
 
@@ -30,4 +30,25 @@
     left: 37%;
     top: 282px;
     background: #99ffff;
+}
+}
+
+@media all and (max-width: 768px) and (min-width: 426px){
+  .submit_btn{
+           position: absolute;
+    left: 304px;
+    top: 277px;
+    background: #99ffff;
+
+}
+}
+
+
+@media all and (min-width: 1025px){
+  .submit_btn{
+         position: absolute;
+    left: 44%;
+    top: 284px;
+    background: #99ffff;
+}
 }
