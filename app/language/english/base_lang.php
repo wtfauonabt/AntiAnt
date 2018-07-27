@@ -37,10 +37,10 @@ $lang["nav"]["awards"] = "Awards";
 $lang["nav"]["about"] = "About Us";
 $lang["nav"]["contact"] = "Contact Us";
 // Side Nav Language
-$lang["nav"]["username"] = "Username";
-$lang["nav"]["password"] = "Password";
-$lang["nav"]["register"] = "Register";
-$lang["nav"]["login"] = "Login";
+$lang["side"]["username"] = "Username";
+$lang["side"]["password"] = "Password";
+$lang["side"]["register"] = "Register";
+$lang["side"]["login"] = "Login";
 // Footer Nav Langugage
 $lang["footer"]['copyright'] = "Anti-Ant Logistic Limited All Rights Reserved";
 

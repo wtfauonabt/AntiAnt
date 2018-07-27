@@ -8,9 +8,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <ul >
-                    <?php foreach($nav_lang as $data): ?>
-                        <li><?php echo $data;?> |</li>
+                <ul >|
+                    <?php foreach($nav_lang as $key => $value): ?>
+						<li><a href='<?php echo site_url("/Base/menu/{$key}"); ?>'><?php echo $value;?></a> |</li>
                     <?php endforeach;?>
                 </ul>
                 <p><?php echo $footer_lang['copyright']; ?></p>
