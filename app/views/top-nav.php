@@ -13,25 +13,25 @@
                 <ul class="menu_btn nav  justify-content-center">
                     <li class="nav-item home_page_btn" tab="home">
                         
-                        <a class="nav-link <?php if($menu == 'home'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/home'); ?>"><img src="./src/image/home_page_btn.png"><?php echo $nav_lang['home']; ?></a>
+                        <a class="nav-link <?php if($menu == 'home'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/home'); ?>"><img src="<?php base_url();?>/src/image/home_page_btn.png"><?php echo $nav_lang['home']; ?></a>
                     </li>
                     <li class="nav-item" tab="profile">
-                        <a class="nav-link <?php if($menu == 'profile'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/profile'); ?>"><?php echo $nav_lang['profile']; ?></a>
+                        <a class="nav-link <?php if($menu == 'profile'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/profile'); ?>"><?php echo $nav_lang['profile']; ?></a>
                     </li>
                     <li class="nav-item" tab="expertise">
-                        <a class="nav-link <?php if($menu == 'expertise'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/expertise'); ?>"><?php echo $nav_lang['expertise']; ?></a>
+                        <a class="nav-link <?php if($menu == 'expertise'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/expertise'); ?>"><?php echo $nav_lang['expertise']; ?></a>
                     </li>
                     <li class="nav-item" tab="pricing">
-                        <a class="nav-link <?php if($menu == 'pricing'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/pricing'); ?>"><?php echo $nav_lang['pricing']; ?></a>
+                        <a class="nav-link <?php if($menu == 'pricing'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/pricing'); ?>"><?php echo $nav_lang['pricing']; ?></a>
                     </li>
                     <li class="nav-item" tab="tracking">
-                        <a class="nav-link <?php if($menu == 'tracking'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/tracking'); ?>"><?php echo $nav_lang['tracking']; ?></a>
+                        <a class="nav-link <?php if($menu == 'tracking'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/tracking'); ?>"><?php echo $nav_lang['tracking']; ?></a>
                     </li>
                     <li class="nav-item" tab="about">
-                        <a class="nav-link <?php if($menu == 'about'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/about'); ?>"><?php echo $nav_lang['about']; ?></a>
+                        <a class="nav-link <?php if($menu == 'about'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/about'); ?>"><?php echo $nav_lang['about']; ?></a>
                     </li>
                     <li class="nav-item" tab="contact">
-                        <a class="nav-link <?php if($menu == 'contact'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/contact'); ?>"><?php echo $nav_lang['contact']; ?></a>
+                        <a class="nav-link <?php if($menu == 'contact'): ?>active<?php endif;?>" href="<?php echo site_url('/Base/menu/contact'); ?>"><?php echo $nav_lang['contact']; ?></a>
                     </li>
                 </ul>
             </div>

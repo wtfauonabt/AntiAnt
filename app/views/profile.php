@@ -18,8 +18,9 @@ $profile_lang = $this->lang->line('profile');
                 <div class="profile-title">
                     <h1><?php echo $profile_lang['title']?></h1>
                 </div>
-                <p><?php echo $profile_lang['paragraph']?></p>
-
+                <?php foreach($profile_lang['paragraph'] as $paragraph): ?>
+                    <p><?php echo $paragraph; ?></p>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>

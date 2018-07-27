@@ -1,21 +1,22 @@
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
+    $title_lang = $this->lang->line('title');
 ?>
 <link href="<?php base_url();?>/src/css/title.css" rel="stylesheet" />
 <section id="main-title">
     <div class="main-title">
         <div class="language text-right">
             <p>
-                <?php if($current_lang == 'english'):?>
-                    English
+                <?php if($current_lang == 'simp_chinese'):?>
+                    <?php echo $title_lang["simp_chinese"]; ?>
                 <?php else: ?>
-                    <a href="<?php echo site_url('/Language/change/english'); ?>">English</a>
+                    <a href='<?php echo site_url("/Base/switchLanguage/simp_chinese/{$menu}"); ?>'><?php echo $title_lang["simp_chinese"]; ?></a>
                 <?php endif; ?>
                 /
-                <?php if($current_lang == 'chinese'):?>
-                    中文
+                <?php if($current_lang == 'english'):?>
+                    <?php echo $title_lang["english"]; ?>
                 <?php else: ?>
-                    <a href="<?php echo site_url('/Language/change/chinese'); ?>">中文</a>
+                    <a href="<?php echo site_url("/Base/switchLanguage/english/{$menu}"); ?>"><?php echo $title_lang["english"]; ?></a>
                 <?php endif; ?>
             </p>
         </div>
@@ -28,8 +29,8 @@
                         </div>
                     </div>
                     <div class="col-9">
-                        <h1 class="main_title text-center" ><?php echo $en_title; ?></h1>
-                        <h1 class="main_title text-center"><?php echo $cn_title; ?></h1>
+                        <h1 class="main_title text-center"><?php $title_lang['en_title']; ?></h1>
+                        <h1 class="main_title text-center"><?php $title_lang['cn_title']; ?></h1>
                     </div>    
                 </div>
             </div>
