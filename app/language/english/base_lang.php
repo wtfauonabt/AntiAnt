@@ -70,6 +70,11 @@ $lang["expertise"]["paragraph"] =["全球專業倉儲","進出口報關、物流
  *  
 *******************************************************************************/
 
+$lang["pricing"]["header"] =["Ordinary user price (HKD)","Member price (HKD)"
+];
+$lang["pricing"]["data"] =["Ordinary user price (HKD)","Member price (HKD)","dsd","fdsdf","fdsaaa"
+];
+
 /*******************************************************************************
  * Tracking Language Pack (English)
  * -------------------------------
@@ -116,3 +121,13 @@ $lang["contact"]['email'] = 'Email : AAReceiving@gmail.com';
 $lang["contact"]['openhours'] = 'Opening hour:  Monday to Saturday：9:00am-6:00pm
                              Sunday and Public Holiday：Closed
 ';
+/*******************************************************************************
+ * Footer Language Pack (English)
+ * -------------------------------
+ * Display language for contact page
+ *  
+*******************************************************************************/
+$lang["foo"]["paragraph"] = ["Company Profile" ,"Expertise","Pricing", "Tracking" ,  "Awards" ,"Awards" , "About us" , "Contact"];
+
+
+

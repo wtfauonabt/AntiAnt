@@ -33,6 +33,11 @@
                     <?php $this->load->view($menu); ?>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <?php $this->load->view("footer"); ?>
+                </div>
+            </div>
         </div>
         
         <!-- JQuery -->
