@@ -5,9 +5,12 @@
 <div class="side-nav">
     <!-- Sidebar -->
     <nav id="sidebar navbar navbar-dark ">
-        <div class="login">
-            <form class="login_box">
-                <div class="form-group form_group_mob">
+
+        <div class="login chat-box" >
+            <input type="checkbox"/>
+        <label data-expanded="" data-collapsed="Login Here"></label>
+            <form class="login_box chat-box-content" >
+                <div class="form-group form_group_mob" >
                     <label><?php echo $nav_lang['username']; ?></label>
                     <input class="form-control form_control_mob" type="text" placeholder="<?php echo $nav_lang['username']; ?>" aria-label="<?php echo $nav_lang['username']; ?>">
                 </div>
@@ -15,7 +18,7 @@
                     <label><?php echo $nav_lang['password']; ?></label>
                     <input class="form-control form_control_mob" type="password" placeholder="<?php echo $nav_lang['password']; ?>" aria-label="<?php echo $nav_lang['password']; ?>">
                 </div>
-                <div class="text-center">
+                <div class="text-center register">
                     <a href=""><?php echo $nav_lang['register']; ?></a>
                 </div>
                 <div class="submit text-center">

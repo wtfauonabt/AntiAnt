@@ -1,6 +1,6 @@
 body {
     position: relative;
-    padding-top: 30px;
+    
 }
 
 body:before {
@@ -76,49 +76,120 @@ input[type="submit"] {
 @media all and (max-width: 768px){
     .login {
     padding-top: 0;
-}
-.login_box{
-    background-color: #4d88ff;
-    width: 30%;
-    padding: 10px;
-    /* float: right; */
-    z-index: 1;
-    position: fixed;
-    right: 0;
-    top: 90px;
-
-}
-.form_group_mob{
-    margin:0 0;
-}
-.form_control_mob{
-
-    padding: 0 0;
-    font-size: 1px;
-    line-height: 1;
-}
-    .hidden_sidenav {
-    ;
     }
-    .side-nav a{
-    color: #000000;
-    font-weight:bold
-}
-.form-group label{
-    font-family:"Times New Roman",Georgia,Serif;
-    font-weight: bold;
-}
-
-.side-nav .submit{
-    padding-top: 10px 30px;
-    background-color: #000;
+    .chat-box {
+  font: normal normal 11px/1.4 Tahoma, Verdana, Sans-Serif;
+    width: 92px;
+    /* border: 1px solid #344150; */
+    border-bottom: none;
+    position: fixed;
+    left: 10px;
+    left: -1px;
+    top: 0;
+     z-index: 1;
 
 }
-.login_btn{
-    border-style: none;
-    padding-top: 10px 30px;
-    background-color: #000;
-}
+
+    .chat-box>input[type="checkbox"] {
+      display: block;
+      margin: 0 0;
+      padding: 0 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 26px;
+      z-index: 4;
+      cursor: pointer;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+
+    .chat-box>label {
+      display: block;
+      height: 24px;
+      line-height: 24px;
+      background-color:#4d86f8;
+      color: white;
+      font-weight: bold;
+      padding: 0 1em 1px;
+
+    }
+
+    .chat-box>label:before {
+      content: attr(data-collapsed)
+    }
+
+    .chat-box .chat-box-content {
+      padding: 10px;
+      display: none;
+    }
+        .chat-box>input[type="checkbox"]:hover+label {
+      background-color: #4d86f8
+    }
+
+    /* checked state */
+
+    .chat-box>input[type="checkbox"]:checked+label {
+      background-color: #4d86f8
+    }
+
+    .chat-box>input[type="checkbox"]:checked+label:before {
+      content: attr(data-expanded)
+    }
+
+    .chat-box>input[type="checkbox"]:checked~.chat-box-content {
+      display: block
+    }
+    .login_box{
+            background-color: #4d88ff;
+            width: 26%;
+    padding: 3px 15px 5px 15px;
+        /* float: left; */
+        z-index: 1;
+        position: fixed;
+        left: -3px;
+        top: -2px;
+        border-radius: 3px;
+    }
+    .form_group_mob{
+        margin:0 0;
+    }
+    .form_control_mob{
+
+        padding: 0 0;
+        font-size: 1px;
+        line-height: 1;
+    }
+        .hidden_sidenav {
+        ;
+        }
+        .side-nav a{
+        color: #000000;
+        font-weight:bold
+    }
+    .form-group label{
+        font-family:"Times New Roman",Georgia,Serif;
+        font-weight: bold;
+
+    }
+
+    .side-nav .submit{
+        padding-top: 10px 30px;
+        background-color: #000;
+
+    }
+    .login_btn{
+        border-style: none;
+        padding-top: 10px 30px;
+        background-color: #000;
+        font-size: 1px;
+    }
+    .register{
+        font-size: 4px;
+    }
+
 }
 
 
@@ -129,6 +200,8 @@ input[type="submit"] {
 .form-group label{
     font-family:"Times New Roman",Georgia,Serif;
     font-weight: bold;
+        font-size: 11px;
+    line-height: 1px;
 }
 
 .side-nav .submit{
@@ -140,6 +213,8 @@ input[type="submit"] {
     border-style: none;
     padding-top: 10px 30px;
     background-color: #000;
+        padding: 1px;
+}
 }
 
 .container-fluid{
