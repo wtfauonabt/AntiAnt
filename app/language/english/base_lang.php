@@ -20,6 +20,8 @@ $lang["title"]["cn_title"] = "顺水速递";
 // Language
 $lang["title"]["english"] = "English";
 $lang["title"]["simp_chinese"] = "简体中文";
+// Slogan
+$lang["title"]["slogan"] = "Attentiveness is an attitude"；
 
 /*******************************************************************************
  * Navbar Language Pack (Chinese)

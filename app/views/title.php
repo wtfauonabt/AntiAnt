@@ -32,7 +32,7 @@
                     <div class="col-9 comp_name">
                         <h1 class="main_title text-center"><?php echo $title_lang['en_title']; ?></h1>
                         <h1 class="main_title text-center"><?php echo $title_lang['cn_title']; ?></h1>
-
+                        <p class="text-center"><?php echo $title_lang['slogan']; ?></p>
                     </div>    
                 </div>
             </div>

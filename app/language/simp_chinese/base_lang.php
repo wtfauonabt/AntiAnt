@@ -20,7 +20,8 @@ $lang["title"]["cn_title"] = "顺水速递";
 // Language
 $lang["title"]["english"] = "English";
 $lang["title"]["simp_chinese"] = "简体中文";
-
+// Slogan
+$lang["title"]["slogan"] = "用心，是一种态度";
 /*******************************************************************************
  * Navbar Language Pack (简体中文)
  * -------------------------------
