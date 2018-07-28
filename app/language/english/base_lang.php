@@ -107,15 +107,18 @@ $lang["tracking"]["submit"] = "Submit";
  *  
 *******************************************************************************/
 $lang["about"]["title"] = "About us";
-$lang["about"]["paragraph"] = "Professional, innovative, loyal, and win-win!
 
-Professionalism is the unchanging rule of the company that achieves customers and is prosperous!
-Innovation is the foundation for the continuous development of the company!
-Loyalty is the firm belief that the corporate team will never give up fighting!
-A win-win situation is the reputation of the company's reputation!
+$lang["about"]["paragraph"] = 
+	"Professional, innovative, loyal, and win-win!",
+	"Professionalism is the unchanging rule of the company that achieves customers and is prosperous!",
+	"Innovation is the foundation for the continuous development of the company!",
+	"Loyalty is the firm belief that the corporate team will never give up fighting!",
+	"A win-win situation is the reputation of the company's reputation!",
+	"People-oriented, talent is the core wealth of the smooth delivery, is the propeller of the company's development!",
+	"The company advocates openness, enthusiasm, unity, never give up the working atmosphere, build a core team of people-oriented, create a democratic and open corporate atmosphere, and improve service quality and corporate image."
 
-People-oriented, talent is the core wealth of the smooth delivery, is the propeller of the company's development!
-The company advocates openness, enthusiasm, unity, never give up the working atmosphere, build a core team of people-oriented, create a democratic and open corporate atmosphere, and improve service quality and corporate image.";
+];
+
 /*******************************************************************************
  * Contact Us Language Pack (Chinese)
  * -------------------------------
