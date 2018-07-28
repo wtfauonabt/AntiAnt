@@ -88,15 +88,16 @@ $lang["tracking"]["submit"] = "Submit";
  *  
 *******************************************************************************/
 $lang["about"]["title"] = "About us";
-$lang["about"]["paragraph"] = "專業，創新，忠誠，共赢！
+$lang["about"]["paragraph"] = 
+	"Professional, innovative, loyal, and win-win!",
+	"Professionalism is the unchanging rule of the company that achieves customers and is prosperous!",
+	"Innovation is the foundation for the continuous development of the company!",
+	"Loyalty is the firm belief that the corporate team will never give up fighting!",
+	"A win-win situation is the reputation of the company's reputation!",
+	"People-oriented, talent is the core wealth of the smooth delivery, is the propeller of the company's development!",
+	"The company advocates openness, enthusiasm, unity, never give up the working atmosphere, build a core team of people-oriented, create a democratic and open corporate atmosphere, and improve service quality and corporate image."
 
-專業，是企業成就客戶，長盛不衰的不變法則！
-創新，是企業不斷發展的基礎！
-忠誠，是企業團隊永不放棄為奮鬥的堅定信念！
-共贏，是企業聲名遠播的口碑！
-
-以人為本，人才是順水速遞的核心財富，是公司發展的推進器！
-公司提倡開放，積極，團結，永不放棄工作氛圍，打造以人為本的核心團隊，營造民主開放的企業氛圍，提升服務品質與企業形象。 ";
+];
 /*******************************************************************************
  * Contact Us Language Pack (English)
  * -------------------------------
