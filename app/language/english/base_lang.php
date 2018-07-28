@@ -88,7 +88,7 @@ $lang["tracking"]["submit"] = "Submit";
  *  
 *******************************************************************************/
 $lang["about"]["title"] = "About us";
-$lang["about"]["paragraph"] = 
+$lang["about"]["paragraph"] = [
 	"Professional, innovative, loyal, and win-win!",
 	"Professionalism is the unchanging rule of the company that achieves customers and is prosperous!",
 	"Innovation is the foundation for the continuous development of the company!",
