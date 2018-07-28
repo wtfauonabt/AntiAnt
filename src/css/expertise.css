@@ -24,3 +24,10 @@ and open the template in the editor.
     display: inline-block;
   content: url(././src/image/arrow.png);
     transform: scale(.8);
+  }
+
+@media all and (max-width: 768px){
+  .exper_img{
+  padding: 0px;
+  } 
+}

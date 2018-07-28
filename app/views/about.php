@@ -35,10 +35,10 @@ $about_lang = $this->lang->line('about');
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <img class='w-100 about_img' src='<?php base_url();?>/src/image/aboutUs.png'>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <div class="about-title">
                     <h1><?php echo $about_lang['title']?></h1>
                 </div>

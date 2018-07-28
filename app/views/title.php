@@ -24,13 +24,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-3">
-                        <div class="main-logo">
+                        <div class="main-logo ">
                             <img class="img-responsive" src="<?php echo base_url('src/image/logo.png'); ?>">
                         </div>
                     </div>
-                    <div class="col-9">
+
+                    <div class="col-9 comp_name">
                         <h1 class="main_title text-center"><?php echo $title_lang['en_title']; ?></h1>
                         <h1 class="main_title text-center"><?php echo $title_lang['cn_title']; ?></h1>
+
                     </div>    
                 </div>
             </div>

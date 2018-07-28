@@ -28,10 +28,10 @@ $expertise_lang = $this->lang->line('expertise');
             </div>
         </div>
         <div class="row">
-            <div class="col-6 ">
+            <div class="col-lg-6 col-sm-12">
                 <img class='w-100 exper_img' src='<?php base_url();?>/src/image/expertise.png'>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <div class="expertise-title">
                     <h1><?php echo $expertise_lang['title'];?></h1>
                 </div>

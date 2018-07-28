@@ -38,13 +38,13 @@ $address = 'Hang+Wai+Industrial+Center,6+Kin+Tai+Street,Tuen+Mun,N.T.,Hong+Kong'
     <div class="container">
         
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <!--<div id="map" class='map'>My map will go here</div>-->
                 <iframe width="100%" height="100%" rameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=<?php echo $api_key; ?>&q=<?php echo $address; ?>"></iframe>
                 <!--<img class='w-100 about_img' src='<?php base_url();?>/src/image/map.png'>-->
                  <p style="text-align: center;"><?php echo $contact_lang['address']?></p>
             </div>
-            <div class="col-6 contact_position">
+            <div class="col-lg-6 col-sm-12 contact_position">
                 <p><?php echo $contact_lang['web']?></p>
                 <p><?php echo $contact_lang['email']?></p>
                 <p><?php echo $contact_lang['number']?></p>

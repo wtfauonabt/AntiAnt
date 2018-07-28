@@ -6,3 +6,8 @@
 .pro_img{
 	padding-top: 100px;
 }
+@media all and (max-width: 768px){
+	.pro_img{
+	padding: 0px;
+	}	
+}

@@ -1,6 +1,6 @@
 body {
     position: relative;
-    padding-top: 30px;
+    
 }
 
 body:before {
@@ -40,6 +40,7 @@ input[type="submit"] {
 .top-nav {
     padding-top: 30px;
 }
+
 .home_page_btn img {
     width: 10%;
     display: block;
@@ -55,25 +56,26 @@ input[type="submit"] {
 
 }
 .menu_btn a:hover{
-    background-color: #4d88ff;
+    background-color: #95c5e8;
 }
 .menu_btn{
-    border-bottom: 4px solid #1a53ff;
+    border-bottom: 4px solid #95c5e8;
     width: 100%
 }
 
-.main-title {
-    padding-top: 50px;
-}
+
 
 .login {
     padding-top: 100px;
 }
 .login_box{
-    background-color: #4d88ff;
+    background-color: #95c5e8;
     width: 110%;
     padding: 40px 10px 250px;
 }
+
+
+
 .side-nav a{
     color: #000000;
     font-weight:bold
@@ -81,6 +83,8 @@ input[type="submit"] {
 .form-group label{
     font-family:"Times New Roman",Georgia,Serif;
     font-weight: bold;
+        font-size: 11px;
+    line-height: 1px;
 }
 
 .side-nav .submit{
@@ -92,8 +96,134 @@ input[type="submit"] {
     border-style: none;
     padding-top: 10px 30px;
     background-color: #000;
+        padding: 1px;
+    color:#fff;
 }
+
 
 .container-fluid{
    padding: 0 20px !important;
+}
+.hidden_ch{
+  opacity:0;
+}
+
+@media all and (max-width: 768px){
+    .login {
+    padding-top: 0;
+    }
+    .chat-box {
+  font: normal normal 11px/1.4 Tahoma, Verdana, Sans-Serif;
+    width: 92px;
+    /* border: 1px solid #344150; */
+    border-bottom: none;
+    position: fixed;
+    left: 10px;
+    left: -1px;
+    top: 0;
+     z-index: 1;
+
+}
+
+    .chat-box>input[type="checkbox"] {
+      display: block;
+      margin: 0 0;
+      padding: 0 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 26px;
+      z-index: 4;
+      cursor: pointer;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+
+    .chat-box>label {
+      display: block;
+      height: 24px;
+      line-height: 24px;
+      background-color:#4d86f8;
+      color: white;
+      font-weight: bold;
+      padding: 0 1em 1px;
+
+    }
+
+    .chat-box>label:before {
+      content: attr(data-collapsed)
+    }
+
+    .chat-box .chat-box-content {
+      padding: 10px;
+      display: none;
+    }
+        .chat-box>input[type="checkbox"]:hover+label {
+      background-color: #4d86f8
+    }
+
+    /* checked state */
+
+    .chat-box>input[type="checkbox"]:checked+label {
+      background-color: #4d86f8
+    }
+
+    .chat-box>input[type="checkbox"]:checked+label:before {
+      content: attr(data-expanded)
+    }
+
+    .chat-box>input[type="checkbox"]:checked~.chat-box-content {
+      display: block
+    }
+    .login_box{
+            background-color: #4d88ff;
+            width: 26%;
+    padding: 3px 15px 5px 15px;
+        /* float: left; */
+        z-index: 1;
+        position: fixed;
+        left: -3px;
+        top: -2px;
+        border-radius: 3px;
+    }
+    .form_group_mob{
+        margin:6px 0;
+    }
+    .form_control_mob{
+
+        padding: 0 0;
+        font-size: 1px;
+        line-height: 2;
+    }
+        .hidden_sidenav {
+        ;
+        }
+        .side-nav a{
+        color: #000000;
+        font-weight:bold
+    }
+    .form-group label{
+        font-family:"Times New Roman",Georgia,Serif;
+        font-weight: bold;
+
+    }
+
+    .side-nav .submit{
+        padding-top: 10px 30px;
+        background-color: #000;
+
+    }
+    .login_btn{
+        border-style: none;
+        padding-top: 10px 30px;
+        background-color: #000;
+        font-size: 1px;
+        font-color: #fff;
+    }
+    .register{
+        font-size: 4px;
+    }
+
 }
