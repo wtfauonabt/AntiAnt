@@ -41,6 +41,7 @@ $lang["side"]["username"] = "用户名";
 $lang["side"]["password"] = "密码";
 $lang["side"]["register"] = "登記";
 $lang["side"]["login"] = "登录";
+$lang["side"]["loginBtn"] = " 登录";
 // Footer Nav Langugage
 $lang["footer"]['copyright'] = "顺水速递有限公司版权所有";
 

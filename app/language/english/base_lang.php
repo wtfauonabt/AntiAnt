@@ -43,6 +43,7 @@ $lang["side"]["username"] = "Username";
 $lang["side"]["password"] = "Password";
 $lang["side"]["register"] = "Register";
 $lang["side"]["login"] = "Login";
+$lang["side"]["loginBtn"] = "Login Here";
 // Footer Nav Langugage
 $lang["footer"]['copyright'] = "Anti-Ant Logistic Limited All Rights Reserved";
 

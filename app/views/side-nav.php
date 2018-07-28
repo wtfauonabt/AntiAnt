@@ -8,7 +8,7 @@
 
         <div class="login chat-box" >
             <input type="checkbox" class="hidden_ch" />
-        <label data-expanded="" data-collapsed="Login Here"></label>
+        <label data-expanded="" data-collapsed="<?php echo $side_lang['loginBtn']; ?>"></label>
             <form class="login_box chat-box-content" >
                 <div class="form-group form_group_mob" >
                     <label><?php echo $side_lang['username']; ?></label>
