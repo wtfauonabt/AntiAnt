@@ -42,7 +42,9 @@ $about_lang = $this->lang->line('about');
                 <div class="about-title">
                     <h1><?php echo $about_lang['title']?></h1>
                 </div>
-                <p><?php echo $about_lang['paragraph']?></p>
+                <?php foreach($about_lang['paragraph'] as $paragraph): ?>
+                    <p><?php echo $paragraph; ?></p>
+                <?php endforeach; ?>
 
             </div>
         </div>

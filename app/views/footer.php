@@ -7,7 +7,7 @@
 <section id="footer" class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 footer_mob">
                 <ul >|
                     <?php foreach($nav_lang as $key => $value): ?>
 						<li><a href='<?php echo site_url("/Base/menu/{$key}"); ?>'><?php echo $value;?></a> |</li>

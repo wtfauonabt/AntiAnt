@@ -10,3 +10,14 @@
 .footer p{
 	text-align: center;
 }
+@media all and (max-width: 768px){
+	.footer ul li{
+		font-size: 2px
+	}
+	.footer_mob {
+	padding-top: 110px
+}
+	.footer ul {
+	  padding: 0 0 0 0;
+}
+}

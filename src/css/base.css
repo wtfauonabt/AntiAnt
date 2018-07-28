@@ -36,7 +36,16 @@ input[type="submit"] {
 .navbar-button {
     float: right !important;
 }
-
+.toggler{
+  background: #3b90ce;
+  border-radius: 9px;
+      position: relative;
+    left: 260px;
+        bottom: 35px;
+}
+.toggler svg{
+      color: #ffffff;
+}
 .top-nav {
     padding-top: 30px;
 }

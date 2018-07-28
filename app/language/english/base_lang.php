@@ -33,7 +33,7 @@ $lang["nav"]["profile"] = "Company Profile";
 $lang["nav"]["expertise"] = "Expertise";
 $lang["nav"]["pricing"] = "Pricing";
 $lang["nav"]["tracking"] = "Tracking";
-$lang["nav"]["awards"] = "Awards";
+
 $lang["nav"]["about"] = "About Us";
 $lang["nav"]["contact"] = "Contact Us";
 // Side Nav Language
@@ -60,7 +60,7 @@ $lang["home"]["tracknum"] = "EK12345678HK, Ek87654321HK";
 *******************************************************************************/
 $lang["profile"]["title"] = "Company Profile";
 $lang["profile"]["paragraph"] = [
-	"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. "
+	"Established in 2000, Shunshui Express Co., Ltd. is a Hong Kong-based cross-border express delivery company with extensive experience in the industry, providing customers with one-stop express delivery and logistics delivery services.","Shunshui Express is committed to the development of global import and export declarations and logistics, providing warehousing and logistics services for professional e-commerce providers. The business includes global supply chain management, warehousing services, cross-border e-commerce import and export declarations and cross-border e-commerce logistics distribution, providing comprehensive and holistic services to major customers.", "The Shunshui Express subsidiary is located in Germany, Australia, New Zealand, Japan, and Korea, providing customers with comprehensive services such as global procurement, warehousing, logistics, import and export declaration, and supply chain finance.","Shunshui Express aims to provide customers with a better customer experience, continuously improve the global e-commerce logistics service field, strengthen logistics information construction, and win the trust and praise of customers with professional logistics solutions and efficient services. In the future, we will unswervingly strive to become the leader of cross-border e-commerce logistics and the vision of our customers' permanent partners."
 ];
 /*******************************************************************************
  * Expertise Language Pack (Chinese)
