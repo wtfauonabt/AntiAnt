@@ -188,7 +188,7 @@ input[type="submit"] {
     }
     .login_box{
             background-color: #4d88ff;
-            width: 26%;
+            width: 60%;
     padding: 3px 15px 5px 15px;
         /* float: left; */
         z-index: 1;
@@ -202,9 +202,9 @@ input[type="submit"] {
     }
     .form_control_mob{
 
-        padding: 0 0;
-        font-size: 1px;
-        line-height: 2;
+            padding: 0 0;
+    font-size: 1px;
+    line-height: 40px;
     }
         .hidden_sidenav {
         ;
@@ -228,11 +228,9 @@ input[type="submit"] {
         border-style: none;
         padding-top: 10px 30px;
         background-color: #000;
-        font-size: 1px;
+     
         font-color: #fff;
     }
-    .register{
-        font-size: 4px;
-    }
+    
 
 }
