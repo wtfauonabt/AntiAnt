@@ -40,11 +40,16 @@ input[type="submit"] {
   background: #3b90ce;
   border-radius: 9px;
   position: relative;
-  right: 60px;
-  bottom: 35px;
+      right: 66px;
+    bottom: 157px;
 }
 .toggler svg{
       color: #ffffff;
+}
+@media all and (max-width: 375px){
+  .toggler{
+  bottom: 182px;
+
 }
 .top-nav {
     padding-top: 30px;
