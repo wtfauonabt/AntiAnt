@@ -1,6 +1,5 @@
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
-    $title_lang = $this->lang->line('title');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,11 +13,6 @@
         <!-- Custom -->
         <link href="<?php base_url();?>/src/css/base.css" rel="stylesheet" />
         <link href="<?php base_url();?>/src/css/fontawesome/css/all.css" rel="stylesheet" />
-		<?php if($current_lang == 'english'): ?>
-			<title><?php echo $title_lang['en_title']; ?></title>
-		<?php else: ?>
-			<title><?php echo $title_lang['cn_title']; ?></title>
-		<?php endif; ?>
     </head>
     
     <body>
