@@ -5,3 +5,17 @@
 .contact_position{
 	padding: 90px 0;
 }
+
+.wechat {
+	background: #28d524;
+}
+
+.wechat svg{
+	color: #ffffff;
+	font-size: 50px;
+}
+
+.wechat_qr img{
+	width: 20%;
+	height: 20%;
+}
