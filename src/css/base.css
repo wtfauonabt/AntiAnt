@@ -46,7 +46,7 @@ input[type="submit"] {
 .toggler svg{
       color: #ffffff;
 }
-@media all and (max-width: 375px){
+@media all and (max-width: 375px) and{
   .toggler{
   bottom: 182px;
   }
@@ -60,9 +60,7 @@ input[type="submit"] {
     display: block;
     float: left
 }
-.home_page_btn:before{
-);
-}
+
 .menu_btn a{
     color: black;
     font-family:"Times New Roman",Georgia,Serif;
@@ -121,6 +119,19 @@ input[type="submit"] {
 .hidden_ch{
   opacity:0;
 }
+@media screen and (orientation:landscape) and (max-width: 667px){
+.toggler {
+   
+    right: 129px;
+    bottom: 170px;
+}
+  }
+@media screen and (orientation:landscape) and (max-width: 736px) and (min-width: 668px){
+.toggler {
+right: 166px;
+    bottom: 172px;
+}
+  }
 
 @media all and (max-width: 768px){
     .login {

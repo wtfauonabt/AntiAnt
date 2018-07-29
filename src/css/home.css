@@ -48,3 +48,10 @@ and open the template in the editor.
     margin-right: 3%;
 }
 }
+@media screen and (orientation:landscape){
+.home {
+  
+    margin-top: 11px;
+   
+}
+}

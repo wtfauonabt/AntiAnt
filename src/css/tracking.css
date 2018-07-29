@@ -20,7 +20,7 @@
 	position: absolute;
     left: 43%;
     top: 324px;
-    background: #99ffff;
+    background: #9bbdd6;
     
 }
 
@@ -28,8 +28,8 @@
   .submit_btn{
         position: absolute;
     left: 37%;
-    top: 282px;
-    background: #99ffff;
+        top: 277px;
+    background: #9bbdd6;
 }
 }
 
@@ -38,7 +38,7 @@
            position: absolute;
     left: 304px;
     top: 277px;
-    background: #99ffff;
+    background: #9bbdd6;
 
 }
 }
@@ -49,6 +49,15 @@
          position: absolute;
     left: 44%;
     top: 284px;
-    background: #99ffff;
+    background: #9bbdd6;
 }
 }
+
+@media screen and (orientation:landscape) {
+.submit_btn {
+    
+    left: 225px;
+    top: 277px;
+    background: #9bbdd6;
+}
+  }

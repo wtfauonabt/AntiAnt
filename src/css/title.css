@@ -13,3 +13,13 @@
 		font-size: 20px;
 	}
 }
+@media screen and (orientation:landscape){
+    .main-logo img {
+    position: absolute;
+    height: 131%;
+}
+    .comp_name h1{
+        font-size:  25px;
+    }
+
+}
