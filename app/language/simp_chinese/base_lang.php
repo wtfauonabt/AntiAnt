@@ -18,7 +18,7 @@
 $lang["title"]["en_title"] 		= "Anti-Ant Logistic Limited";
 $lang["title"]["cn_title"] 		= "順水速遞有限公司";
 // Language
-$lang["title"]["english"] 		= "English";
+$lang["title"]["english"] 		= "Eng";
 $lang["title"]["simp_chinese"] 	= "中文";
 // Slogan
 $lang["title"]["slogan"] 		= "用心，是一种态度";
@@ -146,11 +146,11 @@ $lang["contact"]['header']['cn_number'] 	= "国内号码";
 $lang["contact"]['header']['email'] 		= "电子邮件";
 $lang["contact"]['header']['open_hours'] 	= "开放时间";
 
-$lang["contact"]['content']['address'] 		= "香港新界屯门建泰街6号坑围工业中心C1坐12楼6室";
-$lang["contact"]['content']['web'] 			= "http://www.aa-expresshk.com";
+$lang["contact"]['content']['address'] 		= "香港新界屯门建泰街6号恒威工业中心C1坐12楼6室";
+$lang["contact"]['content']['web'] 			= "AA-ExpressHK.com";
 $lang["contact"]['content']['hk_number']	= "+852 3590 2379";
 $lang["contact"]['content']['cn_number']	= "+86 151 0204 0978";
-$lang["contact"]['content']['email'] 		= 'contact@aa-expresshk.com';
+$lang["contact"]['content']['email'] 		= 'AAReceiving@gmail.com';
 $lang["contact"]['content']['open_hours']	= [
 												'周一至周六：上午9：00-6：00',
 												'周日及公众假期：休息'

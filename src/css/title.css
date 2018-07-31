@@ -12,3 +12,8 @@
 		font-size: 20px;
 	}
 }
+
+.main-title_w_logo img {
+	position: relative;
+	width: 100%;
+}

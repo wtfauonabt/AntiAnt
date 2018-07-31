@@ -18,7 +18,7 @@
 $lang["title"]["en_title"] 		= "Anti-Ant Logistic Limited";
 $lang["title"]["cn_title"] 		= "順水速遞有限公司";
 // Language
-$lang["title"]["english"] 		= "English";
+$lang["title"]["english"] 		= "Eng";
 $lang["title"]["simp_chinese"] 	= "中文";
 // Slogan
 $lang["title"]["slogan"] 		= "Attentiveness is an attitude";
@@ -145,10 +145,10 @@ $lang["contact"]['header']['email'] 		= "Email";
 $lang["contact"]['header']['open_hours'] 	= "Opening hours";
 
 $lang["contact"]['content']['address'] 		= "Unit 6, 12/F, Hang Wai Industrial Center Block C1, 6 Kin Tai Street, Tuen Mun, N.T., Hong Kong";
-$lang["contact"]['content']['web'] 			= "http://www.aa-expresshk.com";
+$lang["contact"]['content']['web'] 			= "AA-ExpressHK.com";
 $lang["contact"]['content']['hk_number']	= "+852 3590 2379";
 $lang["contact"]['content']['cn_number']	= "+86 151 0204 0978";
-$lang["contact"]['content']['email'] 		= 'contact@aa-expresshk.com';
+$lang["contact"]['content']['email'] 		= 'AAReceiving@gmail.com';
 $lang["contact"]['content']['open_hours']	= [
 												'Monday to Saturday：9:00am-6:00pm',
 												'Sunday and Public Holiday：Closed'
