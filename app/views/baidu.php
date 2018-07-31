@@ -20,7 +20,7 @@
 
 <body>
 <!--百度地图容器-->
-<div style="width:100%;height:100%;border:#ccc solid 1px;" id="dituContent"></div>
+<div style="width:100%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
 </body>
 <script type="text/javascript">
 	//创建和初始化地图函数：
@@ -34,7 +34,7 @@
 	//创建地图函数：
 	function createMap(){
 		var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-		var point = new BMap.Point(113.981633,22.399935);//定义一个中心点坐标
+		var point = new BMap.Point(113.9813,22.3981);//定义一个中心点坐标
 		map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
 		window.map = map;//将map变量存储在全局
 	}

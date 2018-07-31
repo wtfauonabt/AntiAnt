@@ -22,36 +22,34 @@ and open the template in the editor.
     font-size: 39px;
 }
 .home input{
-	    width: 50%;
+	width: 50%;
     display: block;
     text-align: center;
     margin: 0 25%;
 }
-@media all and (max-width: 768px){
-	.home input{
-	        width: 78%;
-    display: block;
-    text-align: center;
-    margin: 0 11%;
 
+@media all and (max-width: 1024px) {
+	.home {
+		display: block;
+		text-align: center;
+		font-size: 2vm;
+		margin-top: 50px;
+		background-color: #3b90ce;
+	}
+	.home input {
+		width: 78%;
+		display: block;
+		text-align: center;
+		margin: 0 11%;
+	}
+	.home label {
+		font-size: 25px;
+	}
 }
-.home label{
-	font-size: 31px;
-}
-.home{
-	    display: block;
-    text-align: center;
-    font-size: 37px;
-    margin-top: 50px;
-    background-color: #3b90ce;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-}
+
 @media screen and (orientation:landscape){
-.home {
-  
-    margin-top: 11px;
-   
+	.home {
+		margin-top: 100px;
+	}
 }
-}
+

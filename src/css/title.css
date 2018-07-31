@@ -13,6 +13,7 @@
 		font-size: 20px;
 	}
 }
+
 @media screen and (orientation:landscape){
     .main-logo img {
     position: absolute;
@@ -22,4 +23,9 @@
         font-size:  25px;
     }
 
+}
+
+.main-title_w_logo img {
+	position: relative;
+	width: 100%;
 }

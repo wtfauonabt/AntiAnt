@@ -67,12 +67,6 @@ $address = 'Hang+Wai+Industrial+Center,6+Kin+Tai+Street,Tuen+Mun,N.T.,Hong+Kong'
 						</tr>
 						<?php endforeach; ?>
 						<tr>
-							<th scope="row"></th>
-							<td>
-								<a class="wechat btn btn-lg" href="weixin://dl/chat?AAlogistic">
-									<i class="fab fa-weixin"></i>
-								</a>
-							</td>
 						</tbody>
 					</table>
 				</div>

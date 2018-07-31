@@ -23,6 +23,7 @@
         <div class='container'>  
             <div class="container">
                 <div class="row">
+					<!--
                     <div class="col-3">
                         <div class="main-logo ">
                             <img class="img-responsive" src="<?php echo base_url('src/image/logo.png'); ?>">
@@ -33,7 +34,13 @@
                         <h1 class="main_title text-center"><?php echo $title_lang['en_title']; ?></h1>
                         <h1 class="main_title text-center"><?php echo $title_lang['cn_title']; ?></h1>
                         <p class="text-center"><?php echo $title_lang['slogan']; ?></p>
-                    </div>    
+                    </div>
+                    -->
+					<div class="col-12">
+						<div class="main-title_w_logo">
+							<img class="img-responsive" src="<?php echo base_url('src/image/title_w_logo.png'); ?>">
+						</div>
+					</div>
                 </div>
             </div>
         </div>
