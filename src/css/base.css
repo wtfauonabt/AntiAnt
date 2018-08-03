@@ -39,8 +39,8 @@ input[type="submit"] {
 .toggler{
 	background: #3b90ce;
 	position: fixed;
-	left: 0px;
-	top: 24px;
+	left: 88px;
+	top: -1px;
 	z-index: 0.9;
 }
 .toggler svg{
