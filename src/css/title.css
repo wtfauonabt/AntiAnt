@@ -1,7 +1,18 @@
-.main-logo img{
-    position: absolute;
-    height: 150%;
+.first_bar{
+    background-color: #9ec7e6;
+    padding: 0
 }
+.language{ 
+    padding: 9px 20px 0px;
+    border-right: 1px solid #00016f;
+     }
+
+.language a{
+    color: #00016f;
+    font-weight:bold
+}
+
+
 @media all and (max-width: 425px){
     .main-logo img{
     position: absolute;
@@ -25,7 +36,3 @@
 
 }
 
-.main-title_w_logo img {
-	position: relative;
-	width: 100%;
-}

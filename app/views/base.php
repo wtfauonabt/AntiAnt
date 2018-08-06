@@ -26,27 +26,28 @@
         <div class="background-logo text-center">
             <img class="img-responsive" src="<?php echo base_url('src/image/logo.png'); ?>">
         </div>
-        <div class="container">
+        
             <div class="row">
                 <div class="col-12">
                     <?php $this->load->view("title"); ?>
                 </div>
             </div>
             <div class="row" >
-                <div class="col-lg-2 col-sm-12 hidden_sidenav">
-                    <?php $this->load->view("side-nav"); ?>
-                </div>
-                <div class="col-lg-10 col-sm-12">
+                <div class="col-lg-12 col-sm-12">
                     <?php $this->load->view("top-nav"); ?>
                     <?php $this->load->view($menu); ?>
                 </div>
+                <div class="col-lg-2 col-sm-12 hidden_sidenav">
+                    <?php $this->load->view("side-nav"); ?>
+                </div>
+                
             </div>
             <div class="row">
                 <div class="col-12">
                     <?php $this->load->view("footer"); ?>
                 </div>
             </div>
-        </div>
+        
         
         <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

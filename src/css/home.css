@@ -7,7 +7,13 @@ and open the template in the editor.
     Created on : Jul 18, 2018, 11:21:29 PM
     Author     : Stanley Yeung
 */
+.home_v2 img{
+	z-index: -1;
+position: absolute;
+top: 90px;
+width: 100%;
 
+}
 .home{
 	display: block;
 	text-align: center;

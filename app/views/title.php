@@ -3,11 +3,14 @@
     $title_lang = $this->lang->line('title');
 ?>
 <link href="<?php base_url();?>/src/css/title.css" rel="stylesheet" />
-<section id="main-title">
-    <div class="main-title">
-        <div class="language text-right">
-            <p>
-                <?php if($current_lang == 'simp_chinese'):?>
+<nav class="navbar navbar-light navbar-expand first_bar " >
+        
+            
+            <!--2 buttons on the right in the top contact bar-->
+            <div class=" btn_position collapse navbar-collapse justify-content-end" >
+                <div class="language ">
+                    <p>
+                            <?php if($current_lang == 'simp_chinese'):?>
                     <?php echo $title_lang["simp_chinese"]; ?>
                 <?php else: ?>
                     <a href='<?php echo site_url("/Base/switchLanguage/simp_chinese/{$menu}"); ?>'><?php echo $title_lang["simp_chinese"]; ?></a>
@@ -19,10 +22,13 @@
                     <a href="<?php echo site_url("/Base/switchLanguage/english/{$menu}"); ?>"><?php echo $title_lang["english"]; ?></a>
                 <?php endif; ?>
             </p>
-        </div>
-        <div class='container'>  
-            <div class="container">
-                <div class="row">
+                </div>
+                <div class="language ">
+                    <p><a href="/">Create account</a><p>
+                </div>
+            </div>
+        </nav>
+
 					<!--
                     <div class="col-3">
                         <div class="main-logo ">
@@ -36,11 +42,7 @@
                         <p class="text-center"><?php echo $title_lang['slogan']; ?></p>
                     </div>
                     -->
-					<div class="col-12">
-						<div class="main-title_w_logo">
-							<img class="img-responsive" src="<?php echo base_url('src/image/title_w_logo.png'); ?>">
-						</div>
-					</div>
+					
                 </div>
             </div>
         </div>
