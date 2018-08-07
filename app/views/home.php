@@ -7,7 +7,7 @@ $home_lang = $this->lang->line('home');
 <link href="<?php base_url();?>/src/css/home.css" rel="stylesheet" />
 
 <section  class="home_v2" id="home">
-    <img src="../src/image/tracking_bg.jpg">
+    <img src="<?php base_url();?>/src/image/tracking_bg.jpg">
     <!--<div class="card">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">

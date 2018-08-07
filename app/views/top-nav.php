@@ -4,7 +4,7 @@
 ?>
 <nav class="navbar navbar-expand-lg ">
     <div class="logo">
-         <a class="navbar-brand " href="#"><img src="../src/image/logo.png"></a>
+         <a class="navbar-brand " href="#"><img src="<?php base_url();?>/src/image/logo.png"></a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
