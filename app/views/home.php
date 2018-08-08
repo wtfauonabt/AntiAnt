@@ -85,15 +85,20 @@ $promote_lang = $this->lang->line('promote');
     <h3><?php echo $home_lang['pro_inf']?></h3>
     <div class="container">
         <div class="row">
-            <?php foreach($promote_lang as $key => $value): ?>
-                <div class="col-6">
-                    <?php if($key == 'subtitle'): ?>
-                        <p><?php echo $value; ?></p>
-                    <?php endif;?> 
-                    <?php if($key == 'date'): ?>
-                        <p><?php echo $value; ?></p>
-                    <?php endif;?> 
-                </div>
+            <?php foreach($promote_lang["subtitle"]as $subtitle): ?>
+                <?php foreach($promote_lang["date"]as $date): ?>
+                    <div class="col-6 card">
+                        <div class="col-md-5">
+                            <img class='w-100 pro_img' src='<?php base_url();?>/src/image/profile/profile.png'>
+                        </div>
+                        <div class="col-md-7">
+                            <p><?php echo $subtitle; ?></p>
+
+                    
+                            <p><?php echo $date; ?></p>
+                        </div>
+                    </div>
+                <?php endforeach;?> 
             <?php endforeach;?>
         </div>
         
