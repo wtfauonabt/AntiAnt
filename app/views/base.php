@@ -37,9 +37,6 @@
                     <?php $this->load->view("top-nav"); ?>
                     <?php $this->load->view($menu); ?>
                 </div>
-                <div class="col-lg-2 col-sm-12 hidden_sidenav">
-                    <?php $this->load->view("side-nav"); ?>
-                </div>
                 
             </div>
             <div class="row">

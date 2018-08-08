@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 $home_lang = $this->lang->line('home');
-
+$title_lang = $this->lang->line('title');
 ?>
 <link href="<?php base_url();?>/src/css/home.css" rel="stylesheet" />
 
@@ -43,5 +43,36 @@ $home_lang = $this->lang->line('home');
                    </div>
                    
                 </form>
+</section>
+
+
+<!--contact-->
+<section class="h_contact">
+    <h2><?php echo $title_lang['slogan']?></h2>
+    <div >
+                    <form class="contact3-form validate-form form_size" >
+                        <div class="wrap-input3 validate-input emp_alert" data-validate="Name is required">
+                            <input id="name" class="input3" type="text" name="name" placeholder="YOUR NAME">
+                            <span class="focus-input3"></span><p id="emp1"></p>
+                        </div>
+
+                        <div  class="wrap-input3 validate-input emp_alert" data-validate = "Valid email is required">
+                            <input  id="email" class="input3" type="text" name="email" placeholder="EMAIL ADDRESS">
+                            <span class="focus-input3"></span><p id="emp2"></p>
+                        </div>
+
+                        <div class="wrap-input3 validate-input emp_alert" data-validate = "Message is required">
+                            <textarea id="message" class="input3" name="message" placeholder="MESSAGE"></textarea>
+                            <span class="focus-input3"></span><p id="emp3"></p>
+                        </div>
+
+                        <div class="container-contact3-form-btn emp_alert">
+                            <button type="button" onclick="inputEmptyFunction()" class="contact3-form-btn">
+                                <?php echo $home_lang['send']?>
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
 </section>
 <script src="<?php base_url();?>/src/js/home.js"></script>
