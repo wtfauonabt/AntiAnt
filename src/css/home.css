@@ -7,7 +7,6 @@ and open the template in the editor.
     Created on : Jul 18, 2018, 11:21:29 PM
     Author     : Stanley Yeung
 */
-.home_v2{}
 
 .home_v2 img{
 	z-index: -1;
@@ -65,9 +64,12 @@ width: 100%;
 		margin-top: 100px;
 	}
 }
+
 /*******************
 form
 *******************/
+
+
 .h_contact{
 	background-color: #c7cedc;
 	padding-top: 30px;
@@ -158,13 +160,18 @@ textarea.input3 {
   color: #fff;
 }
 
-.contact3-form-btn:hover:before {
-  opacity: 0;
+/***************
+promotions
+**************/
+
+.promote{
+	padding: 30px 0;
+}
+.promote h2,h3{
+text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+
 }
 
-.validate-input {
-  position: relative;
-}
-.form_size{
-	padding: 0px 50px 0 90px
-}
+

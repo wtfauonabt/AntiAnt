@@ -3,6 +3,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 $home_lang = $this->lang->line('home');
 $title_lang = $this->lang->line('title');
+$promote_lang = $this->lang->line('promote');
 ?>
 <link href="<?php base_url();?>/src/css/home.css" rel="stylesheet" />
 
@@ -47,6 +48,8 @@ $title_lang = $this->lang->line('title');
 
 
 <!--contact-->
+
+
 <section class="h_contact">
     <h2><?php echo $title_lang['slogan']?></h2>
     <div >
@@ -70,9 +73,30 @@ $title_lang = $this->lang->line('title');
                             <button type="button" onclick="inputEmptyFunction()" class="contact3-form-btn">
                                 <?php echo $home_lang['send']?>
                             </button>
-
                         </div>
                     </form>
                 </div>
+</section>
+
+<!--promote-->
+
+<section class="promote">
+    <h2><?php echo $home_lang['pro_title']?></h2>
+    <h3><?php echo $home_lang['pro_inf']?></h3>
+    <div class="container">
+        <div class="row">
+            <?php foreach($promote_lang as $key => $value): ?>
+                <div class="col-6">
+                    <?php if($key == 'subtitle'): ?>
+                        <p><?php echo $value; ?></p>
+                    <?php endif;?> 
+                    <?php if($key == 'date'): ?>
+                        <p><?php echo $value; ?></p>
+                    <?php endif;?> 
+                </div>
+            <?php endforeach;?>
+        </div>
+        
+    </div>
 </section>
 <script src="<?php base_url();?>/src/js/home.js"></script>

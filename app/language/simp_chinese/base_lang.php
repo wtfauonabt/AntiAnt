@@ -55,6 +55,14 @@ $lang["footer"]['copyright'] 	= "顺水速递有限公司版权所有";
 $lang["home"]["title"] 		= "邮件查询";
 $lang["home"]["tracknum"] 	= "e.g. EK12345678HK, Ek87654321HK";
 $lang["home"]["send"] 	= "提交";
+$lang["home"]["pro_title"] = "推廣";
+$lang["home"]["pro_inf"] = "我們的最新促銷活動";
+$lang["promote"]["subtitle"] = [
+								"Send international shipments",
+								"Send international shipments",
+								"Send international shipments",
+								"Send international shipments"];
+$lang["promote"]["date"] = ["Underway 2018.05.44", "Underway 2018.05.44" , "Underway 2018.05.44", "Underway 2018.05.44"];
 /*******************************************************************************
  * Company Profile Language Pack (简体中文)
  * -------------------------------

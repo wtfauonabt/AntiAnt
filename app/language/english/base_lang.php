@@ -55,6 +55,14 @@ $lang["footer"]['copyright'] 	= "Anti-Ant Logistic Limited All Rights Reserved";
 $lang["home"]["title"] 		= "Track & Trace ";
 $lang["home"]["tracknum"] 	= "e.g. EK12345678HK, Ek87654321HK";
 $lang["home"]["send"] 	= "SEND MESSAGE";
+$lang["home"]["pro_title"] = "Promotions";
+$lang["home"]["pro_inf"] = "Our Latest Promotions";
+$lang["promote"]["subtitle"] = [
+								"Send international shipments",
+								"Send international shipments",
+								"Send international shipments",
+								"Send international shipments"];
+$lang["promote"]["date"] = ["Underway 2018.05.44", "Underway 2018.05.44" , "Underway 2018.05.44", "Underway 2018.05.44"];
 /*******************************************************************************
  * Company Profile Language Pack (Chinese)
  * -------------------------------
