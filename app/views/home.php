@@ -42,7 +42,7 @@ $promote_lang = $this->lang->line('promote');
                        <label><?php echo $home_lang['title']; ?></label>
                        <input class="form-control" type="text" placeholder="<?php echo $home_lang['tracknum']; ?>" aria-label="<?php echo $home_lang['tracknum']; ?>">
                    </div>
-                   
+
                 </form>
 </section>
 
@@ -93,15 +93,18 @@ $promote_lang = $this->lang->line('promote');
                         </div>
                         <div class="col-md-7">
                             <p><?php echo $subtitle; ?></p>
-
-                    
                             <p><?php echo $date; ?></p>
                         </div>
                     </div>
                 <?php endforeach;?> 
             <?php endforeach;?>
         </div>
-        
+
     </div>
 </section>
 <script src="<?php base_url();?>/src/js/home.js"></script>
+
+
+<div class="col-12">
+	<?php $this->load->view("collaborator"); ?>
+</div>

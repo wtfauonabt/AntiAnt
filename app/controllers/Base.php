@@ -22,11 +22,18 @@ class Base extends CI_Controller {
         $lang = $this->lang->load("base", $current_lang);
 
         // Set display data
-        $data = [
-            'current_lang' => $current_lang,
-            'lang' => $lang,
-            'menu' => $menu
-        ];
+		$data['current_lang'] = $current_lang;
+		$data['lang'] = $lang;
+		$data['menu'] = $menu;
+
+        switch($menu){
+			case 'home':
+//				$this->load->model('Promotion');
+				$this->load->model('Collaborator');
+
+				$data['collaborator_list'] = $this->Collaborator->getCollaborator();
+				break;
+		}
 
         $this->load->view('base', $data);
 	}
