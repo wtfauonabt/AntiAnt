@@ -42,7 +42,7 @@ $promote_lang = $this->lang->line('promote');
                        <label><?php echo $home_lang['title']; ?></label>
                        <input class="form-control" type="text" placeholder="<?php echo $home_lang['tracknum']; ?>" aria-label="<?php echo $home_lang['tracknum']; ?>">
                    </div>
-                   
+
                 </form>
 </section>
 
@@ -89,14 +89,19 @@ $promote_lang = $this->lang->line('promote');
                 <div class="col-6">
                     <?php if($key == 'subtitle'): ?>
                         <p><?php echo $value; ?></p>
-                    <?php endif;?> 
+                    <?php endif;?>
                     <?php if($key == 'date'): ?>
                         <p><?php echo $value; ?></p>
-                    <?php endif;?> 
+                    <?php endif;?>
                 </div>
             <?php endforeach;?>
         </div>
-        
+
     </div>
 </section>
 <script src="<?php base_url();?>/src/js/home.js"></script>
+
+
+<div class="col-12">
+	<?php $this->load->view("collaborator"); ?>
+</div>

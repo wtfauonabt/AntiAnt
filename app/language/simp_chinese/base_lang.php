@@ -63,6 +63,10 @@ $lang["promote"]["subtitle"] = [
 								"Send international shipments",
 								"Send international shipments"];
 $lang["promote"]["date"] = ["Underway 2018.05.44", "Underway 2018.05.44" , "Underway 2018.05.44", "Underway 2018.05.44"];
+
+
+$lang["collaborator"]["title"]	= "合作伙伴";
+
 /*******************************************************************************
  * Company Profile Language Pack (简体中文)
  * -------------------------------
