@@ -20,7 +20,7 @@
 
 <body>
 <!--百度地图容器-->
-<div style="width:100%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+<div style="width:100%;height:100%;border:#ccc solid 1px;" id="dituContent"></div>
 </body>
 <script type="text/javascript">
 	//创建和初始化地图函数：

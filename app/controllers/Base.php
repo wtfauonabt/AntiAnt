@@ -17,24 +17,7 @@ class Base extends CI_Controller {
     }
 
 	public function index($menu="home"){
-        // Get Language
-        $current_lang = $this->Language->getCurrentLanguage();
-        $lang = $this->lang->load("base", $current_lang);
-
-        // Set display data
-		$data['current_lang'] = $current_lang;
-		$data['lang'] = $lang;
-		$data['menu'] = $menu;
-
-        switch($menu){
-			case 'home':
-//				$this->load->model('Promotion');
-				$this->load->model('Collaborator');
-
-				$data['collaborator_list'] = $this->Collaborator->getCollaborator();
-				break;
-		}
-
+		$data = $this->getData($menu);
         $this->load->view('base', $data);
 	}
         
@@ -46,4 +29,42 @@ class Base extends CI_Controller {
         $this->Language->setLanguage($lang);
         $this->menu($menu);
     }
+
+    private function getData($menu){
+    	$data = array();
+
+		// Get Language
+		$current_lang = $this->Language->getCurrentLanguage();
+		$lang = $this->lang->load("base", $current_lang);
+
+		// Set display data
+		$data['current_lang'] = $current_lang;
+		$data['lang'] = $lang;
+		$data['menu'] = $menu;
+
+		$this->load->model('TopNav');
+		$data['nav_drop_link'] = $this->TopNav->getDropDown();
+
+		switch($menu){
+			case 'home':
+				$this->load->model('Promotion');
+				$data['promotion_list'] = $this->Promotion->getPromotion();
+
+				$this->load->model('Collaborator');
+				$data['collaborator_list'] = $this->Collaborator->getCollaborator();
+
+				$this->load->model('SocialMedia');
+				$data['social_media_list'] = $this->SocialMedia->getSocialMedia();
+
+				$data['track_link'] = $this->TopNav->getTrackingLink();
+				break;
+			default:
+				$data['header'] = $this->TopNav->getHeader($menu, $this->lang->line('nav'));
+				if(!$data['header']){
+					show_404();
+				}
+				break;
+		}
+		return $data;
+	}
 }

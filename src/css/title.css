@@ -1,38 +1,47 @@
-.first_bar{
-    background-color: #9ec7e6;
-    padding: 0
-}
-.language{ 
-    padding: 9px 20px 0px;
-    border-right: 1px solid #00016f;
-     }
-
-.language a{
-    color: #00016f;
-    font-weight:bold
+.title.container {
+	position: relative;
+	text-align: center;
+	color: #FFFFFF;
+	width: 100%;
 }
 
+.title .centered {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.title img{
+	z-index: -1;
+	position: relative;
+	width: 100%;
+}
+.title .home_v2 form{
+	position: absolute;
 
-@media all and (max-width: 425px){
-    .main-logo img{
-    position: absolute;
-        width: 103px;
-    height: 84px;
-    left: -2px;
-	}
-	.comp_name h1{
-		font-size: 20px;
-	}
+	left: 25%;
+	right: 25%;
+	top: 150px;
 }
 
-@media screen and (orientation:landscape){
-    .main-logo img {
-    position: absolute;
-    height: 131%;
-}
-    .comp_name h1{
-        font-size:  25px;
-    }
-
+.title .slogan h2{
+	font-size: 5.5vw;
 }
 
+.title .slogan svg{
+	color: red;
+}
+
+.title .tracking{
+	position: absolute;
+	font-size: 3.2vw;
+	left: 10%;
+	padding-top: 20%;
+}
+
+.title button{
+	background-color: #7FB2DF;
+	color: #ffffff;
+	border-radius: 12px;
+	width: 40vw;
+}

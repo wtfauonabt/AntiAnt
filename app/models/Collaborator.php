@@ -28,6 +28,7 @@ class Collaborator extends CI_Model{
 		$this->collaborator_list['link']['tnt'] = "https://www.tnt.com/express/zh_cn/site/home.html";
 		$this->collaborator_list['link']['china_post'] = "http://www.chinapost.com.cn/";
 		$this->collaborator_list['link']['qyin'] = "http://www.gdqiying.com/";
+		$this->collaborator_list['link']['sf'] = "http://www.sf-express.com/";
 //		$this->collaborator_list['link']['hengqin'] = "";
 
 
@@ -36,6 +37,7 @@ class Collaborator extends CI_Model{
 		$this->collaborator_list['logo']['tnt'] = "tnt_logo.png";
 		$this->collaborator_list['logo']['china_post'] = "china_post_logo.png";
 		$this->collaborator_list['logo']['qyin'] = "qyin_logo.jpeg";
+		$this->collaborator_list['logo']['sf'] = "sf_logo.png";
 //		$this->collaborator_list['path']['hengqin'] = "";
 
 

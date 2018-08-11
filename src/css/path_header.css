@@ -1,0 +1,22 @@
+.path_header{
+	padding: 200px 0 40px 200px;
+	background-color: #2e8ece;
+}
+
+.path_header .container-fluid{
+	width: 100%;
+}
+
+
+.path_header h2{
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: 800;
+	font-size: 3vw;
+}
+
+
+.path_header h5,
+.path_header a{
+	color: #FFFFFF;
+}

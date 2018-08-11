@@ -5,7 +5,7 @@ $api_key = 'AIzaSyCQPjritES8o4t77VJSVSGz9keLKlklYFk';
 $address = 'Hang+Wai+Industrial+Center,6+Kin+Tai+Street,Tuen+Mun,N.T.,Hong+Kong';
 ?>
 <link href="<?php base_url();?>/src/css/contact.css" rel="stylesheet" />
-<section id="contact">
+<section id="contact" class="contact">
 <!--    Contact page title
     <h2><?php echo $contact_lang['title']; ?></h2>
     form
@@ -35,8 +35,7 @@ $address = 'Hang+Wai+Industrial+Center,6+Kin+Tai+Street,Tuen+Mun,N.T.,Hong+Kong'
             </div>
         </div>
     </div>-->
-    <div class="container">
-        
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-sm-12">
 				<?php if($current_lang == "english"): ?>

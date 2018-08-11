@@ -1,0 +1,33 @@
+.collaborator{
+	padding: 40px 0px;
+}
+
+.collaborator h2{
+	padding: 20px 0px;
+}
+
+.collaborator .scrollable{
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	padding: 20px 20px;
+	margin: 0 40px;
+}
+
+.collaborator .card{
+	display: inline-block;
+	width: 25%;
+	padding: 20px 20px;
+	margin: 0 40px;
+}
+
+.collaborator .card:hover{
+	transform: scale(1.2);
+}
+
+
+.collaborator img{
+	width: 100%;
+	height: 3vw;
+	object-fit: scale-down;
+}
