@@ -18,7 +18,7 @@ class EmailModel extends CI_Model
 		parent::__construct();
 		// Define Variables for email sending
 		$this->from = "Contact Form <do-not-reply@aa-experesshk.com>";
-		$this->sendTo = "Contact Form <contact@aa-experesshk.com>";
+		$this->sendTo = "Contact Form <admin@aa-experesshk.com>";
 		$this->subject = "New message from website contact form";
 		$this->fields["name"] = "Name";
 		$this->fields["phone"] = "Phone";

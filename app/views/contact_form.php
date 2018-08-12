@@ -3,10 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $contact_form_lang = $this->lang->line('contact_form');
 ?>
 <link href="<?php base_url();?>/src/css/contact_form.css" rel="stylesheet"/>
-<section class="contact_form">
+<section id="contact_form" class="contact_form">
 	<h2><?php echo $contact_form_lang['title']?></h2>
 	<div >
-		<form method="post" action="<?php base_url();?>/Base/sendEmail/<?php echo $menu;?>" role="form">
+		<form method="post" action="<?php site_url("/Base/contactForm/{$menu}#contact_form");?>" role="form">
 			<div class="wrap-input3">
 				<input class="input3" type="text" name="name" placeholder="<?php echo $contact_form_lang['name']?>">
 			</div>
@@ -19,9 +19,8 @@ $contact_form_lang = $this->lang->line('contact_form');
 			<div class="wrap-input3 textarea">
 				<textarea class="input3" name="message" placeholder="<?php echo $contact_form_lang['message']?>"></textarea>
 			</div>
-			<button class="btn btn-primary" type="button" onclick="">
-				<?php echo $contact_form_lang['submit']?>
-			</button>
+			<input class="btn btn-primary" type="submit" value="<?php echo $contact_form_lang['submit']?>">
+
 		</form>
 	</div>
 </section>

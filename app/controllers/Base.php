@@ -68,9 +68,10 @@ class Base extends CI_Controller {
 		return $data;
 	}
 
-	public function sendEmail($menu){
+	public function contactForm($menu){
     	$this->load->controller('EmailController');
     	$data["errorMessage"] = $this->EmailController->sendEmail;
+    	var_dump($data["errorMessage"]);
 		$this->index($menu);
 	}
 }
