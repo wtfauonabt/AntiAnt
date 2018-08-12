@@ -42,6 +42,9 @@ class Base extends CI_Controller {
 		$data['lang'] = $lang;
 		$data['menu'] = $menu;
 
+		$this->load->model('SocialMedia');
+		$data['social_media_list'] = $this->SocialMedia->getSocialMedia();
+
 		$this->load->model('TopNav');
 		$data['nav_drop_link'] = $this->TopNav->getDropDown();
 
@@ -52,9 +55,6 @@ class Base extends CI_Controller {
 
 				$this->load->model('Collaborator');
 				$data['collaborator_list'] = $this->Collaborator->getCollaborator();
-
-				$this->load->model('SocialMedia');
-				$data['social_media_list'] = $this->SocialMedia->getSocialMedia();
 
 				$data['track_link'] = $this->TopNav->getTrackingLink();
 				break;

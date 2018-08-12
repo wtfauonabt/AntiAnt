@@ -2,24 +2,32 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 $contact_lang = $this->lang->line('contact');
 $sitemap_lang = $this->lang->line('sitemap');
+$nav_lang = $this->lang->line('nav');
 ?>
 <link href="<?php base_url();?>/src/css/sitemap.css" rel="stylesheet" />
 <section id="sitemap" class="sitemap">
 	<div class="container">
 		<div class="row">
-			<?php foreach($sitemap_lang['header'] as $key => $header): ?>
-				<div class="col-2">
-					<h4>
-						<?php echo $header; ?>
-					</h4>
-					<?php foreach($sitemap_lang['content'][$key] as $content): ?>
-						<a href="">
-							<p>
-								<?php echo $content; ?>
-							</p>
-						</a>
-					<?php endforeach;?>
-				</div>
+			<?php foreach($nav_lang['header'] as $key => $header): ?>
+				<?php if(isset($nav_lang[$key])): ?>
+					<div class="col-2">
+						<h4>
+							<?php echo $header; ?>
+						</h4>
+						<?php foreach($nav_drop_link[$key] as $menu => $link): ?>
+							<a class="dropdown-item" href="
+											<?php
+							if($menu == "tracking"){
+								echo $link;
+							} else {
+								echo site_url("/Base/menu/{$link}");
+							}
+							?>">
+								<?php echo $nav_lang[$key][$menu]; ?>
+							</a>
+						<?php endforeach;?>
+					</div>
+				<?php endif; ?>
 			<?php endforeach;?>
 			<div class="col-2">
 				<h4>

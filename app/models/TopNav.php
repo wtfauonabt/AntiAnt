@@ -31,6 +31,7 @@ class TopNav extends CI_Model{
 		}
 		$this->nav_drop_link["quick"]["tracking"] 	= $this->tracking_link;
 //		$this->nav_drop_link["quick"]["faq"] 		= "faq";
+		$this->nav_drop_link["quick"]["contact"] 	= "contact";
 		$this->nav_drop_link["about"]["profile"] 	= "profile";
 		$this->nav_drop_link["about"]["history"] 	= "history";
 		$this->nav_drop_link["service"]["expertise"]= "expertise";

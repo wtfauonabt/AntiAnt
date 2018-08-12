@@ -7,27 +7,27 @@ and open the template in the editor.
     Created on : Jul 19, 2018, 12:46:13 AM
     Author     : Stanley Yeung
 */
-
-.expertise-title{
+.expertise {
+	padding-top: 100px;
+}
+.expertise .expertise-title{
     text-align: center;
     text-decoration: underline;
     padding: 20px 0;
 }
-.exper_list ul {
+.expertise .exper_list ul {
   list-style-type: none;
   line-height: 50px;
 }
-.exper_img{
-	padding-top: 100px;
-}
-.exper_list li:before{
+
+.expertise .exper_list li:before{
     display: inline-block;
-  content: url(././src/image/arrow.png);
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f061 ";
     transform: scale(.8);
   }
 
 @media all and (max-width: 768px){
-  .exper_img{
-  padding: 0px;
-  } 
+	.expertise .exper_img{
+  		padding: 0px;
+  	}
 }

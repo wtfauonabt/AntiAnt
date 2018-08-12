@@ -24,15 +24,15 @@ class Promotion extends CI_Model{
 	}
 
 	public function setPromotion($promotions = array()){
-		$this->promotion_list['1'] = array();
-		$this->promotion_list['1']['subtitle'] = "Send international shipments";
-		$this->promotion_list['1']['picture'] = "carousel_1.jpg";
-		$this->promotion_list['1']['date'] = "12-05-2018";
-
-		$this->promotion_list['2'] = array();
-		$this->promotion_list['2']['subtitle'] = "Send international shipments";
-		$this->promotion_list['2']['picture'] = "carousel_2.jpg";
-		$this->promotion_list['2']['date'] = "12-05-2018";
+//		$this->promotion_list['1'] = array();
+//		$this->promotion_list['1']['subtitle'] = "Send international shipments";
+//		$this->promotion_list['1']['picture'] = "carousel_1.jpg";
+//		$this->promotion_list['1']['date'] = "12-05-2018";
+//
+//		$this->promotion_list['2'] = array();
+//		$this->promotion_list['2']['subtitle'] = "Send international shipments";
+//		$this->promotion_list['2']['picture'] = "carousel_2.jpg";
+//		$this->promotion_list['2']['date'] = "12-05-2018";
 
 	}
 }

@@ -58,6 +58,7 @@
 
 		</div>
 
+		<?php $this->load->view("sitemap"); ?>
 		<!-- Display footer -->
 		<?php $this->load->view("footer"); ?>
     </body>

@@ -1,13 +1,15 @@
-.profile-title{
+.profile{
+	padding-top: 100px;
+}
+
+.profile .profile-title{
     text-align: center;
     text-decoration: underline;
     padding: 20px 0;
 }
-.pro_img{
-	padding-top: 100px;
-}
+
 @media all and (max-width: 768px){
-	.pro_img{
-	padding: 0px;
+	.profile .pro_img{
+		padding: 0px;
 	}	
 }

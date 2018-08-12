@@ -1,7 +1,8 @@
 .top_nav {
+	white-space: nowrap;
 	position: fixed;
 	padding-top: 50px;
-	background: #ffffff;
+	background: #EEF0EF;
 	display: inline-block;
 	width:100%;
 	z-index: 1000;
@@ -18,8 +19,9 @@
 menu bar
 ****************/
 .top_nav  .logo img{
-	width: 112px;
+	width: 500px;
 	padding-left: 28px;
+	margin:0;
 }
 .top_nav .menu_v2 ul{
 	padding-left: 18vw;

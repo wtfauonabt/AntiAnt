@@ -28,11 +28,6 @@ $promote_lang = $this->lang->line('promote');
 				<?php $this->load->view("collaborator"); ?>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-12">
-				<?php $this->load->view("sitemap"); ?>
-			</div>
-		</div>
 	</div>
 </section>
 <script src="<?php base_url();?>/src/js/home.js"></script>

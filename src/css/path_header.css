@@ -1,5 +1,5 @@
 .path_header{
-	padding: 200px 0 40px 200px;
+	padding: 300px 0 40px 200px;
 	background-color: #2e8ece;
 }
 
@@ -9,10 +9,10 @@
 
 
 .path_header h2{
-	text-align: center;
+	text-align: left;
 	color: #FFFFFF;
 	font-weight: 800;
-	font-size: 3vw;
+	font-size:50px;
 }
 
 

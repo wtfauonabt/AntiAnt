@@ -37,7 +37,7 @@ class SocialMedia extends CI_Model{
 		$this->social_media_list['zhihu']['logo'] 	= "zhihu.png";
 		$this->social_media_list['douban']['logo'] 	= "douban.png";
 		$this->social_media_list['jianshu']['logo'] = "jianshu.png";
-		$this->social_media_list['sina']['logo'] 	= "sina.jpg";
+		$this->social_media_list['sina']['logo'] 	= "sina.png";
 	}
 }
 

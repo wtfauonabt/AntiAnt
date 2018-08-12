@@ -7,18 +7,20 @@ and open the template in the editor.
     Created on : Jul 19, 2018, 1:07:12 AM
     Author     : Stanley Yeung
 */
-
-.about-title{
+.history {
+	padding-top: 100px;
+}
+.history .about-title{
     text-align: center;
     text-decoration: underline;
     padding: 20px 0;
 }
-.about_img{
+.history .about_img{
 	padding-top: 90px;
 }
 
 @media all and (max-width: 768px){
-	.about_img{
-	padding: 0px;
+	.history .about_img{
+		padding: 0px;
 	}	
 }
