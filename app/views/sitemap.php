@@ -8,40 +8,46 @@ $nav_lang = $this->lang->line('nav');
 <section id="sitemap" class="sitemap">
 	<div class="container">
 		<div class="row">
-			<?php foreach($nav_lang['header'] as $key => $header): ?>
-				<?php if(isset($nav_lang[$key])): ?>
-					<div class="col-2">
+			<div class="col-8">
+				<div class="row">
+					<?php foreach($nav_lang['header'] as $key => $header): ?>
+						<?php if(isset($nav_lang[$key])): ?>
+							<div class="col-2">
+								<h4>
+									<?php echo $header; ?>
+								</h4>
+								<?php foreach($nav_drop_link[$key] as $menu => $link): ?>
+									<a href="
+												<?php
+									if($menu == "tracking"){
+										echo $link;
+									} else {
+										echo site_url("/Base/menu/{$link}");
+									}
+									?>">
+										<p>
+											<?php echo $nav_lang[$key][$menu]; ?>
+										</p>
+									</a>
+								<?php endforeach;?>
+							</div>
+						<?php endif; ?>
+					<?php endforeach;?>
+					<div class="col-4">
 						<h4>
-							<?php echo $header; ?>
+							<?php echo $contact_lang['title']; ?>
 						</h4>
-						<?php foreach($nav_drop_link[$key] as $menu => $link): ?>
-							<a class="dropdown-item" href="
-											<?php
-							if($menu == "tracking"){
-								echo $link;
-							} else {
-								echo site_url("/Base/menu/{$link}");
-							}
-							?>">
-								<?php echo $nav_lang[$key][$menu]; ?>
-							</a>
+						<?php foreach($contact_lang['content'] as $key => $content): ?>
+							<?php if($key == 'open_hours'): ?>
+								<?php foreach($contact_lang['content'][$key] as $content): ?>
+									<p><?php echo $content; ?></p>
+								<?php endforeach; ?>
+							<?php else: ?>
+								<p><?php echo $content; ?></p>
+							<?php endif; ?>
 						<?php endforeach;?>
 					</div>
-				<?php endif; ?>
-			<?php endforeach;?>
-			<div class="col-2">
-				<h4>
-					<?php echo $contact_lang['title']; ?>
-				</h4>
-				<?php foreach($contact_lang['content'] as $key => $content): ?>
-					<?php if($key == 'open_hours'): ?>
-						<?php foreach($contact_lang['content'][$key] as $content): ?>
-							<p><?php echo $content; ?></p>
-						<?php endforeach; ?>
-					<?php else: ?>
-						<p><?php echo $content; ?></p>
-					<?php endif; ?>
-				<?php endforeach;?>
+				</div>
 			</div>
 			<div class="col-4">
 				<h4 class="text-center">

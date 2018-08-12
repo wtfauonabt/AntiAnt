@@ -6,12 +6,28 @@
 	padding: 20px 0px;
 }
 
-.collaborator .scrollable{
-	overflow-x: scroll;
-	overflow-y: hidden;
-	white-space: nowrap;
+.collaborator .container-fluid{
 	padding: 20px 20px;
-	margin: 0 40px;
+	margin: 0 7%;
+}
+
+.collaborator .carousel-inner{
+	margin-bottom:90px;
+}
+
+.collaborator .carousel-indicators{
+	margin-left: 0;
+}
+
+.collaborator .carousel-indicators li{
+	background-color: #d4d4d4;
+	padding:20px;
+	margin: 0 30px;
+	border-radius: 50%
+}
+
+.collaborator .carousel-indicators .active{
+	background-color: #999999;
 }
 
 .collaborator .card{
@@ -23,8 +39,8 @@
 
 .collaborator .card:hover{
 	transform: scale(1.2);
+	border: none;
 }
-
 
 .collaborator img{
 	width: 100%;

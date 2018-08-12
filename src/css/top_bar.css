@@ -3,12 +3,10 @@
 	width:100%;
 	background-color: #9ec7e6;
 	top: 0;
-	width: 100%;
 	z-index:2000;
 }
-.top_bar .language{
-	padding: 9px 20px 0px;
-	border-right: 1px solid #00016f;
+.top_bar nav{
+	padding: 0 15px;
 }
 
 .top_bar .language a{
@@ -16,8 +14,9 @@
 	font-weight:bold
 }
 
-.top_bar .login{
-	padding: 9px 20px 0px;
+.top_bar .login,
+.top_bar .language{
+	padding: 10px 20px 0px;
 }
 
 .top_bar .login a{
@@ -45,6 +44,5 @@
 	.top_bar .comp_name h1{
 		font-size:  25px;
 	}
-
 }
 

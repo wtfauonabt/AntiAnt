@@ -6,7 +6,7 @@ $contact_form_lang = $this->lang->line('contact_form');
 <section class="contact_form">
 	<h2><?php echo $contact_form_lang['title']?></h2>
 	<div >
-		<form action="post">
+		<form method="post" action="<?php base_url();?>/Base/sendEmail/<?php echo $menu;?>" role="form">
 			<div class="wrap-input3">
 				<input class="input3" type="text" name="name" placeholder="<?php echo $contact_form_lang['name']?>">
 			</div>
