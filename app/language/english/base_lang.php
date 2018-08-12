@@ -37,7 +37,8 @@ $lang["nav"]["header"]["support"] 		= "Support";
 // Dropdowns Langugage
 $lang["nav"]["quick"]["tracking"]		= "Track & Trace";
 //$lang["nav"]["quick"]["faq"]			= "FAQs";
-$lang["nav"]["quick"]["contact"]		= "Contact Us Profile";
+$lang["nav"]["quick"]["contact"]		= "Contact Us";
+$lang["nav"]["about"]["profile"]		= "Profile";
 $lang["nav"]["about"]["history"]		= "Company History";
 $lang["nav"]["service"]["expertise"]	= "Expertise";
 $lang["nav"]["support"]["contact"]		= "Contact Us";
