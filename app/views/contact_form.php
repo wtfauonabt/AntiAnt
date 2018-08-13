@@ -19,7 +19,7 @@ $contact_form_lang = $this->lang->line('contact_form');
 			<div class="wrap-input3 textarea">
 				<textarea class="input3" name="message" placeholder="<?php echo $contact_form_lang['message']?>"></textarea>
 			</div>
-			<input class="btn btn-primary" type="submit" value="<?php echo $contact_form_lang['submit']?>">
+			<input class="btn btn-primary sub_btn" type="submit" value="<?php echo $contact_form_lang['submit']?>">
 
 		</form>
 	</div>

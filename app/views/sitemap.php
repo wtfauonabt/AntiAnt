@@ -9,10 +9,10 @@ $nav_lang = $this->lang->line('nav');
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-12">
-				<div class="row">
+				<div class="row" style="text-align: center;">
 					<?php foreach($nav_lang['header'] as $key => $header): ?>
 						<?php if(isset($nav_lang[$key])): ?>
-							<div class="col-lg-2 col-md-6">
+							<div class="col-lg-2 col-md-6 col-sm-6">
 								<h4>
 									<?php echo $header; ?>
 								</h4>
@@ -33,7 +33,7 @@ $nav_lang = $this->lang->line('nav');
 							</div>
 						<?php endif; ?>
 					<?php endforeach;?>
-					<div class="col-lg-4 col-md-6">
+					<div class="col-lg-4 col-md-6 col-sm-12">
 						<h4>
 							<?php echo $contact_lang['title']; ?>
 						</h4>
