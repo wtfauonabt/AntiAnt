@@ -8,11 +8,11 @@ $nav_lang = $this->lang->line('nav');
 <section id="sitemap" class="sitemap">
 	<div class="container">
 		<div class="row">
-			<div class="col-8">
+			<div class="col-lg-8 col-md-12">
 				<div class="row">
 					<?php foreach($nav_lang['header'] as $key => $header): ?>
 						<?php if(isset($nav_lang[$key])): ?>
-							<div class="col-2">
+							<div class="col-lg-2 col-md-6">
 								<h4>
 									<?php echo $header; ?>
 								</h4>
@@ -33,7 +33,7 @@ $nav_lang = $this->lang->line('nav');
 							</div>
 						<?php endif; ?>
 					<?php endforeach;?>
-					<div class="col-4">
+					<div class="col-lg-4 col-md-6">
 						<h4>
 							<?php echo $contact_lang['title']; ?>
 						</h4>
@@ -49,7 +49,7 @@ $nav_lang = $this->lang->line('nav');
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-md-12">
 				<h4 class="text-center">
 					<?php echo $sitemap_lang['follow']; ?>
 				</h4>

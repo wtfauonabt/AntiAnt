@@ -18,10 +18,22 @@
 /*****************
 menu bar
 ****************/
+.top_nav  .logo a{
+	padding-bottom: 0;
+}
 .top_nav  .logo img{
-	width: 500px;
+	width: 68%;
 	padding-left: 28px;
 	margin:0;
+}
+.top_nav .menu_v2{
+	-webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 .top_nav .menu_v2 ul{
 	padding-left: 18vw;
@@ -58,9 +70,20 @@ Dropdown
 	line-height: 50px;
 	vertical-align: middle;
 }
-
+@media screen and (max-width: 415px) {
+	.top_nav .logo img {
+    width: 42%;
+    padding-left: 0
+}
+}
 @media screen and (max-width: 767px) {
 	.dropdown-menu > a {
 		display: block;
 	}
+}
+@media screen and (max-width: 1024px)
+{
+	.top_nav {
+    padding-top: 0; 
+}
 }
