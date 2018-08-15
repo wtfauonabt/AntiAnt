@@ -15,7 +15,7 @@
  *  
 *******************************************************************************/
 // Language
-$lang["top_bar"]["english"] 		= "Engish";
+$lang["top_bar"]["english"] 		= "English";
 $lang["top_bar"]["simp_chinese"] 	= "中文";
 // Login Button
 $lang["top_bar"]["login"]			= "Login";
