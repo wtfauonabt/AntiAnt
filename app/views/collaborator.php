@@ -19,7 +19,7 @@ $collaborator_per_carousel = 3;
 							<?php foreach($collaborator_list['link'] as $key => $value): ?>
 
 								<?php if($count == 1): ?>
-									<div class="carousel-item <?php if($first): ?>active<?php $first = false; ?><?php endif; ?>">
+									<div class=" collaborator_posit_fixed carousel-item <?php if($first): ?>active<?php $first = false; ?><?php endif; ?>">
 								<?php endif; ?>
 										<div class="card">
 											<a href="<?php echo $value; ?>">
@@ -28,7 +28,7 @@ $collaborator_per_carousel = 3;
 												</div>
 											</a>
 										</div>
-								<?php if($count == $collaborator_per_carousel): ?>'
+								<?php if($count == $collaborator_per_carousel): ?>
 									<?php $count = 0; ?>
 									</div>
 								<?php endif; ?>
