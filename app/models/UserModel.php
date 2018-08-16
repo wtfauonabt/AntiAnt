@@ -28,6 +28,7 @@ class UserModel extends CI_Model
     	$this->load->db("default");
 
     	$sql = "SELECT * FROM {$this->table_name} WHERE user_name='{$user_name}, password={$encrpted_password}"
+
     	//$result = query
     	//$result = query to array
     	if(count($result)) != 1){

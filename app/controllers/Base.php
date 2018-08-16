@@ -74,4 +74,16 @@ class Base extends CI_Controller {
     	var_dump($data["errorMessage"]);
 		$this->index($menu);
 	}
+
+	public function user($action){
+		$this->load->controller('UserController');
+		$data["errorMessage"] = $this->UserController->handle($action);
+		if($data["errorMessage"]){
+			//display login page with error
+		}
+		$user["user_name"] = $user_name;
+		//$_SESSION[$user];
+		//$_COOKIES[$user];
+		//$this->index("wms_home");
+	}
 }

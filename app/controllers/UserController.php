@@ -25,7 +25,7 @@ class UserController extends CI_Controller {
 			case('signout'):
 				break;
 			default:
-				throw new Exception("Cannot find action");
+				return "Cannot find action";
 		}
 		
 		//view login
@@ -37,9 +37,9 @@ class UserController extends CI_Controller {
 		$data["user_name"] = $this->input->post('user_name');
 		$data["password"] = $this->input->post('password');
 
-		$error_message = $this->UserModel->login($data);
+		$errorMessage = $this->UserModel->login($data);
 
-		return $error_message;
+		return $errorMessage;
 	}
 
 }
