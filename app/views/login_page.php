@@ -6,7 +6,7 @@
  <form class="modal-content animate" action="/action_page.php">
   <div class="container">
       <label for="uname"><b><?php echo $contact_lang['username']?></b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" name="user_name" required>
 
       <label for="psw"><b><?php echo $contact_lang['password']?></b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
