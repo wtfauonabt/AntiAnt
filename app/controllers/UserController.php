@@ -16,7 +16,7 @@ class UserController extends CI_Controller {
 
 	public function handle($action){
 		if(!$action){
-			throw new Exception("No Action");
+			return("No Action");
 		}
 		switch ($action){
 			case('login'):
@@ -33,7 +33,10 @@ class UserController extends CI_Controller {
 
 
 	public function login(){
-		// if(!) check if coming back is post 
+		// if(!) check if coming back is post /
+		if ($_SERVER['REQUEST_METHOD'] != 'POST') {
+  			return("Not postback")
+		}
 		$data["user_name"] = $this->input->post('user_name');
 		$data["password"] = $this->input->post('password');
 

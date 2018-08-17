@@ -30,7 +30,13 @@ class UserModel extends CI_Model
     	$sql = "SELECT * FROM {$this->table_name} WHERE user_name='{$user_name}, password={$encrpted_password}"
 
     	//$result = query
+        $result = mysql_query($sql)
     	//$result = query to array
+        $row = $result->row_array();
+        if (!isset($row))
+            {
+               return("No array")
+            }
     	if(count($result)) != 1){
 			return "Invalid username and password";
 		}
