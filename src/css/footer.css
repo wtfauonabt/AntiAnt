@@ -1,7 +1,7 @@
 .footer {
 	bottom:0;
 	width:100%;
-	height:60px;   /* Height of the footer */
+	height:30px;   /* Height of the footer */
 	background-color: #C7CEDC;
 }
 
@@ -16,6 +16,7 @@
 
 }
 .footer p{
+	color: #000000;
 	padding-top: 5px;
 	text-align: center;
 }

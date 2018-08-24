@@ -32,12 +32,14 @@ class SocialMedia extends CI_Model{
 		$this->social_media_list['douban']['link'] 	= "https://www.douban.com/people/182602056/";
 		$this->social_media_list['jianshu']['link'] = "https://www.jianshu.com/u/f3762bd7bc4e";
 		$this->social_media_list['sina']['link'] 	= "http://blog.sina.com.cn/u/6623733875";
+		$this->social_media_list['wechat']['link'] 	= "";
 
 		$this->social_media_list['weibo']['icon'] 	= "fab fa-weibo";
 		$this->social_media_list['zhihu']['logo'] 	= "zhihu.png";
 		$this->social_media_list['douban']['logo'] 	= "douban.png";
 		$this->social_media_list['jianshu']['logo'] = "jianshu.png";
 		$this->social_media_list['sina']['logo'] 	= "sina.png";
+		$this->social_media_list['wechat']['icon'] 	= "fab fa-weixin";
 	}
 }
 

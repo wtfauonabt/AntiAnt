@@ -1,6 +1,10 @@
 .contact{
 	padding-top: 100px;
+}
+
+.contact .info{
 	margin: 0 30px;
+	padding-bottom: 10px;
 }
 
 .contact .map {
