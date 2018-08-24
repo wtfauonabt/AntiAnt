@@ -6,7 +6,7 @@ $nav_lang = $this->lang->line('nav');
 <section id="top_nav" class="top_nav">
 	<nav class="navbar navbar-expand-lg ">
 		<div class="logo">
-			<a  href="<?php echo base_url();?>"><img src="<?php echo base_url();?>/src/image/logo.png"></a>
+			<a  href="<?php echo base_url();?>"><img src="<?php echo base_url();?>/src/image/logo.jpg"></a>
 		</div>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

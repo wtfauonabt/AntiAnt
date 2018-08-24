@@ -24,8 +24,8 @@ $nav_lang = $this->lang->line('nav');
 									} else {
 										echo site_url("/Base/menu/{$link}");
 									}
-									?>">
-										<p>
+									?>" class="sitemap-content">
+										<p class="sitemap-content">
 											<?php echo $nav_lang[$key][$menu]; ?>
 										</p>
 									</a>
@@ -34,16 +34,16 @@ $nav_lang = $this->lang->line('nav');
 						<?php endif; ?>
 					<?php endforeach;?>
 					<div class="col-lg-4 col-md-6 col-sm-12">
-						<h4>
+						<h4 class="sitemap-header">
 							<?php echo $contact_lang['title']; ?>
 						</h4>
 						<?php foreach($contact_lang['content'] as $key => $content): ?>
 							<?php if($key == 'open_hours'): ?>
 								<?php foreach($contact_lang['content'][$key] as $content): ?>
-									<p><?php echo $content; ?></p>
+									<p class="sitemap-content"><?php echo $content; ?></p>
 								<?php endforeach; ?>
 							<?php else: ?>
-								<p><?php echo $content; ?></p>
+								<p class="sitemap-content"><?php echo $content; ?></p>
 							<?php endif; ?>
 						<?php endforeach;?>
 					</div>
@@ -55,17 +55,39 @@ $nav_lang = $this->lang->line('nav');
 				</h4>
 				<div class="container">
 					<div class="row">
-						<?php foreach($social_media_list as $social_media): ?>
+						<?php foreach($social_media_list as $source => $social_media): ?>
 							<div class="card">
-								<a href="<?php echo $social_media['link'];?>">
-									<?php if(isset($social_media['logo'])): ?>
-										<img src="<?php base_url();?>/src/image/social_media/<?php echo $social_media['logo'];?>"/>
-									<?php else: ?>
+								<?php if($source == "wechat"): ?>
+									<button type="button" class="wechat" data-toggle="modal" data-target="#wechat">
 										<i class="<?php echo $social_media['icon'];?>"></i>
-									<?php endif; ?>
-								</a>
+									</button>
+								<?php else: ?>
+									<a href="<?php echo $social_media['link'];?>">
+										<?php if(isset($social_media['logo'])): ?>
+											<img src="<?php base_url();?>/src/image/social_media/<?php echo $social_media['logo'];?>" class="logo"/>
+										<?php else: ?>
+											<i class="<?php echo $social_media['icon'];?>"></i>
+										<?php endif; ?>
+									</a>
+								<?php endif; ?>
 							</div>
 						<?php endforeach;?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="wechat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="close-button">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="wechat-qr">
+						<img src="<?php echo base_url();?>/src/image/wechat_qr.jpg">
 					</div>
 				</div>
 			</div>

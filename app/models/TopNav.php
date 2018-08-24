@@ -29,13 +29,14 @@ class TopNav extends CI_Model{
 		if($nav_drop_link){
 			$this->nav_drop_link = $nav_drop_link;
 		}
-		$this->nav_drop_link["quick"]["tracking"] 	= $this->tracking_link;
-//		$this->nav_drop_link["quick"]["faq"] 		= "faq";
-		$this->nav_drop_link["quick"]["contact"] 	= "contact";
-		$this->nav_drop_link["about"]["profile"] 	= "profile";
-		$this->nav_drop_link["about"]["history"] 	= "history";
-		$this->nav_drop_link["service"]["expertise"]= "expertise";
-		$this->nav_drop_link["support"]["contact"]	= "contact";
+		$this->nav_drop_link["quick"]["tracking"] 			= $this->tracking_link;
+//		$this->nav_drop_link["quick"]["faq"] 				= "faq";
+		$this->nav_drop_link["quick"]["contact"] 			= "contact";
+		$this->nav_drop_link["quick"]["email_enquiry"] 		= "email_enquiry";
+		$this->nav_drop_link["about"]["profile"] 			= "profile";
+		$this->nav_drop_link["about"]["history"] 			= "history";
+		$this->nav_drop_link["service"]["expertise"]		= "expertise";
+		$this->nav_drop_link["support"]["contact"]			= "contact";
 	}
 
 	public function getHeader($menu, $lang){
