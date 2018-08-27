@@ -58,6 +58,8 @@ class Base extends CI_Controller {
 
 				$data['track_link'] = $this->TopNav->getTrackingLink();
 				break;
+			case 'login_page':
+				break;
 			default:
 				$data['header'] = $this->TopNav->getHeader($menu, $this->lang->line('nav'));
 				if(!$data['header']){
@@ -76,14 +78,15 @@ class Base extends CI_Controller {
 	}
 
 	public function user($action){
-		$this->load->controller('UserController');
-		$data["errorMessage"] = $this->UserController->handle($action);
-		if($data["errorMessage"]){
+		//$this->load->controller('UserController');
+		//$data["errorMessage"] = $this->UserController->handle($action);
+		//if($data["errorMessage"]){
 			//display login page with error
-		}
-		$user["user_name"] = $user_name;
+		//}
+		//$user["user_name"] = $user_name;
 		//$_SESSION[$user];
 		//$_COOKIES[$user];
 		//$this->index("wms_home");
+		$this->index('login_page');
 	}
 }
