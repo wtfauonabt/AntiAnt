@@ -2,9 +2,10 @@
     defined('BASEPATH') OR exit('No direct script access allowed');
     $contact_lang = $this->lang->line('contact');
 ?>
-
- <form class="modal-content animate" action="/action_page.php">
-  <div class="container">
+<link href="<?php base_url();?>/src/css/login.css" rel="stylesheet" />
+  <img src="<?php echo base_url();?>/src/image/logo.png">
+ <form class=" animate input_box" action="/app/controllers/UserController.php">
+  <div class="container ">
       <label for="uname"><b><?php echo $contact_lang['username']?></b></label>
       <input type="text" placeholder="Enter Username" name="user_name" required>
 
@@ -20,7 +21,5 @@
   <div class="container">
       <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
-  <div class="container">
-      <a href="#"><?php echo $contact_lang['register']?></a>
-  </div>
+ 
 </form>
