@@ -29,9 +29,7 @@ class Base extends CI_Controller {
         $this->Language->setLanguage($lang);
         $this->menu($menu);
     }
-    public function loginLink(){
-    	
-    }
+
     private function getData($menu){
     	$data = array();
 
