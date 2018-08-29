@@ -69,24 +69,4 @@ class Base extends CI_Controller {
 		}
 		return $data;
 	}
-
-	public function contactForm($menu){
-    	$this->load->controller('EmailController');
-    	$data["errorMessage"] = $this->EmailController->sendEmail;
-    	var_dump($data["errorMessage"]);
-		$this->index($menu);
-	}
-
-	public function user($action){
-		//$this->load->controller('UserController');
-		//$data["errorMessage"] = $this->UserController->handle($action);
-		//if($data["errorMessage"]){
-			//display login page with error
-		//}
-		//$user["user_name"] = $user_name;
-		//$_SESSION[$user];
-		//$_COOKIES[$user];
-		//$this->index("wms_home");
-		$this->index('login_page');
-	}
 }
