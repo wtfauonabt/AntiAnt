@@ -1,12 +1,13 @@
 .top_nav {
 	white-space: nowrap;
-	position: fixed;
+	
 	padding-top: 50px;
-	background: #EEF0EF;
+	background: none;
 	display: inline-block;
 	width:100%;
 	z-index: 1000;
 }
+
 
 .top_nav .navbar-nav .navbar-center {
 	position: absolute;

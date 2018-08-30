@@ -4,7 +4,7 @@ $title_lang = $this->lang->line('title');
 ?>
 <link href="<?php base_url();?>/src/css/title.css" rel="stylesheet" />
 <section class="title" id="title">
-	<img src="<?php base_url();?>/src/image/home/back.jpg">
+	<!-- <img src="<?php base_url();?>/src/image/home/back.jpg"> -->
 	<div class="centered">
 		<div class="slogan">
 			<h2>

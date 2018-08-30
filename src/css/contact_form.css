@@ -2,7 +2,7 @@
 form
 *******************/
 .contact_form{
-	background-color: #9EC7E6;
+	background-color: #fff;
 	padding-top: 2vw;
 	padding-bottom: 2vw;
 	text-align: center;
@@ -32,6 +32,11 @@ form
 
 input.input3 {
 	height: 45px;
+	background-color: #dadada;
+}
+.input3 {
+	
+	background-color: #dadada;
 }
 
 .contact_form .textarea{
