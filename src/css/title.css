@@ -11,7 +11,7 @@
 
 .title .centered {
 	position: absolute;
-	top: 40%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -37,15 +37,14 @@
 }
 
 .title .tracking{
-	position: absolute;
 	font-size: 3.2vw;
-	left: 10%;
-	padding-top: 20%;
+}
+.fa-search{
+	color: #45a1d5;
 }
 
 .title button{
 	    background-color: #fff9f9ad;
-	color: ##000;
+	    padding: 20px 41px;
 	border-radius: 12px;
-	width: 40vw;
 }

@@ -6,16 +6,16 @@ $title_lang = $this->lang->line('title');
 <section class="title" id="title">
 	<!-- <img src="<?php base_url();?>/src/image/home/back.jpg"> -->
 	<div class="centered">
-		<div class="slogan">
+		<!-- <div class="slogan">
 			<h2>
 				<?php echo $title_lang['slogan_1'] ;?>
 				<i class="fas fa-heart"></i>
 				<?php echo $title_lang['slogan_2'] ;?>
 			</h2>
-		</div>
+		</div> -->
 		<div class="tracking">
 			<a href="<?php echo $track_link; ?>">
-				<button type="button"><?php echo $title_lang['track'] ;?></button>
+				<button type="button"><?php echo $title_lang['track'] ;?> <i class="fas fa-search"></i></button>
 			</a>
 		</div>
 	</div>
