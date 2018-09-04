@@ -1,5 +1,6 @@
 body{
 	background-color: rgb(0, 0, 179);
+
 }
 .input_box{
 	position: fixed;
@@ -11,3 +12,9 @@ body{
 .input_box input{
 	display: block
 }
+.login-page img{
+	position: fixed;
+  top: 20%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);}
