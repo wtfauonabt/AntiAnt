@@ -1,6 +1,13 @@
 /*******************
 form
 *******************/
+
+.cont {
+    width: 80%;
+   /* max-width: 1320px;*/
+    margin: 0 auto;
+    color: #003;
+}
 .contact_form{
 	background-color: #fff;
 	padding-top: 2vw;
@@ -15,12 +22,19 @@ form
 .wrap-input3 {
 	margin-bottom: 2vw;
 }
-
-
+.wrap-input3 ul{
+list-style: none; width: 100%;    padding: 0;
+}
+.wrap-input3 ul li{
+	width:33.3%;float:left;padding-right: 10px;display:inline-block;    padding-bottom: 10px;
+}
+.wrap-input3 ul li:nth-child(3){
+padding-right: 0px
+}
 .input3 {
 
 	display: block;
-	width: 50%;
+	width: 100%;
 	background: #ffffff;
 	font-size: 1vw;
 	border: none;
@@ -64,7 +78,7 @@ input.input3 {
 	min-height: 115px;
 	padding-top: 13px;
 	padding-bottom: 13px;
-	    width: 58.66%;
+	    width: 100%;
     display: initial;
 }
 
@@ -80,12 +94,12 @@ input.input3 {
 	display: inline-block;
 	text-align: left;
 }
-.contact_form input[type=text], .contact_form input[type=number]{
+/*.contact_form input[type=text], .contact_form input[type=number]{
 	width: 14%;
 }
 .contact_form input[type=email]{
 	width:30%;
-}
+}*/
 
 .contact_form
 input[type=number]::-webkit-inner-spin-button,
@@ -95,4 +109,29 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .contact_form hr{
 	    margin: 71px 7% 0 7%;
+}
+
+@media all and (max-width: 425px){
+	.wrap-input3 ul{
+	padding-right: 20px;
+	padding-left: 30px;
+}
+.wrap-input3 textarea{
+margin: 0 11%;
+    width: 82%;
+
+}
+	.wrap-input3 ul li{
+	width:100%;float:left;padding-right: 0px;display:inline-block;    padding-bottom: 10px;
+}
+.input3 {
+   
+    padding: 22px 25px;
+}
+.sub_btn {
+    text-align: center !important;
+     padding: 6px 12px; 
+    border-radius: 0px;
+    background-color: #45a1d5;
+}
 }

@@ -27,12 +27,12 @@ and open the template in the editor.
 		margin-top: 50px;
 		
 	}
-	.home input {
+	/*.home input {
 		width: 78%;
 		display: block;
 		text-align: center;
 		margin: 0 11%;
-	}
+	}*/
 	.home label {
 		font-size: 25px;
 	}
