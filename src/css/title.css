@@ -48,3 +48,15 @@
 	    padding: 20px 41px;
 	border-radius: 12px;
 }
+@media all and (max-width: 425px){
+  body{
+    background-image: url(/src/image/home/back2.jpg);
+
+  }
+  .title .centered {
+     top: 0%; 
+}
+.title {
+    padding-bottom: 100px;
+}
+}

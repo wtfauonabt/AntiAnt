@@ -14,7 +14,10 @@ body {
 	overflow-x: hidden;
 	padding-bottom:60px;
    background-image: url(/src/image/home/back.jpg);
+       background-repeat: no-repeat;
+    background-size: 100%;
 }
+
 .content {
 	min-height: 100%;
 }
@@ -25,7 +28,10 @@ body:before {
     background-position: center;
     opacity:0.2;
 }
-
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}
 .background-logo img{
     position: fixed;
     height: 100%;
