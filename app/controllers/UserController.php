@@ -45,9 +45,9 @@ class UserController extends CI_Controller {
 
 		$this->session->user = $this->UserModel->getUser();
 
-		var_dump($this->session->user);
+		// var_dump($this->session->user);
 
-		die('here');
+		// die('here');
 		return $errorMessage;
 	}
 

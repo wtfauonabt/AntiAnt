@@ -44,18 +44,26 @@ class UserModel extends CI_Model
         // }
 
     	//$result = query to array
+
         $user = $query->result();
-        if (!isset($user) && count($user) != 1){
-               return "Invalid username and password";
+        // var_dump($user);
+        if (isset($user) && count($user) != 1){
+ 
+            $this->load->view("login_page");
+            return "Invalid username and password";
         }
 
+        // var_dump(!isset($user) && count($user) != 1);
+         
         // unset password before return
         //$user
 
         $this->user = $user;
-		return NULL;
-    }
 
+		return NULL;
+         
+    }
+ 
 
     public function getUser(){
         return $this->user;
