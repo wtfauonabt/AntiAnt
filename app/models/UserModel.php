@@ -35,7 +35,7 @@ class UserModel extends CI_Model
 
     	//$result = query
         $query = $this->db->query($sql);
-
+// var_dump($query);
          // Log user access and error
         // if($result){
            
@@ -49,10 +49,12 @@ class UserModel extends CI_Model
         // var_dump($user);
         if (isset($user) && count($user) != 1){
  
-            $this->load->view("login_page");
+            // $this->load->view("login_page");
+            
+            redirect($this->load->view("login_page.php"));
             return "Invalid username and password";
         }
-
+        // var_dump($user);
         // var_dump(!isset($user) && count($user) != 1);
          
         // unset password before return
