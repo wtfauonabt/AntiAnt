@@ -12,24 +12,41 @@ class UserController extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('UserModel');
+		$array = array();
+		$array['usermodel'] = $this->load->model('UserModel');
+		var_dump($array);
+		$array['usermodel']->login();
+
+		$array[] = "abc";
+
+		$array[] = 123;
+
+		$array[] = hanle();
+
 	}
 
 	public function handle($action){
-		if(!$action){
-			return("No Action");
-		}
+		
 		switch ($action){
 			case('login'):
-				$this->login();
+				$error = $this->login();
 				break;
 			case('signout'):
 				break;
 			default:
-				return "Cannot find action";
+				$error = "Cannot find action";
 		}
-		
+		echo "$error: "
+		var_dump($error);
+		echo "</br>";
+		var_dump($error);
+		if(isset($error) && $error != ''){
+			$this->load->view("login_page");
+		}else {
+			$this->load->view("wms_home");
+		}
 		//view login
-		$this->load->view("wms_home");
+		
 	}
 
 
@@ -42,13 +59,15 @@ class UserController extends CI_Controller {
 		$data["user_name"] = $this->input->post('user_name');
 		$data["password"] = $this->input->post('password');
 		$errorMessage = $this->UserModel->login($data);
-
+		if($errorMessage){
+			return $errorMessage;
+		}
 		$this->session->user = $this->UserModel->getUser();
 
 		// var_dump($this->session->user);
 
 		// die('here');
-		return $errorMessage;
+		
 	}
 
 	public function isAuthorized($user){

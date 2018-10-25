@@ -31,7 +31,7 @@ class UserModel extends CI_Model
 
     	$this->load->database("backend");
         //
-    	$sql = "SELECT * FROM {$this->table_name} WHERE user_name='{$user_name}' AND password='{$encryptPassword}'";
+    	$sql = "SELECT user_name, password FROM {$this->table_name} WHERE user_name='{$user_name}' AND password='{$encryptPassword}'";
 
     	//$result = query
         $query = $this->db->query($sql);
@@ -50,8 +50,9 @@ class UserModel extends CI_Model
         if (isset($user) && count($user) != 1){
  
             // $this->load->view("login_page");
-            
-            redirect($this->load->view("login_page.php"));
+   
+            // redirect($this->load->view("login_page.php"));
+            // die('aa');
             return "Invalid username and password";
         }
         // var_dump($user);
@@ -60,9 +61,9 @@ class UserModel extends CI_Model
         // unset password before return
         //$user
 
-        $this->user = $user;
+  //       $this->user = $user;
 
-		return NULL;
+		// return NULL;
          
     }
  

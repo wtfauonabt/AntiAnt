@@ -165,6 +165,12 @@ $lang["contact"]["username"] 				= 	"用户名";
 $lang["contact"]["password"] 				= 	"密码";
 $lang["contact"]["register"] 				= 	"登記";
 
+$lang["login"]["username"] 				= 	"用户名";
+$lang["login"]["remember"] 				= 	"  a";
+$lang["login"]["forgot"] 				= 	"忘記密碼?";
+$lang["login"]["password"] 				= 	"密码";
+$lang["login"]["register"] 				= 	"登記";
+
 $lang["contact"]['header']['address']		= 	"地址";
 $lang["contact"]['header']['web'] 			= 	"网站";
 $lang["contact"]['header']['hk_number'] 	= 	"香港号码";
