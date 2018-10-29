@@ -168,6 +168,7 @@ $lang["login"]["remember"] 				= 	"Remember me";
 $lang["login"]["forgot"] 				= 	"Forgot password?";
 $lang["login"]["password"] 				= 	"Password";
 $lang["login"]["register"] 				= 	"Register";
+$lang["login"]["login"] 				= 	"Login";  
 
 $lang["contact"]['header']['address']		= 	"Address";
 $lang["contact"]['header']['web'] 			= 	"Website";

@@ -170,6 +170,7 @@ $lang["login"]["remember"] 				= 	"  a";
 $lang["login"]["forgot"] 				= 	"忘記密碼?";
 $lang["login"]["password"] 				= 	"密码";
 $lang["login"]["register"] 				= 	"登記";
+$lang["login"]["login"] 				= 	"登入";
 
 $lang["contact"]['header']['address']		= 	"地址";
 $lang["contact"]['header']['web'] 			= 	"网站";
