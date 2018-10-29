@@ -1,10 +1,11 @@
  <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
     $login_lang = $this->lang->line('login');
+    $top_bar_lang = $this->lang->line('top_bar');
 ?>
 <link href="<?php base_url();?>/src/css/login.css" rel="stylesheet" />
  <section class="login-page" id="login_page">
-
+ 	
  	<div class="limiter">
 		<div class="container-login100" style="background-color: blue">
 			<div class="wrap-login100">
