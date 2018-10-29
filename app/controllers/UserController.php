@@ -12,17 +12,7 @@ class UserController extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('UserModel');
-		$array = array();
-		$array['usermodel'] = $this->load->model('UserModel');
-		var_dump($array);
-		$array['usermodel']->login();
-
-		$array[] = "abc";
-
-		$array[] = 123;
-
-		$array[] = hanle();
-
+		
 	}
 
 	public function handle($action){
@@ -36,10 +26,7 @@ class UserController extends CI_Controller {
 			default:
 				$error = "Cannot find action";
 		}
-		echo "$error: "
-		var_dump($error);
-		echo "</br>";
-		var_dump($error);
+	
 		if(isset($error) && $error != ''){
 			$this->load->view("login_page");
 		}else {

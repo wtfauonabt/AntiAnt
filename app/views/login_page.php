@@ -29,7 +29,7 @@
 		<button class="login100-form-btn"type="submit">Login</button>
 </div>
 			
-		</div>
+		</div> 
 
 		<div class="text-center p-t-90">
 		<spa nclass="psw"><a class="txt1" href="#"><?php echo $login_lang['forgot']?></a></span>
