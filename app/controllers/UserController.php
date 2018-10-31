@@ -12,6 +12,7 @@ class UserController extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('UserModel');
+
 		$this->load->model('Language');
 		
 	}
@@ -34,9 +35,32 @@ class UserController extends CI_Controller {
 			$this->load->view("wms_home");
 		}
 		//view login
-		
+		die("2");
 	}
+	public function index($menu="login_page"){
+		$data = $this->getData($menu);
+        $this->load->view('base', $data);
+	}
+	public function menu($menu){
+	        $this->index($menu);
+	    }
+	public function switchLanguage($lang, $menu) {
+        $this->Language->setLanguage($lang);
+        $this->menu($menu);
+    }
+    private function getData($menu){
+    	$data = array();
+		// Get Language
+		$current_lang = $this->Language->getCurrentLanguage();
+		$lang = $this->lang->load("base", $current_lang);
 
+		$data['current_lang'] = $current_lang;
+		$data['lang'] = $lang;
+		$data['menu'] = $menu;
+		$this->load->model('UserModel');
+		$data['user'] = $this->UserModel->getUser();
+
+	}
 
 	public function login(){
 		// if(!) check if coming back is post /

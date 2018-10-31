@@ -59,6 +59,9 @@ class Base extends CI_Controller {
 				$data['track_link'] = $this->TopNav->getTrackingLink();
 				break;
 			case 'login_page':
+				$this->load->model('UserModel');
+				$data['user'] = $this->UserModel->getUser();
+
 				break;
 			default:
 				$data['header'] = $this->TopNav->getHeader($menu, $this->lang->line('nav'));
