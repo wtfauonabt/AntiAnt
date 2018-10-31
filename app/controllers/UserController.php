@@ -35,7 +35,7 @@ class UserController extends CI_Controller {
 			$this->load->view("wms_home");
 		}
 		//view login
-		die("2");
+		// die("2");
 	}
 	public function index($menu="login_page"){
 		$data = $this->getData($menu);
