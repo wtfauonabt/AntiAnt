@@ -30,20 +30,25 @@ class UserController extends CI_Controller {
 		}
 	
 		if(isset($error) && $error != ''){
-			$this->load->view("login_page");
-
+	
+			//get language
 			$data = array();
 			$current_lang = $this->Language->getCurrentLanguage();
 			$lang = $this->lang->load("base", $current_lang);
 			$data['current_lang'] = $current_lang;
 			$data['lang'] = $lang;
+			//error message
+  			$message = "Username and/or Password incorrect.";
+  			echo "<script type='text/javascript'>alert('$message');</script>";
+  			//back to login page
+  			$this->load->view("login_page");
 			
 		}else {
 			$this->load->view("wms_home");
 		}
 		//view login
 		// die("2");
-		return $data;
+		
 	}
 	// public function index($menu="login_page"){
 	// 	$data = $this->getData($menu);
