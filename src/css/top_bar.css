@@ -1,5 +1,5 @@
 .top_bar{
-	
+	background-color: #ffffffa8;
 	width:100%;
 	background-color: none;
 	top: 0;
@@ -18,7 +18,9 @@
 .top_bar .language{
 	padding: 10px 20px 0px;
 }
-
+.nav-link{
+	color: black;
+}
 .top_bar .login a{
 	color: #00016f;
 	font-weight:bold

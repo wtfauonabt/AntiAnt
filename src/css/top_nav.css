@@ -1,8 +1,8 @@
 .top_nav {
 	white-space: nowrap;
-	
+	background-color: #ffffffa8;
 	padding-top: 50px;
-	background: none;
+
 	display: inline-block;
 	width:100%;
 	z-index: 1000;

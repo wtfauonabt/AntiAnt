@@ -68,7 +68,7 @@ $lang["title"]["slogan_2"] 			= "，是一种态度";
 // Track and Trace
 $lang["title"]["track"] 			= $lang["nav"]["quick"]["tracking"];
 // Contact_form
-$lang["contact_form"]["title"] 		= "请跟我们联系吧！";
+$lang["contact_form"]["title"] 		= "請跟我們聯繫吧！";
 $lang["contact_form"]["name"] 		= "名称";
 $lang["contact_form"]["phone"]		= "电话号码";
 $lang["contact_form"]["email"]		= "电子邮件";

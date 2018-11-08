@@ -45,8 +45,8 @@
 
 .title button{
 	    background-color: #fff9f9ad;
-	    padding: 20px 41px;
-	border-radius: 12px;
+	    padding: 30px 60px;
+	border-radius: 9px;
 }
 @media all and (max-width: 425px){
   body{

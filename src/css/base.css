@@ -3,7 +3,7 @@ body {
 	margin:0;
 	padding:0;
 	height:100%;
-  background-image: url(/src/image/home/back.jpg) top left no-repeat;
+  background-image: url(/src/image/home/back3.jpg) top left no-repeat;
   background-size: 100%
 }
 
@@ -13,7 +13,7 @@ body {
 	height:100%;
 	overflow-x: hidden;
 	padding-bottom:60px;
-   background-image: url(/src/image/home/back.jpg);
+   background-image: url(/src/image/home/back3.jpg);
        background-repeat: no-repeat;
     background-size: 100%;
 }

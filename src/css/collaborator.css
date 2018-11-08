@@ -1,4 +1,4 @@
-.collaborator{
+/*.collaborator{
 	padding: 40px 0px;
 	background-color: #fff;
 }
@@ -50,4 +50,11 @@
 .collaborator_posit_fixed{
 
     text-align: center;
+}
+*/
+.collaborator .card{
+	display: inline-block;
+	width: 50px;
+	padding: 20px 0px;
+	margin: 0 3%;
 }

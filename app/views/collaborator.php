@@ -12,9 +12,9 @@ $collaborator_per_carousel = 3;
 			<?php echo $collaborator_lang['title']?>
 		</h2>
 		<div class="container-fluid">
-			<div class="carousel slide" data-ride="carousel" id="collaborator_carousel">
+			<div class="carousel slide" data-ride="carousel" id="">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-3">
 						<div class="carousel-inner">
 							<?php foreach($collaborator_list['link'] as $key => $value): ?>
 
@@ -28,10 +28,9 @@ $collaborator_per_carousel = 3;
 												</div>
 											</a>
 										</div>
-								<?php if($count == $collaborator_per_carousel): ?>
-									<?php $count = 0; ?>
+								
 									</div>
-								<?php endif; ?>
+								
 
 								<?php $count++; ?>
 							<?php endforeach;?>
