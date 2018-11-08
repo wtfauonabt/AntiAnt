@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $collaborator_lang = $this->lang->line('collaborator');
 $count = 1;
 $first = true;
-$collaborator_per_carousel = 3;
+$collaborator_per_carousel = 5;
 ?>
 <?php if($collaborator_list): ?>
 	<link href="<?php base_url();?>/src/css/collaborator.css" rel="stylesheet" />
@@ -14,7 +14,7 @@ $collaborator_per_carousel = 3;
 		<div class="container-fluid">
 			<div class="carousel slide" data-ride="carousel" id="">
 				<div class="row">
-					<div class="col-3">
+					<div class="col-5">
 						<div class="carousel-inner">
 							<?php foreach($collaborator_list['link'] as $key => $value): ?>
 
