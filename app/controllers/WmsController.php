@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * UserController: stanley
- * Date: 8/15/2018
- * Time: 9:36 PM
- */
+
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -13,7 +8,7 @@ class WmsController extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Language');
 	}
-	public function index($menu="login_page"){
+	public function index($menu="wms_home"){
 		$data = $this->getData($menu);
         $this->load->view('base', $data);
 	}

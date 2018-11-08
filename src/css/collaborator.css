@@ -52,9 +52,16 @@
     text-align: center;
 }
 */
-/*.collaborator .card{
-	display: inline-block;
-	width: 50px;
-	padding: 20px 0px;
-	margin: 0 3%;
-}*/
+.collaborator .card{
+	display: block;
+    width: 96%;
+    min-height: 122px;
+    padding: 19px 6px;
+    margin: 0 3%;
+}
+.card_img{
+	height: 45px;
+}
+.collab{
+	text-align: center;
+}
