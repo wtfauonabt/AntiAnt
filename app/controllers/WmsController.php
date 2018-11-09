@@ -5,32 +5,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class WmsController extends CI_Controller {
 	public function __construct(){
+		
 		parent::__construct();
 		$this->load->model('Language');
+		
 	}
 	public function index($menu="wms_home"){
-		$data = $this->getData($menu);
-        $this->load->view('base', $data);
+		include_once 'simple_html_dom.php';
 	}
-	public function menu($menu){
-	        $this->index($menu);
-	    }
-	public function switchLanguage($lang, $menu) {
-        $this->Language->setLanguage($lang);
-        $this->menu($menu);
-    }
-    private function getData($menu){
-    	$data = array();
-		// Get Language
-		$current_lang = $this->Language->getCurrentLanguage();
-		$lang = $this->lang->load("base", $current_lang);
+	public function getIdInfo(){
+		die('d');
+		$rowData = array();
 
-		$data['current_lang'] = $current_lang;
-		$data['lang'] = $lang;
-		$data['menu'] = $menu;
-		$this->load->model('UserModel');
-		$data['user'] = $this->UserModel->getUser();
+		$detail = array();
+		// --get html
+		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
 
-	}
+		// --get data
+		foreach($html->find('tr') as $element):    
+		   	// foreach($html->find('td') as $element) :
+			 echo $element . '<br>';
+				
 
+		    foreach($element->find('td') as $subelement):
+
+		    	array_push($detail, $subelement);
+
+		    	echo $subelement . '<br>';
+
+			endforeach;
+
+			echo "<br>";
+			array_push($rowData, $detail);
+
+		endforeach;
+
+			}
+
+		
 }
