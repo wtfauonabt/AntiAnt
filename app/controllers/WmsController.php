@@ -1,6 +1,6 @@
 <?php
 
-
+ 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class WmsController extends CI_Controller {
@@ -10,11 +10,10 @@ class WmsController extends CI_Controller {
 		$this->load->model('Language');
 		
 	}
-	public function index($menu="wms_home"){
-		include_once 'simple_html_dom.php';
-	}
+	
 	public function getIdInfo(){
-		die('d');
+		include_once 'simple_html_dom.php';
+		// die('d');
 		$rowData = array();
 
 		$detail = array();
