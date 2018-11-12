@@ -15,7 +15,7 @@ class WmsController extends CI_Controller {
 		include_once 'simple_html_dom.php';
 		// die('d');
 		$rowData = array();
-
+		$count = 0;
 		$detail = array();
 		// --get html
 		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
@@ -23,9 +23,9 @@ class WmsController extends CI_Controller {
 		// --get data
 		foreach($html->find('tr') as $element):    
 		   	// foreach($html->find('td') as $element) :
-			 echo $element . '<br>';
+			 // echo $element . '<br>';
 				
-
+			if ($count < 35){
 		    foreach($element->find('td') as $subelement):
 
 		    	array_push($detail, $subelement);
@@ -36,6 +36,10 @@ class WmsController extends CI_Controller {
 
 			echo "<br>";
 			array_push($rowData, $detail);
+
+			$count += 1;
+		}
+
 
 		endforeach;
 

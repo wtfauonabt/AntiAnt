@@ -34,7 +34,7 @@ include_once './app/controllers/WmsController.php';
 
 
 		<div class="container-login100-form-btn">
-		<button class="login100-form-btn"type="submit">s</button>
+		<button class="login100-form-btn"type="submit">Get IDs</button>
 </div>
 			
 		</div> 
