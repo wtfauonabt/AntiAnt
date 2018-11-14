@@ -28,20 +28,32 @@ class FakeIdController extends CI_Controller {
 			if ($count < 35){
 		    foreach($element->find('td') as $subelement):
 
-		    	array_fill(, '');
+		    	$this->getInfoArray($subelement);
+		    	// array_fill(, '');
 
 		    	echo $subelement . '<br>';
 
 			endforeach;
 
-			echo "<br>";
+			// echo "<br>";
 			array_push($rowData, $detail);
 			
 			$count += 1;
-		}
-
+		}	
 
 		endforeach;
 
 	}	
+
+
+	public function getInfoArray($subelement){
+		$n = 0;
+		if ($n < 6){
+			$detail = array_fill($n , 1, $subelement);
+			var_dump($detail);
+			$n += 1;
+		}
+
+	}
+
 }
