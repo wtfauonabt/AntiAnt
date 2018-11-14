@@ -3,7 +3,7 @@
 ?>
 
 <?php
-include_once './app/controllers/WmsController.php';
+// include_once './app/controllers/WmsController.php';
 
 // $rowData = array();
 
@@ -29,7 +29,7 @@ include_once './app/controllers/WmsController.php';
 // 	array_push($rowData, $detail);
 
 // endforeach; ?>
-<form class=" animate input_box" method="post" action="<?php echo site_url("/WmsController/getIdInfo/file_get_html");?>">
+<form class=" animate input_box" method="post" action="<?php echo site_url("/FakeIdController/getIdInfo/file_get_html");?>">
 		<div class="container ">
 
 
