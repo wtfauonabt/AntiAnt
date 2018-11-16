@@ -18,7 +18,7 @@ class WmsController extends CI_Controller {
 		$count = 0;
 		$detail = array();
 		// --get html
-		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
+		$html = file_get_html('https://www.mexgroup.com/');
 
 		// --get data
 		foreach($html->find('tr') as $element):    
