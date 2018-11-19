@@ -24,24 +24,26 @@ class FakeIdController extends CI_Controller {
 								'age' => 'Age',
 								'address' => 'Address');
 
-		$index_array = array('0' => 'name',
-							'1' => 'id',
-							'2' => 'gender',
-							'3' => 'bday',
-							'4' => 'age',
-							'5' => 'address');
+		// $index_array = array('0' => 'name',
+		// 					'1' => 'id',
+		// 					'2' => 'gender',
+		// 					'3' => 'bday',
+		// 					'4' => 'age',
+		// 					'5' => 'address');
 		$header_list= array();
 		// --get html
 		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
 
 		// get header 
+		
 		foreach($html->find('th') as $header):
-			echo $header ,"<br>";
-			if (in_array('Age', $header_mapping)) {
-					$header_list [] = 'Age';
-				
-			}
 			
+
+			if (in_array($header, $header_mapping)) {
+
+					$header_list [$i] = key($header_mapping);
+			}
+			$i += 1;
 		endforeach;
 		var_dump($header_list);
 
