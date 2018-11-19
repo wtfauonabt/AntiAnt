@@ -13,10 +13,6 @@ class FakeIdController extends CI_Controller {
 	
 	public function getIdInfo(){
 		include_once 'app/models/simple_html_dom.php';
-		// die('d');
-		
-		$count = 0;
-		$i = 0;
 		$header_mapping = array('name' => 'Name',
 								'id' => 'Chinese Id Card Number',
 								'gender' => 'Gender',
@@ -35,20 +31,32 @@ class FakeIdController extends CI_Controller {
 		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
 
 		// get header 
-		
 		foreach($html->find('th') as $header):
-			
 
-			if (in_array($header, $header_mapping)) {
+			$header = $this -> removTag($header);
 
-					$header_list [$i] = key($header_mapping);
+			if (in_array($header, $header_mapping) && ($header == current($header_mapping))) {
+				$header_list [] = key($header_mapping);
 			}
-			$i += 1;
+			next($header_mapping);
+
 		endforeach;
+	
+
 		var_dump($header_list);
 
+	}
 
 
+	// remove space and tags
+	public function removTag($header){
+		$header = trim($header);
+		$header = str_replace("<th>","", $header);
+		$header = str_replace("</th>", "", $header);
+
+		return $header;
+
+		}
 		// --get data
 		// foreach($html->find('tr') as $element):    
 
@@ -71,7 +79,7 @@ class FakeIdController extends CI_Controller {
 
 		// endforeach;
 
-	}	
+		
 
 
 	public function getInfoArray($subelement){
