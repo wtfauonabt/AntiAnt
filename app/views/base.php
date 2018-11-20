@@ -56,7 +56,7 @@
 
 			<!-- Display additional header if not Home Page -->
 			<?php
-			if($menu != "home" && $menu != "login_page"){
+			if($menu != "home" && $menu != "login_page" && $menu != "profile"){
 				$this->load->view("path_header");
 			}
 			?>

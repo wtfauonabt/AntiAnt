@@ -12,11 +12,13 @@ body {
   background-image: url(/src/image/home/back3.jpg);
        background-repeat: no-repeat;
     background-size: 100%;
+    
 }
 .about_bg{
   background-image: url(/src/image/about_us_bg.jpg);
        background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment:fixed;
 }
 body {
     position: relative;
