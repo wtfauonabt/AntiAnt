@@ -40,7 +40,13 @@
 		<!-- Custom -->
 		<script src="<?php base_url();?>/src/js/base.js"></script>
     </head>
-    <body>
+    <?php if ($menu == "home"):  ?>
+    	<?php echo "<body class='home_bg'>";?>
+    <?php endif; ?>
+    <?php if ($menu != "home" && $menu != "login_page"):  ?>
+    	<?php echo "<body class='about_bg'>";?>
+    <?php endif; ?>
+
 		<div class="content">
 			<!-- Display fixed nav bar -->
 			<?php if ($menu != "login_page"): ?>

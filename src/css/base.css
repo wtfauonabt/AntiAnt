@@ -1,20 +1,31 @@
+
+
 html,
 body {
 	margin:0;
 	padding:0;
 	height:100%;
-  background-image: url(/src/image/home/back3.jpg) top left no-repeat;
+  
   background-size: 100%
 }
-
+.home_bg{
+  background-image: url(/src/image/home/back3.jpg);
+       background-repeat: no-repeat;
+    background-size: 100%;
+}
+.about_bg{
+  background-image: url(/src/image/about_us_bg.jpg);
+       background-repeat: no-repeat;
+    background-size: 100%;
+}
 body {
     position: relative;
  
 	height:100%;
 	overflow-x: hidden;
 	padding-bottom:60px;
-   background-image: url(/src/image/home/back3.jpg);
-       background-repeat: no-repeat;
+/*   background-image: url(/src/image/home/back3.jpg);
+       background-repeat: no-repeat;*/
     background-size: 100%;
 }
 
