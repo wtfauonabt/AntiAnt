@@ -60,8 +60,18 @@
     margin: 0 3%;
 }
 .card_img{
-	height: 45px;
+	height: 77px;
+    width: 95%;
 }
 .collab{
 	text-align: center;
+}
+@media all and (max-width: 600px){
+	.collabc{
+	display: inherit;
+	    text-align: -webkit-center;
+}
+.col-2{
+	width: 100%;
+}
 }

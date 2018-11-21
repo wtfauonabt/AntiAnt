@@ -11,10 +11,12 @@ $count = 1;
 			<?php echo $collaborator_lang['title']?>
 		</h2>
 		<div class="container-fluid collab">
-						<div class="carousel slide" data-ride="carousel" id="collaborator_carousel">
-				<div class="row"><?php foreach($collaborator_list['link'] as $key => $value): ?>
+		
+				<div class="row collabc" style="left: 7%;
+    position: relative;    padding-bottom: 83px;">
+					<?php foreach($collaborator_list['link'] as $key => $value): ?>
 					<div class="col-2">
-						<div class="carousel-inner">
+						
 							
 										<div class="card">
 											<a href="<?php echo $value; ?>">
@@ -22,16 +24,16 @@ $count = 1;
 													<img class="card_img" src="<?php base_url();?>/src/image/collaborator/<?php echo $collaborator_list['logo'][$key]; ?>" alt="Card image">
 												
 											</a>
-										</div>
+										</div> 
 								
-									</div>
+								
 								
 								</div>
 								<?php $count++; ?>
 							<?php endforeach;?>
 						
 					</div>
-				</div>
+				
 			</div>
 			
 		</div>

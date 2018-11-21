@@ -12,6 +12,8 @@ body {
   background-image: url(/src/image/home/back3.jpg);
        background-repeat: no-repeat;
     background-size: 100%;
+    background-size: cover;
+    background-position: center;
     
 }
 .about_bg{
@@ -19,6 +21,8 @@ body {
        background-repeat: no-repeat;
     background-size: 100%;
     background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
 }
 body {
     position: relative;

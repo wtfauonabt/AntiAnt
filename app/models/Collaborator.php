@@ -33,7 +33,7 @@ class Collaborator extends CI_Model{
 
 
 
-		$this->collaborator_list['logo']['ems'] = "ems_logo.jpeg";
+		$this->collaborator_list['logo']['ems'] = "ems_logo.png";
 		$this->collaborator_list['logo']['tnt'] = "tnt_logo.png";
 		$this->collaborator_list['logo']['china_post'] = "china_post_logo.png";
 		$this->collaborator_list['logo']['qyin'] = "qyin_logo.jpeg";
