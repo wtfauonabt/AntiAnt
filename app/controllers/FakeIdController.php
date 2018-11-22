@@ -13,6 +13,18 @@ class FakeIdController extends CI_Controller {
 	
 	public function getIdInfo(){
 		include_once 'app/models/simple_html_dom.php';
+		$person = array();
+		// --get html
+		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
+
+		// get header 
+		$header = $this -> getHeader($html);
+		$person = $this -> personInfo($html);
+		$comb_h_p = $this -> combineHP($header, $person);
+	}
+
+	// get header 
+	public function getHeader($html){
 		$header_mapping = array('name' => 'Name',
 								'id' => 'Chinese Id Card Number',
 								'gender' => 'Gender',
@@ -20,35 +32,32 @@ class FakeIdController extends CI_Controller {
 								'age' => 'Age',
 								'address' => 'Address');
 		$header_list = array();
-		$person = array();
-		// --get html
-		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
 
-		// get header 
 		foreach($html->find('th') as $header):
 
 			$header = $this -> removTag($header);
-
 			if (in_array($header, $header_mapping) && ($header == current($header_mapping))) {
 				$header_list [] = key($header_mapping);
 			}
 			next($header_mapping);
 
 		endforeach;
-	
+		return $header_list;
 
-		var_dump($header_list);
-		$p = $this -> personInfo($html);
 	}
 
 
 	// remove space and tags
-	public function removTag($header){
-		$header = trim($header);
-		$header = str_replace("<th>","", $header);
-		$header = str_replace("</th>", "", $header);
+	public function removTag($content){
+		$content = trim($content);
+		$content = str_replace("<th>","", $content);
+		$content = str_replace("</th>", "", $content);
+		$content = str_replace("<tr>","", $content);
+		$content = str_replace("</tr>", "", $content);
+		$content = str_replace("<td>","", $content);
+		$content = str_replace("</td>", "", $content);
 
-		return $header;
+		return $content;
 
 		}
 
@@ -57,16 +66,15 @@ class FakeIdController extends CI_Controller {
 		$count = 0;
 		foreach($html->find('tr') as $element):    
 			if ($count < 35){
-		    foreach($element->find('td') as $subelement):
-		    	$subelement = $this -> removTag($subelement);
-		    	echo $subelement , '<br>';
-		    	// $this->getInfoArray($subelement);
-		    	// array_fill(, '');
+			    foreach($element->find('td') as $subelement):
 
-			endforeach;
+			    	$subelement = $this -> removTag($subelement);
+			    	$person[] = $subelement;
 
+				endforeach;
 			$count += 1;
 		}	
+
 
 		endforeach;
 
