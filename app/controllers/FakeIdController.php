@@ -19,14 +19,8 @@ class FakeIdController extends CI_Controller {
 								'bday' => 'Birthday',
 								'age' => 'Age',
 								'address' => 'Address');
-
-		// $index_array = array('0' => 'name',
-		// 					'1' => 'id',
-		// 					'2' => 'gender',
-		// 					'3' => 'bday',
-		// 					'4' => 'age',
-		// 					'5' => 'address');
-		$header_list= array();
+		$header_list = array();
+		$person = array();
 		// --get html
 		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
 
@@ -44,7 +38,7 @@ class FakeIdController extends CI_Controller {
 	
 
 		var_dump($header_list);
-
+		$p = $this -> personInfo($html);
 	}
 
 
@@ -57,27 +51,28 @@ class FakeIdController extends CI_Controller {
 		return $header;
 
 		}
+
+	public function personInfo($html){
 		// --get data
-		// foreach($html->find('tr') as $element):    
+		$count = 0;
+		foreach($html->find('tr') as $element):    
+			if ($count < 35){
+		    foreach($element->find('td') as $subelement):
+		    	$subelement = $this -> removTag($subelement);
+		    	echo $subelement , '<br>';
+		    	// $this->getInfoArray($subelement);
+		    	// array_fill(, '');
 
-		   	
-				
-		// 	if ($count < 35){
-		
+			endforeach;
 
-		//     foreach($element->find('td') as $subelement):
+			$count += 1;
+		}	
 
-		//     	// $this->getInfoArray($subelement);
-		//     	// array_fill(, '');
+		endforeach;
 
-		    	
 
-		// 	endforeach;
 
-		// 	$count += 1;
-		// }	
-
-		// endforeach;
+	}
 
 		
 
