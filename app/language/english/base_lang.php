@@ -162,7 +162,14 @@ $lang["contact"]["title"] 					= 	$lang["nav"]["support"]["contact"];
 
 $lang["contact"]["username"] 				= 	"Username";
 $lang["contact"]["password"] 				= 	"Password";
-$lang["contact"]["register"] 				= 	"Register";;
+$lang["contact"]["register"] 				= 	"Register";
+
+$lang["login"]["username"] 				= 	"Username";
+$lang["login"]["remember"] 				= 	"Remember me";
+$lang["login"]["forgot"] 				= 	"Forgot password?";
+$lang["login"]["password"] 				= 	"Password";
+$lang["login"]["register"] 				= 	"Register";
+$lang["login"]["login"] 				= 	"Login";  
 
 $lang["contact"]['header']['address']		= 	"Address";
 $lang["contact"]['header']['web'] 			= 	"Website";

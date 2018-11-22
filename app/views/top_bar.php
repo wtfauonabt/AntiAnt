@@ -22,7 +22,7 @@ $top_bar_lang = $this->lang->line('top_bar');
 			</div>
 			<div class="login">
 				<p>
-					<a href="/">
+					<a href="<?php echo site_url("/Base/menu/login_page"); ?>">
 						<?php echo $top_bar_lang["login"]; ?>
 					</a>
 				<p>

@@ -40,15 +40,23 @@
 		<!-- Custom -->
 		<script src="<?php base_url();?>/src/js/base.js"></script>
     </head>
-    <body>
+    <?php if ($menu == "home"):  ?>
+    	<?php echo "<body class='home_bg'>";?>
+    <?php endif; ?>
+    <?php if ($menu != "home" && $menu != "login_page"):  ?>
+    	<?php echo "<body class='about_bg'>";?>
+    <?php endif; ?>
+
 		<div class="content">
 			<!-- Display fixed nav bar -->
-			<?php $this->load->view("top_bar"); ?>
-			<?php $this->load->view("top_nav"); ?>
+			<?php if ($menu != "login_page"): ?>
+				<?php $this->load->view("top_bar"); ?>
+				<?php $this->load->view("top_nav"); ?>
+			<?php endif; ?>
 
 			<!-- Display additional header if not Home Page -->
 			<?php
-			if($menu != "home"){
+			if($menu != "home" && $menu != "login_page" && $menu != "profile"){
 				$this->load->view("path_header");
 			}
 			?>
@@ -57,9 +65,11 @@
 			<?php $this->load->view($menu); ?>
 
 		</div>
+		<?php if ($menu != "login_page"): ?>
+			<?php $this->load->view("sitemap"); ?>
+			<!-- Display footer -->
+			<?php $this->load->view("footer"); ?>
+		<?php endif; ?>
 
-		<?php $this->load->view("sitemap"); ?>
-		<!-- Display footer -->
-		<?php $this->load->view("footer"); ?>
     </body>
 </html>

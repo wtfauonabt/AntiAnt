@@ -1,5 +1,6 @@
-.collaborator{
+/*.collaborator{
 	padding: 40px 0px;
+	background-color: #fff;
 }
 
 .collaborator h2{
@@ -32,8 +33,8 @@
 .collaborator .card{
 	display: inline-block;
 	width: 25%;
-	padding: 20px 20px;
-	margin: 0 40px;
+	padding: 20px 0px;
+	margin: 0 3%;
 }
 
 .collaborator .card:hover{
@@ -49,4 +50,32 @@
 .collaborator_posit_fixed{
 
     text-align: center;
+}
+*/
+.collaborator .card{
+	display: block;
+    width: 96%;
+    min-height: 122px;
+    padding: 19px 6px;
+    margin: 0 3%;
+}
+.card_img{
+	height: 77px;
+    width: 95%;
+}
+.collab{
+	text-align: center;
+}
+@media all and (max-width: 600px){
+	.collabc{
+	display: inherit;
+	    text-align: -webkit-center;
+}
+.col-2{
+	max-width: 72%;
+}
+.collaborator .card{
+
+    margin: 18px 0%;
+}
 }

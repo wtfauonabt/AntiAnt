@@ -1,3 +1,7 @@
+.title{
+	padding-bottom: 550px;
+}
+
 .title.container {
 	position: relative;
 	text-align: center;
@@ -9,7 +13,7 @@
 
 .title .centered {
 	position: absolute;
-	top: 35%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -38,15 +42,26 @@
 }
 
 .title .tracking{
-	position: absolute;
 	font-size: 3.2vw;
-	left: 10%;
-	padding-top: 15%;
+}
+.fa-search{
+	color: #45a1d5;
 }
 
 .title button{
-	background-color: #7FB2DF;
-	color: #ffffff;
-	border-radius: 12px;
-	width: 40vw;
+	    background-color: #fff9f9ad;
+	    padding: 30px 60px;
+	border-radius: 9px;
+}
+@media all and (max-width: 425px){
+  body{
+    background-image: url(/src/image/home/back2.jpg);
+
+  }
+  .title .centered {
+     top: 0%; 
+}
+.title {
+    padding-bottom: 100px;
+}
 }

@@ -58,6 +58,11 @@ class Base extends CI_Controller {
 
 				$data['track_link'] = $this->TopNav->getTrackingLink();
 				break;
+			case 'login_page':
+				$this->load->model('UserModel');
+				$data['user'] = $this->UserModel->getUser();
+
+				break;
 			default:
 				$data['header'] = $this->TopNav->getHeader($menu, $this->lang->line('nav'));
 				if(!$data['header']){
@@ -66,12 +71,5 @@ class Base extends CI_Controller {
 				break;
 		}
 		return $data;
-	}
-
-	public function contactForm($menu){
-    	$this->load->controller('EmailController');
-    	$data["errorMessage"] = $this->EmailController->sendEmail;
-    	var_dump($data["errorMessage"]);
-		$this->index($menu);
 	}
 }

@@ -1,5 +1,8 @@
 .profile{
-	padding-top: 100px;
+	    padding-top: 70px;
+
+	max-width: 1280px;
+	padding-bottom: 18px;
 }
 
 .profile .profile-title{
@@ -7,9 +10,28 @@
     text-decoration: underline;
     padding: 20px 0;
 }
+.pro_img{
+	width: 68%;
+	text-align: center;
+    display: block;
+        margin: 0 auto 37px auto;
+
+}
+.abt_info{
+	background-color: #ffffffcf;
+    max-width: 433px;
+    margin: 0 auto;
+    padding: 32px;
+    margin-top: 10px;
+    font-size: 11px;
+}
+.abt_into p {
+	font-size: 12px;
+}
 
 @media all and (max-width: 768px){
 	.profile .pro_img{
 		padding: 0px;
 	}	
+
 }
