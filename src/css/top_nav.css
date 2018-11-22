@@ -2,7 +2,6 @@
 	white-space: nowrap;
 	background-color: #ffffffa8;
 	padding-top: 50px;
-
 	display: inline-block;
 	width:100%;
 	z-index: 1000;
@@ -23,7 +22,7 @@ menu bar
 	padding-bottom: 0;
 }
 .top_nav  .logo img{
-	width: 68%;
+	width: 30%;
 	padding-left: 28px;
 	margin:0;
 }
@@ -40,7 +39,7 @@ menu bar
 	padding-left: 18vw;
 }
 .top_nav .menu_v2 ul li{
-	padding: 1vw 2vw 1vw;
+	padding: 2px 2vw 2px;
 	font-weight: 700;
 }
 .top_nav a {

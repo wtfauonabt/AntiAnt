@@ -2,7 +2,7 @@
 	width: 100%;
 	padding: 50px;
 	background-color: #000000;
-	color: #FFFFFF;
+
 }
 
 .sitemap .card{
@@ -12,17 +12,37 @@
 	text-align: center;
 }
 
-.sitemap a{
+.sitemap h4{
 	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.sitemap .wechat{
+	background-color:#000000;
+	border: none;
+}
+
+.sitemap .sitemap-header, .sitemap-content{
+	color: #FFFFFF;
+	font-size: 13px;
 }
 
 .sitemap svg{
+	color: #FFFFFF;
 	font-size: 4vw;
 }
 
-.sitemap img, svg{
+.sitemap .logo, svg{
 	width: 100%;
 	height: 5vw;
 	border-radius: 50%;
 	object-fit: scale-down;
+}
+
+.sitemap .close-button{
+	float: right;
+}
+
+.sitemap .close{
+	padding-right: 10px;
 }

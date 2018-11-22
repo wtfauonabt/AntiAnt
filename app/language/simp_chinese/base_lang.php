@@ -38,6 +38,7 @@ $lang["nav"]["header"]["support"] 		= "支持";
 $lang["nav"]["quick"]["tracking"]		= "邮件查询";
 //$lang["nav"]["quick"]["faq"]			= "常问问题";
 $lang["nav"]["quick"]["contact"]		= "联系我们";
+$lang["nav"]["quick"]["email_enquiry"]	= "直接联系";
 $lang["nav"]["about"]["profile"]		= "公司简介";
 $lang["nav"]["about"]["history"]		= "公司历史";
 $lang["nav"]["service"]["expertise"]	= "专门知识";

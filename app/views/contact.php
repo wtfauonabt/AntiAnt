@@ -7,7 +7,7 @@ $address = 'Hang+Wai+Industrial+Center,6+Kin+Tai+Street,Tuen+Mun,N.T.,Hong+Kong'
 <link href="<?php base_url();?>/src/css/contact.css" rel="stylesheet" />
 <section id="contact" class="contact">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row info">
             <div class="col-lg-6 col-sm-12">
 				<?php if($current_lang == "english"): ?>
 					<!--<div id="map" class='map'>My map will go here</div>-->
@@ -19,6 +19,9 @@ $address = 'Hang+Wai+Industrial+Center,6+Kin+Tai+Street,Tuen+Mun,N.T.,Hong+Kong'
 
             </div>
             <div class="col-lg-6 col-sm-12 contact_position">
+				<div class="wechat_qr">
+					<img src="<?php echo base_url();?>/src/image/wechat_qr.jpg">
+				</div>
 				<div class="table-responsive">
 					<table class="table">
 						<tbody>
@@ -42,6 +45,11 @@ $address = 'Hang+Wai+Industrial+Center,6+Kin+Tai+Street,Tuen+Mun,N.T.,Hong+Kong'
 				</div>
             </div>
         </div>
+		<div class="row">
+			<div class="col-12">
+				<?php $this->load->view("contact_form"); ?>
+			</div>
+		</div>
     </div>
 </section>
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
