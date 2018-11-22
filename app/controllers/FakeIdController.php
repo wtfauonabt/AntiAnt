@@ -16,14 +16,18 @@ class FakeIdController extends CI_Controller {
 		$person = array();
 		// --get html
 		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
-
-		// get header 
+		// get header
 		$header = $this -> getHeader($html);
-		$person = $this -> personInfo($html);
+		// var_dump($header);
+		// get personal info
+		$people = $this -> personInfo($html);
+		var_dump($people);
+		// using header as key to every person
 		$comb_h_p = $this -> combineHP($header, $person);
+		var_dump($comb_h_p);
 	}
 
-	// get header 
+
 	public function getHeader($html){
 		$header_mapping = array('name' => 'Name',
 								'id' => 'Chinese Id Card Number',
@@ -47,6 +51,31 @@ class FakeIdController extends CI_Controller {
 	}
 
 
+	
+
+	public function personInfo($html){
+		$person_list = array();
+		$people_list = array();
+		
+		$count = 0;
+		foreach($html->find('tr') as $element):    
+			if ($count < 35){
+				
+			    foreach($element->find('td') as $subelement):
+			    	$subelement = $this -> removTag($subelement);
+			    	$person_list[] = $subelement;
+				endforeach;
+				$people_list[] = $person_list;
+
+			$count += 1;
+			}
+
+		endforeach;
+		return $people_list;
+	}
+
+		
+
 	// remove space and tags
 	public function removTag($content){
 		$content = trim($content);
@@ -60,39 +89,11 @@ class FakeIdController extends CI_Controller {
 		return $content;
 
 		}
-
-	public function personInfo($html){
-		// --get data
-		$count = 0;
-		foreach($html->find('tr') as $element):    
-			if ($count < 35){
-			    foreach($element->find('td') as $subelement):
-
-			    	$subelement = $this -> removTag($subelement);
-			    	$person[] = $subelement;
-
-				endforeach;
-			$count += 1;
-		}	
-
-
-		endforeach;
-
-
-
-	}
-
-		
-
-
-	public function getInfoArray($subelement){
-		// $n = 0;
-		// if ($n < 6){
-		// 	$detail = array_fill($n , 1, $subelement);
-		// 	var_dump($detail);
-		// 	$n += 1;
-		}
-
 	
+
+	public function combineHP($he, $info){
+		$info_order = array_combine($he, $info);
+		return $info_order;
+	}
 
 }
