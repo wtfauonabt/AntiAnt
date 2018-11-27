@@ -17,14 +17,14 @@ class FakeIdController extends CI_Controller {
 		// --get html
 		$html = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandname.php');
 		// get header
-		$header = $this -> getHeader($html);
+		
 		// var_dump($header);
 		// get personal info
 		$people = $this -> personInfo($html);
-		var_dump($people);
+		// var_dump($people);
 		// using header as key to every person
-		$comb_h_p = $this -> combineHP($header, $person);
-		var_dump($comb_h_p);
+		
+		// var_dump($comb_h_p);
 	}
 
 
@@ -56,22 +56,35 @@ class FakeIdController extends CI_Controller {
 	public function personInfo($html){
 		$person_list = array();
 		$people_list = array();
-		
+		$i = 0;
 		$count = 0;
 		foreach($html->find('tr') as $element):    
 			if ($count < 35){
 				
 			    foreach($element->find('td') as $subelement):
+			    	if ($i < 6){
+
 			    	$subelement = $this -> removTag($subelement);
 			    	$person_list[] = $subelement;
-				endforeach;
-				$people_list[] = $person_list;
 
+					$i += 1;
+				}
+				elseif ($i = 6){
+					$i = 0; 
+					$people_list[] = $person_list;
+				// next($people_list);
+				}
+				endforeach;
+				
+				
+
+				// $header = $this -> getHeader($html);
+				// $comb_h_p = $this -> combineHP($header, $people_list);
 			$count += 1;
 			}
-
+			var_dump($people_list);
 		endforeach;
-		return $people_list;
+		// return $comb_h_p;
 	}
 
 		
