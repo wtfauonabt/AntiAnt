@@ -63,27 +63,32 @@ class FakeIdController extends CI_Controller {
 				
 			    foreach($element->find('td') as $subelement):
 			    	if ($i < 6){
-
 			    	$subelement = $this -> removTag($subelement);
-			    	$person_list[] = $subelement;
-
+			    	$person_list[$i] = $subelement;
 					$i += 1;
 				}
-				elseif ($i = 6){
-					$i = 0; 
-					$people_list[] = $person_list;
-				// next($people_list);
-				}
-				endforeach;
-				
-				
 
-				// $header = $this -> getHeader($html);
-				// $comb_h_p = $this -> combineHP($header, $people_list);
+				else{
+					$subelement = $this -> removTag($subelement);	
+					$i = 0; 
+					$person_list[$i] = $subelement;
+					$people_list[] = $person_list;
+					$i += 1;
+				}
+
+				
+				endforeach;
+				$header = $this -> getHeader($html);
+				$comb_h_p = $this -> combineHP($header, $person_list);
+				// var_dump($comb_h_p);
+
 			$count += 1;
 			}
-			var_dump($people_list);
+			
 		endforeach;
+
+		var_dump($people_list);
+
 		// return $comb_h_p;
 	}
 
