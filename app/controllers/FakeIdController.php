@@ -11,6 +11,7 @@ class FakeIdController extends CI_Controller {
 		
 	}
 	
+
 	public function getIdInfo(){
 		include_once 'app/models/simple_html_dom.php';
 		$person = array();
@@ -21,6 +22,8 @@ class FakeIdController extends CI_Controller {
 		// var_dump($header);
 		// get personal info
 		$people = $this -> personInfo($html);
+		var_dump($people);
+		$photoID = $this -> genID($people);
 		// var_dump($people);
 		// using header as key to every person
 		
@@ -88,11 +91,16 @@ class FakeIdController extends CI_Controller {
 			
 		endforeach;
 
-		var_dump($people_list);
+		// var_dump($people_list);
 
-		// return $comb_h_p;
+		return $people_list;
 	}
 
+	public function genID($people_info){
+		$genFunctionLink = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandphoto.php');
+
+
+	}
 		
 
 	// remove space and tags
