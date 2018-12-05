@@ -22,7 +22,7 @@ class FakeIdController extends CI_Controller {
 		// var_dump($header);
 		// get personal info
 		$people = $this -> personInfo($html);
-		var_dump($people);
+		// var_dump($people);
 		$photoID = $this -> genID($people);
 		// var_dump($people);
 		// using header as key to every person
@@ -97,8 +97,9 @@ class FakeIdController extends CI_Controller {
 	}
 
 	public function genID($people_info){
-		$genFunctionLink = file_get_html('https://www.myfakeinfo.com/nationalidno/get-china-citizenidandphoto.php');
+		$genFunctionLink = include 'https://www.myfakeinfo.com/nationalidno/get-china-citizenidandphoto.php' ;
 
+		echo $genFunctionLink;
 
 	}
 		
