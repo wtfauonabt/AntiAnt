@@ -1,5 +1,6 @@
 <?php
 	defined('BASEPATH') OR exit('No direct script access allowed');
+	$people_list =  ;
 ?>
 
 <?php
@@ -36,7 +37,7 @@
 <h3>Chinese ID Card Number Obverse side Image Generate</h3>
 <div class="col-md-12">
 		<form name="form1" class="form-horizontal">
-		<div class="form-group"><label class="col-sm-2 control-label">FullName:</label><div class="col-sm-10"><input type="text" class="form-control" placeholder="please input name" id="xm" value="畅芳"></div></div>
+		<div class="form-group"><label class="col-sm-2 control-label">FullName:</label><div class="col-sm-10"><input type="text" class="form-control" placeholder="please input name" id="xm" value="<?php echo $people_list['name']?>"></div></div>
 		<div class="form-group"><label class="col-sm-2 control-label">Address:</label><div class="col-sm-10"><input class="form-control" placeholder="please input address" id="zhuzhi" value="河南省南阳市"></div></div>
 		<div class="form-group"><label class="col-sm-2 control-label">Date of Birth:</label><div class="col-sm-10"><input type="text" class="form-control"  placeholder="format:1900-11-11" id="cs" value="1985-05-23"></div></div>
 		<div class="form-group"><label class="col-sm-2 control-label">Gender:</label><div class="col-sm-10"><select id="xba" class="form-control" ><option selected value ="男">Male</option><option value="女">FeMale</option></select></div></div>
@@ -67,11 +68,6 @@ $("#zmsubbtn").click(function() {
 		$("#log1").html('<div style="text-align:center"><img src="/include/chinacitizenid/getCitizenIDImg.php?' +　"xm="+xm+"&cs="+cs+"&mz="+mz+"&xba="+xba+"&zhuzhi="+zhuzhi+"&hm="+hm+"&tx="+tx+"&yz=zm" +'"/></div>');	
 });  
 
-$("#bmsubbtn").click(function() {  
-		var qfdw = $("#qfdw").val();
-		var yxq = $("#yxq").val();		
 
-		$("#log2").html('<div style="text-align:center"><img src="/include/chinacitizenid/getCitizenIDImg.php?' + "qfdw="+qfdw+"&yxq="+yxq+"&yz=bm" + '"/></div>');	
-}); 
 
 </script>
