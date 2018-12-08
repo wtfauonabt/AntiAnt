@@ -22,8 +22,11 @@ class FakeIdController extends CI_Controller {
 		// var_dump($header);
 		// get personal info
 		$people = $this -> personInfo($html);
-		var_dump($people);
-		$photoID = $this -> genID($people);
+		$array2['contents'] = $people;
+		// var_dump($array2);
+		$this ->  load -> view('fake_id',$array2);
+		// var_dump($people);
+		// $photoID = $this -> genID($people);
 		// var_dump($people);
 		// using header as key to every person
 		
@@ -113,7 +116,8 @@ class FakeIdController extends CI_Controller {
 		$content = str_replace("</tr>", "", $content);
 		$content = str_replace("<td>","", $content);
 		$content = str_replace("</td>", "", $content);
-
+		$content = str_replace("			", "", $content);
+		$content = trim($content);
 		return $content;
 
 		}
