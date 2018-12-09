@@ -31,8 +31,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<?php echo $contents[$key]['bday'];?>
 			"></div></div>
 
-		<div class="form-group"><label class="col-sm-2 control-label">Gender:</label><div class="col-sm-10"><select id="xba" class="form-control" ><option selected value ="男">Male</option><option value="女">FeMale</option></select></div></div>
-
+		<!-- <div class="form-group"><label class="col-sm-2 control-label">Gender:</label><div class="col-sm-10"><select id="xba" class="form-control" ><option selected value ="男">Male</option><option value="女">FeMale</option></select></div></div> -->
+<div class="form-group"><label class="col-sm-2 control-label">Gender:</label><div class="col-sm-10"><input type="text" class="form-control"  placeholder="m/f" id="xba" value="
+			<?php echo $contents[$key]['gender'];?>
+			"></div></div>
 		<div class="form-group"><label class="col-sm-2 control-label">Ethnicit:</label><div class="col-sm-10"><input type="text"  class="form-control"  placeholder="Ethnicit" value="汉" id="mz"></div></div>
 
 		<div class="form-group"><label class="col-sm-2 control-label">I.D Number:</label><div class="col-sm-10"><input type="text" class="form-control"  placeholder="Please input Chinese Id Card Number" id="hm" value="
@@ -71,7 +73,15 @@ $(document).ready(function(){
 		var zhuzhi = $("#zhuzhi").val();
 		var hm = $("#hm").val();
 		var tx = $("#tx").val();
-		$("#log1").html('<div style="text-align:center"><img src="<?php echo base_url();?>/src/image/male_id.jpg' +　"xm="+xm+"&cs="+cs+"&mz="+mz+"&xba="+xba+"&zhuzhi="+zhuzhi+"&hm="+hm+"&tx="+tx+"&yz=zm" +'"/></div>');
+		$("#log1").html('<div style="text-align:center;position: relative"><img  style="width:600px;z-index: -1; float:left" src="<?php echo base_url();?>/src/image/<?php if ("$('#xba')" == "male" ): echo("male_id"); else: echo("famale_id");  endif;?>.jpg"/>' +　
+			"<p style='position: absolute;top: 105px;font-size: 16px;left: 136px;'>"+xm+"</p>"+ 
+			"<p style='position: absolute;top: 174px;font-size: 16px;left: 137px;'>"+cs+"</p>"+ 
+			"<p style='position: absolute;top: 136px;font-size: 16px;left: 230px;'>"+mz+"</p>"+
+			"&xba="+xba+
+			"<p style='position: absolute;top: 202px;font-size: 16px;left: 136px;'>"+zhuzhi+"</p>"+
+			"<p style='position: absolute;top: 294px;font-size: 16px;left: 202px;'>"+hm+"</p>"+
+			"&tx="+tx+
+			"&yz=zm"+"</div>" );
 });  
 });
 
