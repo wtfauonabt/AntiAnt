@@ -73,7 +73,7 @@ $(document).ready(function(){
 		var zhuzhi = $("#zhuzhi").val();
 		var hm = $("#hm").val();
 		var tx = $("#tx").val();
-		$("#log1").html('<div style="text-align:center;position: relative"><img  style="width:600px;z-index: -1; float:left" src="<?php echo base_url();?>/src/image/<?php if ("$('#xba')" == "male" ): echo("male_id"); else: echo("famale_id");  endif;?>.jpg"/>' +　
+		$("#log1").html('<div style="text-align:center;position: relative"><?php $this->load->view("id");?>' +　
 			"<p style='position: absolute;top: 105px;font-size: 16px;left: 136px;'>"+xm+"</p>"+ 
 			"<p style='position: absolute;top: 174px;font-size: 16px;left: 137px;'>"+cs+"</p>"+ 
 			"<p style='position: absolute;top: 136px;font-size: 16px;left: 230px;'>"+mz+"</p>"+
