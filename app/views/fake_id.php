@@ -77,8 +77,8 @@ $(document).ready(function(){
 		var tx = $("#tx").val();
 		$("#log1").html('<div style="text-align:center;position: relative"><?php 
 
-			$xba = "<script language='javascript'>var xba = $('#xba').val(); </script>";
-			if ("$xba" == "female") {
+			$xba = "<script language='javascript'>$('#xba').val(); </script>";
+			if ("$xba" == " female") {
 			$this->load->view("female_id");}
 			else{
 				$this->load->view("male_id");}
