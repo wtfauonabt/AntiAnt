@@ -75,17 +75,11 @@ $(document).ready(function(){
 		var zhuzhi = $("#zhuzhi").val();
 		var hm = $("#hm").val();
 		var tx = $("#tx").val();
+		var female = "female";
+		var male = "male";
+		if ( xba = "female") {
 		$("#log1").html('<div style="text-align:center;position: relative"><?php 
-
-			$xba = "<script language='javascript'>$('#xba').val(); </script>";
-			if ("$xba" == " female") {
-			$this->load->view("female_id");}
-			else{
-				$this->load->view("male_id");}
-
-
-
-			?>' +　
+			$this->load->view("female_id");?>' +　
 			"<p style='position: absolute;top: 105px;font-size: 16px;left: 136px;'>"+xm+"</p>"+ 
 			"<p style='position: absolute;top: 174px;font-size: 16px;left: 137px;'>"+cs+"</p>"+ 
 			"<p style='position: absolute;top: 136px;font-size: 16px;left: 230px;'>"+mz+"</p>"+
@@ -94,6 +88,18 @@ $(document).ready(function(){
 			"<p style='position: absolute;top: 294px;font-size: 16px;left: 202px;'>"+hm+"</p>"+
 			"&tx="+tx+
 			"&yz=zm"+"</div>" );
+		}else if(xba = male ){
+		$("#log1").html('<div style="text-align:center;position: relative"><?php 
+			$this->load->view("male_id");?>' +　
+			"<p style='position: absolute;top: 105px;font-size: 16px;left: 136px;'>"+xm+"</p>"+ 
+			"<p style='position: absolute;top: 174px;font-size: 16px;left: 137px;'>"+cs+"</p>"+ 
+			"<p style='position: absolute;top: 136px;font-size: 16px;left: 230px;'>"+mz+"</p>"+
+			"&xba="+xba+
+			"<p style='position: absolute;top: 202px;font-size: 16px;left: 136px;'>"+zhuzhi+"</p>"+
+			"<p style='position: absolute;top: 294px;font-size: 16px;left: 202px;'>"+hm+"</p>"+
+			"&tx="+tx+
+			"&yz=zm"+"</div>" );
+		}
 });  
 });
 
