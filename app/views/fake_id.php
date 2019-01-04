@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+foreach ($contents as $key => $value):
 ?>
 
 
@@ -12,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		?> -->
 <h3>Chinese ID Card Number Obverse side Image Generate</h3>
 <div class="col-md-12">
-	<?php foreach ($contents as $key => $value):?>
+	
 		<form name="form1" class="form-horizontal">
 			
 			
@@ -51,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 		<br><p id="log1"></p>
-		<?php endforeach;?>
+		
 </div>
 
 
@@ -71,34 +72,35 @@ $(document).ready(function(){
 		var xm = $("#xm").val();
 		var cs = $("#cs").val();
 		var xba = $("#xba").val();
+		var xba = xba.replace(/\s+/g, '');
 		var mz = $("#mz").val();
 		var zhuzhi = $("#zhuzhi").val();
 		var hm = $("#hm").val();
 		var tx = $("#tx").val();
-		var female = "female";
-		var male = "male";
-		if ( xba = "female") {
-		$("#log1").html('<div style="text-align:center;position: relative"><?php 
+		
+		
+		if ( xba == "female") {
+		$("#log1").html('<div style="position: relative;"><?php 
 			$this->load->view("female_id");?>' +　
 			"<p style='position: absolute;top: 105px;font-size: 16px;left: 136px;'>"+xm+"</p>"+ 
 			"<p style='position: absolute;top: 174px;font-size: 16px;left: 137px;'>"+cs+"</p>"+ 
 			"<p style='position: absolute;top: 136px;font-size: 16px;left: 230px;'>"+mz+"</p>"+
-			"&xba="+xba+
+			
 			"<p style='position: absolute;top: 202px;font-size: 16px;left: 136px;'>"+zhuzhi+"</p>"+
 			"<p style='position: absolute;top: 294px;font-size: 16px;left: 202px;'>"+hm+"</p>"+
-			"&tx="+tx+
-			"&yz=zm"+"</div>" );
-		}else if(xba = male ){
-		$("#log1").html('<div style="text-align:center;position: relative"><?php 
+			+
+			"</div>" );
+		}else if(xba == "male" ){
+		$("#log1").html('<div style=";position: relative;"><?php 
 			$this->load->view("male_id");?>' +　
 			"<p style='position: absolute;top: 105px;font-size: 16px;left: 136px;'>"+xm+"</p>"+ 
 			"<p style='position: absolute;top: 174px;font-size: 16px;left: 137px;'>"+cs+"</p>"+ 
 			"<p style='position: absolute;top: 136px;font-size: 16px;left: 230px;'>"+mz+"</p>"+
-			"&xba="+xba+
-			"<p style='position: absolute;top: 202px;font-size: 16px;left: 136px;'>"+zhuzhi+"</p>"+
+			
+			"<p style='position: absolute;top: 202px;font-size: 16px;left: 136px;padding-right: 55%;'>"+zhuzhi+"</p>"+
 			"<p style='position: absolute;top: 294px;font-size: 16px;left: 202px;'>"+hm+"</p>"+
-			"&tx="+tx+
-			"&yz=zm"+"</div>" );
+			
+			"</div>" );
 		}
 });  
 });
@@ -106,3 +108,4 @@ $(document).ready(function(){
 
 
 </script>
+<?php endforeach;?>
