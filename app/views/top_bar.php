@@ -23,7 +23,14 @@ $top_bar_lang = $this->lang->line('top_bar');
 			<div class="login">
 				<p>
 					<a href="/">
-						<?php echo $top_bar_lang["login"]; ?>
+<!--						--><?php //echo $top_bar_lang["logout"]; ?>
+					</a>
+				<p>
+			</div>
+			<div class="wms">
+				<p>
+					<a href="<?php echo site_url("/WMS/index/orders"); ?>">
+						wms test
 					</a>
 				<p>
 			</div>
