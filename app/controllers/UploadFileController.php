@@ -28,7 +28,8 @@ Class UploadFileController extends CI_Controller {
 			
 		}
 		$save_file = $this->UploadFileModel->saveFile($file);
-		// echo "position: " . $_FILES["file"]["tmp_name"];
+		// var_dump($save_file);
+		echo "new position: " . $save_file["tmp_name"];
 		return $save_file;
 
 
