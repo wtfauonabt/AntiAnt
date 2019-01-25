@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<!-- Display icon -->
 	<link rel="icon" href="<?php echo base_url('src/image/favicon.ico'); ?>" type="image/x-icon"/>
-<!--	<!-- Title Tags-->-->
+<!--	<!-- Title Tags-->
 <!--	--><?php //if($current_lang == 'english'): ?>
 <!--		<title>--><?php //echo $initial_title_lang['en_title']; ?><!--</title>-->
 <!--	--><?php //else: ?>
@@ -44,6 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="content">
 	<!-- Display fixed nav bar -->
 	<?php $this->load->view("/wms/declare/upload"); ?>
+	<?php $this->load->view("/wms/declare/convert_excel"); ?>
 
 </div>
 
