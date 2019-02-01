@@ -22,6 +22,7 @@ class UserController extends CI_Controller {
 		switch ($action){
 			case('login'):
 				$error = $this->login();
+
 				break;
 			case('signout'):
 				break;
@@ -44,8 +45,34 @@ class UserController extends CI_Controller {
   			$this->load->view("login_page");
 			
 		}else {
+// 			$con = mysqli_connect('166.62.25.170', 'f01pxh0ycdd5', 'Auckland1!','antiant_backend');
+
+// 			  $uname = mysqli_real_escape_string($con,$_POST['user_name']);
+//     $password = mysqli_real_escape_string($con,$_POST['password']);
+// 			  $sql_query = "select count(*) as cntUser,id from users where username='".$uname."' and password='".$password."'";
+//         $result = mysqli_query($con, "SELECT * FROM account_user");
+//         if (!$result) {
+//     printf("Error: %s\n", mysqli_error($con));
+//     exit();
+// }
+//         $row = mysqli_fetch_array($result);
+
+//         $count = $row['id'];
+
+//         if($count > 0){
+//              $userid = $row['id'];
+//             if( isset($_POST['remember']) ){
+
+//                 // Set cookie variables
+//                 $days = 30;
+//                 // $value = encryptPassword($userid);
+//                 setcookie ("remember",$value,time()+ ($days *  24 * 60 * 60 * 1000));
+//             }
+            
+//             $_SESSION['userid'] = $userid; 
 			$this->load->view("wms_home");
 		}
+	}
 		//view login
 		// die("2");
 		
@@ -87,6 +114,7 @@ class UserController extends CI_Controller {
 		if($errorMessage){
 			return $errorMessage;
 		}
+
 		$this->session->user = $this->UserModel->getUser();
 
 		// var_dump($this->session->user);

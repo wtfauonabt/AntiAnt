@@ -16,12 +16,14 @@ class UserModel extends CI_Model
 	public function __construct(){
         parent::__construct();
         $this->table_name = "account_user";
+        
     }
 
     public function login($data){
     	// check error
-
 		$errorMessage = $this->checkUser($data["user_name"], $data["user_name"]);
+
+       
     	return $errorMessage;
     }
 
@@ -53,6 +55,8 @@ class UserModel extends CI_Model
    
             // redirect($this->load->view("login_page.php"));
             // die('aa');
+
+
             return "Invalid username and password";
         }
         // var_dump($user);

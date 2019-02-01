@@ -14,26 +14,26 @@
 		<div class="container ">
 
 			<div class="wrap-input100 validate-input" >
-		<label class="input100" for="uname"><b><?php echo $login_lang['username']?></b></label>
-		<input class="input100" type="text" name="user_name" required>
+		<label class="input100" for="uname" ><b><?php echo $login_lang['username']?></b></label>
+		<input class="input100" type="text" name="user_name" value="" required>
 			</div>
 		<div class="wrap-input100 validate-input" >
 		<label class="input100" for="psw"><b><?php echo $login_lang['password']?></b></label>
 		<input class="input100" type="password"  name="password" required>
 	</div>
 	<div class="">
-		<input  type="checkbox" checked="checked" name="remember"><span style="color: #fff"><?php echo $login_lang['remember']?></span> </label>
+		<input  type="checkbox" checked="checked" name="remember" id="remember" value="1"><span style="color: #fff"><?php echo $login_lang['remember']?></span> </label>
 	</div>
 	
 		<div class="container-login100-form-btn">
-		<button class="login100-form-btn"type="submit"><?php echo $login_lang['login']?></button>
+		<button class="login100-form-btn"type="submit" id="login" name="login"><?php echo $login_lang['login']?></button>
 </div>
 			
 		</div> 
 
 		<div class="text-center p-t-90">
 		<spa nclass="psw"><a class="txt1" href="#"><?php echo $login_lang['forgot']?></a></span>
-		</div>
+		</div> 
  
 	</form>
 </div>

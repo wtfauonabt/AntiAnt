@@ -169,7 +169,7 @@ $lang["contact"]["password"] 				= 	"密码";
 $lang["contact"]["register"] 				= 	"登記";
 
 $lang["login"]["username"] 				= 	"用户名";
-$lang["login"]["remember"] 				= 	"  a";
+$lang["login"]["remember"] 				= 	"記住密碼";
 $lang["login"]["forgot"] 				= 	"忘記密碼?";
 $lang["login"]["password"] 				= 	"密码";
 $lang["login"]["register"] 				= 	"登記";
