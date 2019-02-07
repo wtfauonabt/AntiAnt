@@ -82,12 +82,83 @@ class WMS extends CI_Controller {
 	}
 
 	public function excelGetInfo(){
-		$spreadsheet = new Spreadsheet();
-        $sheet = $spreadsheet->getActiveSheet();
-        $sheet->setCellValue('A1', 'ID');
-        $sheet->setCellValue('B1', 'NAME');
-        $sheet->setCellValue('C1', 'AGE');
-        $sheet->setCellValue('D1', 'GENDER');
+		$file_path = "./src/test2_cvs.csv";
+		$file_type = \PhpOffice\PhpSpreadsheet\IOFactory::identify($file_path);
+		$reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader($file_type);
+		$import_file = $reader -> load($file_path);
+		// GET SHEETS
+		$sheet = $import_file -> getSheet(0);
+
+		// 行
+		$highest_row = $sheet -> getHighestRow();
+
+		// $highest_column = $sheet -> getHighestColumn();
+
+		foreach ($import_file->getWorksheetIterator() as $worksheet) {
+
+    		$worksheets[$worksheet -> getTitle()] = $worksheet->toArray();
+			}
+		$title = $worksheets["Worksheet"][0];
+
+		$info = $worksheets["Worksheet"];
+
+		// var_dump($title);
+		// echo "<br>";
+
+		// var_dump($info);
+		$result = array();
+		for ($i=1; $i < $highest_row ; $i++) { 
+			// var_dump($info[$i]);
+			// echo "<br>";
+			$result[] = array_combine($title, $info[$i]);
+
+			
+		}
+		// $largeArraySize = 0;
+
+		// foreach($result as $array) {
+		//    if(count($array) > $largeArraySize) {
+		//      $largeArray = $array;
+		//    }
+		// }
+		// var_dump($result);
+
+ 		$result_key = array_keys($result[0]);
+  		//echo "header: ";
+		// var_dump($result_key);
+
+		// echo "<br>";
+		// echo "<br>";
+		
+		$this -> newExcel($result_key , $result);
+        
+
+	}
+
+	public function newExcel($result_key , $result){
+		// $sheet->fromArray([$result_key], NULL, 'A1');
+        // $sheet->setCellValue('A1', 'ID');
+        // $sheet->setCellValue('B1', 'NAME');
+        // $sheet->setCellValue('C1', 'AGE');
+        // $sheet->setCellValue('D1', 'GENDER');
+		// var_dump($result);
+      	$spreadsheet = new Spreadsheet();
+        $new_sheet = $spreadsheet->getActiveSheet();
+        $new_sheet->fromArray($result_key, NULL, 'A1');
+        // var_dump($result_key);
+ 
+        foreach ($result as $key => $value) {
+        	$row =  (int)$key + 2 ;
+        	// var_dump($key);
+        	// var_dump($value);
+        	// echo "<br>";
+        	$new_sheet -> setCellValue("A". $row , $value["Id"]);
+        	$new_sheet -> setCellValue("B". $row , $value["Name"]);
+        	$new_sheet -> setCellValue("C". $row , $value["Age"]);
+        	$new_sheet -> setCellValue("D". $row , $value["Gender"]);
+        	$new_sheet -> setCellValue("E". $row , $value["Class"]);
+        }
+
 
         $writer = new Xlsx($spreadsheet);
  
@@ -98,8 +169,6 @@ class WMS extends CI_Controller {
         header('Cache-Control: max-age=0');
         
         $writer->save('php://output');
-	
 
-		
 	}
 }
