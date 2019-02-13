@@ -42,17 +42,17 @@
 				<p class="showFileName "></p>
 				<hr>
 				<div class="fileUploadSub">
-					<input type="submit" name="submitFile" >
+					<input type="submit" name="submitFile" value="Get new Excel">
 				</div>
 			</div>
 	</div> 
 </form>
 
-<div class="card">
+<!-- <div class="card">
 	<div class="card-block">
 		<button onclick="window.location='<?php echo site_url("WMS/excelGetInfo");?>'">Get Excecl</button>
 	</div>
-</div>
+</div> -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
